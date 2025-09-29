@@ -1,0 +1,31 @@
+running egg_info
+creating ../build/rover_camera/rover_camera.egg-info
+writing ../build/rover_camera/rover_camera.egg-info/PKG-INFO
+writing dependency_links to ../build/rover_camera/rover_camera.egg-info/dependency_links.txt
+writing entry points to ../build/rover_camera/rover_camera.egg-info/entry_points.txt
+writing requirements to ../build/rover_camera/rover_camera.egg-info/requires.txt
+writing top-level names to ../build/rover_camera/rover_camera.egg-info/top_level.txt
+writing manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'
+reading manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'
+writing manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/workspace/src/build/rover_camera/build
+creating /home/ros/workspace/src/build/rover_camera/build/lib
+creating /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera
+copying rover_camera/__init__.py -> /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera
+running install
+running install_lib
+creating /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera
+copying /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera/__init__.py -> /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera
+byte-compiling /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ros/workspace/src/install/rover_camera/share/ament_index
+creating /home/ros/workspace/src/install/rover_camera/share/ament_index/resource_index
+creating /home/ros/workspace/src/install/rover_camera/share/ament_index/resource_index/packages
+copying resource/rover_camera -> /home/ros/workspace/src/install/rover_camera/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/workspace/src/install/rover_camera/share/rover_camera
+running install_egg_info
+Copying ../build/rover_camera/rover_camera.egg-info to /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ros/workspace/src/build/rover_camera/install.log'

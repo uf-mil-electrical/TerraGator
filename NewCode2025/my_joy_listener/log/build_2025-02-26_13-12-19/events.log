@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.001411] (my_joy_listener) JobQueued: {'identifier': 'my_joy_listener', 'dependencies': OrderedDict()}
+[0.002350] (my_joy_listener) JobStarted: {'identifier': 'my_joy_listener'}
+[0.099116] (-) TimerEvent: {}
+[0.199640] (-) TimerEvent: {}
+[0.300204] (-) TimerEvent: {}
+[0.400734] (-) TimerEvent: {}
+[0.501327] (-) TimerEvent: {}
+[0.601831] (-) TimerEvent: {}
+[0.702377] (-) TimerEvent: {}
+[0.802885] (-) TimerEvent: {}
+[0.903577] (-) TimerEvent: {}
+[1.004429] (-) TimerEvent: {}
+[1.104962] (-) TimerEvent: {}
+[1.205609] (-) TimerEvent: {}
+[1.306560] (-) TimerEvent: {}
+[1.407402] (-) TimerEvent: {}
+[1.507895] (-) TimerEvent: {}
+[1.608441] (-) TimerEvent: {}
+[1.708958] (-) TimerEvent: {}
+[1.809508] (-) TimerEvent: {}
+[1.910052] (-) TimerEvent: {}
+[2.010550] (-) TimerEvent: {}
+[2.111004] (-) TimerEvent: {}
+[2.211547] (-) TimerEvent: {}
+[2.312097] (-) TimerEvent: {}
+[2.412587] (-) TimerEvent: {}
+[2.513128] (-) TimerEvent: {}
+[2.613625] (-) TimerEvent: {}
+[2.714098] (-) TimerEvent: {}
+[2.814593] (-) TimerEvent: {}
+[2.915140] (-) TimerEvent: {}
+[3.015658] (-) TimerEvent: {}
+[3.116251] (-) TimerEvent: {}
+[3.216899] (-) TimerEvent: {}
+[3.317446] (-) TimerEvent: {}
+[3.418140] (-) TimerEvent: {}
+[3.518775] (-) TimerEvent: {}
+[3.619305] (-) TimerEvent: {}
+[3.719797] (-) TimerEvent: {}
+[3.820353] (-) TimerEvent: {}
+[3.920868] (-) TimerEvent: {}
+[4.021423] (-) TimerEvent: {}
+[4.121984] (-) TimerEvent: {}
+[4.221204] (my_joy_listener) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/my_joy_listener', 'build', '--build-base', '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build', 'install', '--record', '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'reptilerover', 'SSH_CLIENT': '10.138.245.149 59084 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/reptilerover', 'OLDPWD': '/home/reptilerover/ReptileRover/NewCode2025', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'reptilerover', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.138.245.149 59084 10.138.253.75 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.223965] (-) TimerEvent: {}
+[4.324460] (-) TimerEvent: {}
+[4.425112] (-) TimerEvent: {}
+[4.525625] (-) TimerEvent: {}
+[4.626136] (-) TimerEvent: {}
+[4.726656] (-) TimerEvent: {}
+[4.827150] (-) TimerEvent: {}
+[4.927647] (-) TimerEvent: {}
+[5.028167] (-) TimerEvent: {}
+[5.128728] (-) TimerEvent: {}
+[5.229341] (-) TimerEvent: {}
+[5.329866] (-) TimerEvent: {}
+[5.399070] (my_joy_listener) StdoutLine: {'line': b'running egg_info\n'}
+[5.400304] (my_joy_listener) StdoutLine: {'line': b'creating build/my_joy_listener/my_joy_listener.egg-info\n'}
+[5.430002] (-) TimerEvent: {}
+[5.487736] (my_joy_listener) StdoutLine: {'line': b'writing build/my_joy_listener/my_joy_listener.egg-info/PKG-INFO\n'}
+[5.488910] (my_joy_listener) StdoutLine: {'line': b'writing dependency_links to build/my_joy_listener/my_joy_listener.egg-info/dependency_links.txt\n'}
+[5.489719] (my_joy_listener) StdoutLine: {'line': b'writing requirements to build/my_joy_listener/my_joy_listener.egg-info/requires.txt\n'}
+[5.490304] (my_joy_listener) StdoutLine: {'line': b'writing top-level names to build/my_joy_listener/my_joy_listener.egg-info/top_level.txt\n'}
+[5.490822] (my_joy_listener) StdoutLine: {'line': b"writing manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'\n"}
+[5.530137] (-) TimerEvent: {}
+[5.630635] (-) TimerEvent: {}
+[5.671376] (my_joy_listener) StdoutLine: {'line': b"reading manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'\n"}
+[5.674171] (my_joy_listener) StdoutLine: {'line': b"writing manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'\n"}
+[5.674773] (my_joy_listener) StdoutLine: {'line': b'running build\n'}
+[5.675299] (my_joy_listener) StdoutLine: {'line': b'running build_py\n'}
+[5.675774] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build\n'}
+[5.676288] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib\n'}
+[5.676746] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener\n'}
+[5.677282] (my_joy_listener) StdoutLine: {'line': b'copying my_joy_listener/__init__.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener\n'}
+[5.677802] (my_joy_listener) StdoutLine: {'line': b'copying my_joy_listener/joy_handsome.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener\n'}
+[5.678903] (my_joy_listener) StdoutLine: {'line': b'running install\n'}
+[5.701505] (my_joy_listener) StdoutLine: {'line': b'running install_lib\n'}
+[5.730764] (-) TimerEvent: {}
+[5.790540] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener\n'}
+[5.791202] (my_joy_listener) StdoutLine: {'line': b'copying /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener/__init__.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener\n'}
+[5.792054] (my_joy_listener) StdoutLine: {'line': b'copying /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener/joy_handsome.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener\n'}
+[5.794503] (my_joy_listener) StdoutLine: {'line': b'byte-compiling /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener/__init__.py to __init__.cpython-312.pyc\n'}
+[5.795962] (my_joy_listener) StdoutLine: {'line': b'byte-compiling /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener/joy_handsome.py to joy_handsome.cpython-312.pyc\n'}
+[5.798123] (my_joy_listener) StdoutLine: {'line': b'running install_data\n'}
+[5.798665] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index\n'}
+[5.799207] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index/resource_index\n'}
+[5.799689] (my_joy_listener) StdoutLine: {'line': b'creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index/resource_index/packages\n'}
+[5.800213] (my_joy_listener) StdoutLine: {'line': b'copying resource/my_joy_listener -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index/resource_index/packages\n'}
+[5.800790] (my_joy_listener) StdoutLine: {'line': b'copying package.xml -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener\n'}
+[5.801361] (my_joy_listener) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.830895] (-) TimerEvent: {}
+[5.895441] (my_joy_listener) StdoutLine: {'line': b'Copying build/my_joy_listener/my_joy_listener.egg-info to /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener-0.0.0-py3.12.egg-info\n'}
+[5.900387] (my_joy_listener) StdoutLine: {'line': b'running install_scripts\n'}
+[5.931071] (-) TimerEvent: {}
+[6.031593] (-) TimerEvent: {}
+[6.132108] (-) TimerEvent: {}
+[6.232596] (-) TimerEvent: {}
+[6.333096] (-) TimerEvent: {}
+[6.433596] (-) TimerEvent: {}
+[6.534153] (-) TimerEvent: {}
+[6.557669] (my_joy_listener) StdoutLine: {'line': b"writing list of installed files to '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log'\n"}
+[6.634414] (-) TimerEvent: {}
+[6.699181] (my_joy_listener) CommandEnded: {'returncode': 0}
+[6.734729] (-) TimerEvent: {}
+[6.752412] (my_joy_listener) JobEnded: {'identifier': 'my_joy_listener', 'rc': 0}
+[6.755313] (-) EventReactorShutdown: {}

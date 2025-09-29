@@ -1,0 +1,33 @@
+[3.358s] Invoking command in '/home/ros/workspace/src/rover_controller': PYTHONPATH=/home/ros/workspace/src/build/rover_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rover_controller build --build-base /home/ros/workspace/src/build/rover_controller/build install --record /home/ros/workspace/src/build/rover_controller/install.log --single-version-externally-managed install_data
+[4.385s] running egg_info
+[4.386s] creating ../build/rover_controller/rover_controller.egg-info
+[4.386s] writing ../build/rover_controller/rover_controller.egg-info/PKG-INFO
+[4.387s] writing dependency_links to ../build/rover_controller/rover_controller.egg-info/dependency_links.txt
+[4.389s] writing entry points to ../build/rover_controller/rover_controller.egg-info/entry_points.txt
+[4.391s] writing requirements to ../build/rover_controller/rover_controller.egg-info/requires.txt
+[4.392s] writing top-level names to ../build/rover_controller/rover_controller.egg-info/top_level.txt
+[4.394s] writing manifest file '../build/rover_controller/rover_controller.egg-info/SOURCES.txt'
+[4.406s] reading manifest file '../build/rover_controller/rover_controller.egg-info/SOURCES.txt'
+[4.413s] writing manifest file '../build/rover_controller/rover_controller.egg-info/SOURCES.txt'
+[4.414s] running build
+[4.414s] running build_py
+[4.414s] creating /home/ros/workspace/src/build/rover_controller/build
+[4.415s] creating /home/ros/workspace/src/build/rover_controller/build/lib
+[4.415s] creating /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller
+[4.416s] copying rover_controller/__init__.py -> /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller
+[4.422s] running install
+[4.425s] running install_lib
+[4.426s] creating /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller
+[4.426s] copying /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller/__init__.py -> /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller
+[4.427s] byte-compiling /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller/__init__.py to __init__.cpython-310.pyc
+[4.427s] running install_data
+[4.429s] creating /home/ros/workspace/src/install/rover_controller/share/ament_index
+[4.430s] creating /home/ros/workspace/src/install/rover_controller/share/ament_index/resource_index
+[4.430s] creating /home/ros/workspace/src/install/rover_controller/share/ament_index/resource_index/packages
+[4.431s] copying resource/rover_controller -> /home/ros/workspace/src/install/rover_controller/share/ament_index/resource_index/packages
+[4.432s] copying package.xml -> /home/ros/workspace/src/install/rover_controller/share/rover_controller
+[4.433s] running install_egg_info
+[4.440s] Copying ../build/rover_controller/rover_controller.egg-info to /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller-0.0.0-py3.10.egg-info
+[4.445s] running install_scripts
+[4.586s] writing list of installed files to '/home/ros/workspace/src/build/rover_controller/install.log'
+[4.740s] Invoked command in '/home/ros/workspace/src/rover_controller' returned '0': PYTHONPATH=/home/ros/workspace/src/build/rover_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rover_controller build --build-base /home/ros/workspace/src/build/rover_controller/build install --record /home/ros/workspace/src/build/rover_controller/install.log --single-version-externally-managed install_data

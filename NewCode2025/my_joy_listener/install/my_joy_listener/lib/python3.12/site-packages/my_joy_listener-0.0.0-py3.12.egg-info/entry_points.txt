@@ -1,0 +1,2 @@
+[console_scripts]
+joy_handsome = my_joy_listener.joy_handsome:main

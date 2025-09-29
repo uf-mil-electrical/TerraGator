@@ -1,0 +1,1 @@
+savedcmd_/home/raspberry/Mars-Rover/firmware/kernel_test/kernel_test.mod := printf '%s\n'   kernel_test.o | awk '!x[$$0]++ { print("/home/raspberry/Mars-Rover/firmware/kernel_test/"$$0) }' > /home/raspberry/Mars-Rover/firmware/kernel_test/kernel_test.mod

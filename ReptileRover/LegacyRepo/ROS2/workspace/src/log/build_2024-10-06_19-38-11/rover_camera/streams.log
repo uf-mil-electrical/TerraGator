@@ -1,0 +1,23 @@
+[3.366s] Invoking command in '/home/ros/workspace/src/rover_camera': PYTHONPATH=/home/ros/workspace/src/build/rover_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rover_camera build --build-base /home/ros/workspace/src/build/rover_camera/build install --record /home/ros/workspace/src/build/rover_camera/install.log --single-version-externally-managed install_data
+[4.338s] running egg_info
+[4.341s] writing ../build/rover_camera/rover_camera.egg-info/PKG-INFO
+[4.344s] writing dependency_links to ../build/rover_camera/rover_camera.egg-info/dependency_links.txt
+[4.345s] writing entry points to ../build/rover_camera/rover_camera.egg-info/entry_points.txt
+[4.357s] writing requirements to ../build/rover_camera/rover_camera.egg-info/requires.txt
+[4.358s] writing top-level names to ../build/rover_camera/rover_camera.egg-info/top_level.txt
+[4.363s] reading manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'
+[4.366s] writing manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'
+[4.368s] running build
+[4.370s] running build_py
+[4.372s] copying rover_camera/rover_camera.py -> /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera
+[4.374s] running install
+[4.377s] running install_lib
+[4.381s] copying /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera/rover_camera.py -> /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera
+[4.383s] byte-compiling /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera/rover_camera.py to rover_camera.cpython-310.pyc
+[4.384s] running install_data
+[4.393s] running install_egg_info
+[4.395s] removing '/home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[4.398s] Copying ../build/rover_camera/rover_camera.egg-info to /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera-0.0.0-py3.10.egg-info
+[4.399s] running install_scripts
+[4.471s] writing list of installed files to '/home/ros/workspace/src/build/rover_camera/install.log'
+[4.638s] Invoked command in '/home/ros/workspace/src/rover_camera' returned '0': PYTHONPATH=/home/ros/workspace/src/build/rover_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rover_camera build --build-base /home/ros/workspace/src/build/rover_camera/build install --record /home/ros/workspace/src/build/rover_camera/install.log --single-version-externally-managed install_data

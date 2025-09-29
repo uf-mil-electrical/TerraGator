@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  ros2_humble:
+    build: .
+    network_mode: host
+    ipc: host
+    volumes:
+      - ~/Mars-Rover/ROS2/:/home/ros
+    #devices:
+    #  - /dev/ttyUSB0:/dev/ttyUSB0
+    tty: true
+    environment:
+      - DISPLAY

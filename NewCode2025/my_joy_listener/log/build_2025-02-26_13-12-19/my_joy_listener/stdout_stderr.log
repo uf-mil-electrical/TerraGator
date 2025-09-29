@@ -1,0 +1,33 @@
+running egg_info
+creating build/my_joy_listener/my_joy_listener.egg-info
+writing build/my_joy_listener/my_joy_listener.egg-info/PKG-INFO
+writing dependency_links to build/my_joy_listener/my_joy_listener.egg-info/dependency_links.txt
+writing requirements to build/my_joy_listener/my_joy_listener.egg-info/requires.txt
+writing top-level names to build/my_joy_listener/my_joy_listener.egg-info/top_level.txt
+writing manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+reading manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+writing manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener
+copying my_joy_listener/__init__.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener
+copying my_joy_listener/joy_handsome.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener
+running install
+running install_lib
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener
+copying /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener/__init__.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener
+copying /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener/joy_handsome.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener
+byte-compiling /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener/joy_handsome.py to joy_handsome.cpython-312.pyc
+running install_data
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index/resource_index
+creating /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index/resource_index/packages
+copying resource/my_joy_listener -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/ament_index/resource_index/packages
+copying package.xml -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener
+running install_egg_info
+Copying build/my_joy_listener/my_joy_listener.egg-info to /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log'

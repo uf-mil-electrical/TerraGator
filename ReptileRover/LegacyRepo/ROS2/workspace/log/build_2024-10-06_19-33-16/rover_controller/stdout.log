@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/rover_controller/rover_controller.egg-info
+writing ../../build/rover_controller/rover_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/rover_controller/rover_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/rover_controller/rover_controller.egg-info/entry_points.txt
+writing requirements to ../../build/rover_controller/rover_controller.egg-info/requires.txt
+writing top-level names to ../../build/rover_controller/rover_controller.egg-info/top_level.txt
+writing manifest file '../../build/rover_controller/rover_controller.egg-info/SOURCES.txt'
+reading manifest file '../../build/rover_controller/rover_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/rover_controller/rover_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/workspace/build/rover_controller/build
+creating /home/ros/workspace/build/rover_controller/build/lib
+creating /home/ros/workspace/build/rover_controller/build/lib/rover_controller
+copying rover_controller/__init__.py -> /home/ros/workspace/build/rover_controller/build/lib/rover_controller
+copying rover_controller/rover_autonomous.py -> /home/ros/workspace/build/rover_controller/build/lib/rover_controller
+copying rover_controller/rover_controller.py -> /home/ros/workspace/build/rover_controller/build/lib/rover_controller
+running install
+running install_lib
+creating /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller
+copying /home/ros/workspace/build/rover_controller/build/lib/rover_controller/__init__.py -> /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller
+copying /home/ros/workspace/build/rover_controller/build/lib/rover_controller/rover_autonomous.py -> /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller
+copying /home/ros/workspace/build/rover_controller/build/lib/rover_controller/rover_controller.py -> /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller
+byte-compiling /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller/rover_autonomous.py to rover_autonomous.cpython-310.pyc
+byte-compiling /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller/rover_controller.py to rover_controller.cpython-310.pyc
+running install_data
+creating /home/ros/workspace/install/rover_controller/share/ament_index
+creating /home/ros/workspace/install/rover_controller/share/ament_index/resource_index
+creating /home/ros/workspace/install/rover_controller/share/ament_index/resource_index/packages
+copying resource/rover_controller -> /home/ros/workspace/install/rover_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/workspace/install/rover_controller/share/rover_controller
+running install_egg_info
+Copying ../../build/rover_controller/rover_controller.egg-info to /home/ros/workspace/install/rover_controller/lib/python3.10/site-packages/rover_controller-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ros/workspace/build/rover_controller/install.log'

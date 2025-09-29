@@ -1,0 +1,7 @@
+Listening to Xbox Wireless Controller...
+Raw event: event at 1727106025.059765, code 05, type 03, val 32582
+Analog input: 5 - 32582
+Raw event: event at 1727106025.059765, code 00, type 00, val 00
+Raw event: event at 1727106025.108423, code 05, type 03, val 33367
+Analog input: 5 - 33367
+Raw event: event at 1727106025.108423, code 00, type 00, val 00

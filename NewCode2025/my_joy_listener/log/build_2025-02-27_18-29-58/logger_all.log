@@ -1,0 +1,90 @@
+[0.462s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.462s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa8b2fb60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa8cc4560>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa8cc4560>>, mixin_verb=('build',))
+[0.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.631s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.745s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'my_joy_listener'
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.746s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.746s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.746s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.813s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.813s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.821s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install
+[0.833s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 334 installed packages in /opt/ros/jazzy
+[0.841s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.054s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'cmake_args' from command line to 'None'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'cmake_target' from command line to 'None'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'cmake_clean_cache' from command line to 'False'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'cmake_clean_first' from command line to 'False'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'cmake_force_configure' from command line to 'False'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'ament_cmake_args' from command line to 'None'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'catkin_cmake_args' from command line to 'None'
+[1.055s] Level 5:colcon.colcon_core.verb:set package 'my_joy_listener' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.055s] DEBUG:colcon.colcon_core.verb:Building package 'my_joy_listener' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener', 'merge_install': False, 'path': '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener', 'symlink_install': False, 'test_result_base': None}
+[1.056s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.059s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.060s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener' with build type 'ament_python'
+[1.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_joy_listener', 'ament_prefix_path')
+[1.068s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/hook/ament_prefix_path.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/hook/ament_prefix_path.dsv'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/hook/ament_prefix_path.sh'
+[1.076s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.077s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.054s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener'
+[2.055s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.055s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_joy_listener build --build-base /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build install --record /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log --single-version-externally-managed install_data
+[7.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_joy_listener build --build-base /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build install --record /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log --single-version-externally-managed install_data
+[7.357s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener' for CMake module files
+[7.360s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener' for CMake config files
+[7.364s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib'
+[7.364s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/bin'
+[7.365s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/pkgconfig/my_joy_listener.pc'
+[7.365s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages'
+[7.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_joy_listener', 'pythonpath')
+[7.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/hook/pythonpath.ps1'
+[7.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/hook/pythonpath.dsv'
+[7.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/hook/pythonpath.sh'
+[7.373s] Level 1:colcon.colcon_core.environment:checking '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/bin'
+[7.374s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_joy_listener)
+[7.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/package.ps1'
+[7.377s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/package.dsv'
+[7.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/package.sh'
+[7.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/package.bash'
+[7.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/my_joy_listener/package.zsh'
+[7.388s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/share/colcon-core/packages/my_joy_listener)
+[7.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.391s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.391s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.391s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.414s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.467s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.468s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/local_setup.ps1'
+[7.472s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/_local_setup_util_ps1.py'
+[7.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/setup.ps1'
+[7.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/local_setup.sh'
+[7.484s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/_local_setup_util_sh.py'
+[7.486s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/setup.sh'
+[7.491s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/local_setup.bash'
+[7.493s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/setup.bash'
+[7.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/local_setup.zsh'
+[7.499s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/setup.zsh'

@@ -1,0 +1,24 @@
+[3.647s] Invoking command in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_joy_listener build --build-base /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build install --record /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log --single-version-externally-managed install_data
+[4.820s] running egg_info
+[4.908s] writing build/my_joy_listener/my_joy_listener.egg-info/PKG-INFO
+[4.909s] writing dependency_links to build/my_joy_listener/my_joy_listener.egg-info/dependency_links.txt
+[4.914s] writing entry points to build/my_joy_listener/my_joy_listener.egg-info/entry_points.txt
+[4.915s] writing requirements to build/my_joy_listener/my_joy_listener.egg-info/requires.txt
+[4.916s] writing top-level names to build/my_joy_listener/my_joy_listener.egg-info/top_level.txt
+[5.096s] reading manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+[5.099s] writing manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+[5.100s] running build
+[5.100s] running build_py
+[5.101s] copying my_joy_listener/dc_motor_driver.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener
+[5.103s] running install
+[5.127s] running install_lib
+[5.216s] copying /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener/dc_motor_driver.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener
+[5.219s] byte-compiling /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener/dc_motor_driver.py to dc_motor_driver.cpython-312.pyc
+[5.223s] running install_data
+[5.223s] running install_egg_info
+[5.316s] removing '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener-0.0.0-py3.12.egg-info' (and everything under it)
+[5.318s] Copying build/my_joy_listener/my_joy_listener.egg-info to /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener-0.0.0-py3.12.egg-info
+[5.323s] running install_scripts
+[5.972s] Installing joy_handsome script to /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/my_joy_listener
+[5.973s] writing list of installed files to '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log'
+[6.116s] Invoked command in '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_joy_listener build --build-base /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build install --record /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log --single-version-externally-managed install_data

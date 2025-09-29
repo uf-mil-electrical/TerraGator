@@ -1,0 +1,22 @@
+running egg_info
+writing build/my_joy_listener/my_joy_listener.egg-info/PKG-INFO
+writing dependency_links to build/my_joy_listener/my_joy_listener.egg-info/dependency_links.txt
+writing entry points to build/my_joy_listener/my_joy_listener.egg-info/entry_points.txt
+writing requirements to build/my_joy_listener/my_joy_listener.egg-info/requires.txt
+writing top-level names to build/my_joy_listener/my_joy_listener.egg-info/top_level.txt
+reading manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+writing manifest file 'build/my_joy_listener/my_joy_listener.egg-info/SOURCES.txt'
+running build
+running build_py
+copying my_joy_listener/dc_motor_driver.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener
+running install
+running install_lib
+copying /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/build/lib/my_joy_listener/dc_motor_driver.py -> /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener
+byte-compiling /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener/dc_motor_driver.py to dc_motor_driver.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener-0.0.0-py3.12.egg-info' (and everything under it)
+Copying build/my_joy_listener/my_joy_listener.egg-info to /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/python3.12/site-packages/my_joy_listener-0.0.0-py3.12.egg-info
+running install_scripts
+Installing joy_handsome script to /home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/install/my_joy_listener/lib/my_joy_listener
+writing list of installed files to '/home/reptilerover/ReptileRover/NewCode2025/my_joy_listener/build/my_joy_listener/install.log'

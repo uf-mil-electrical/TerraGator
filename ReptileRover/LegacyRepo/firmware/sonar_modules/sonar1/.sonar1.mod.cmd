@@ -1,0 +1,1 @@
+savedcmd_/home/raspberry/Mars-Rover/firmware/sonar_modules/sonar1/sonar1.mod := printf '%s\n'   sonar1.o | awk '!x[$$0]++ { print("/home/raspberry/Mars-Rover/firmware/sonar_modules/sonar1/"$$0) }' > /home/raspberry/Mars-Rover/firmware/sonar_modules/sonar1/sonar1.mod

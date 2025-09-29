@@ -1,0 +1,1 @@
+savedcmd_/home/raspberry/Mars-Rover/firmware/sonar_2/sonar_2.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/raspberry/Mars-Rover/firmware/sonar_2/sonar_2.ko /home/raspberry/Mars-Rover/firmware/sonar_2/sonar_2.o /home/raspberry/Mars-Rover/firmware/sonar_2/sonar_2.mod.o;  true

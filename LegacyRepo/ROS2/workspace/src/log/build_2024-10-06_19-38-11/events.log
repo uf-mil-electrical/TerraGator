@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.002342] (rover_camera) JobQueued: {'identifier': 'rover_camera', 'dependencies': OrderedDict()}
+[0.002476] (rover_controller) JobQueued: {'identifier': 'rover_controller', 'dependencies': OrderedDict()}
+[0.002550] (rover_camera) JobStarted: {'identifier': 'rover_camera'}
+[0.037642] (rover_controller) JobStarted: {'identifier': 'rover_controller'}
+[0.099251] (-) TimerEvent: {}
+[0.200171] (-) TimerEvent: {}
+[0.300864] (-) TimerEvent: {}
+[0.401896] (-) TimerEvent: {}
+[0.502677] (-) TimerEvent: {}
+[0.603309] (-) TimerEvent: {}
+[0.703921] (-) TimerEvent: {}
+[0.804558] (-) TimerEvent: {}
+[0.905495] (-) TimerEvent: {}
+[1.008922] (-) TimerEvent: {}
+[1.109584] (-) TimerEvent: {}
+[1.210314] (-) TimerEvent: {}
+[1.311025] (-) TimerEvent: {}
+[1.411674] (-) TimerEvent: {}
+[1.512295] (-) TimerEvent: {}
+[1.612919] (-) TimerEvent: {}
+[1.713567] (-) TimerEvent: {}
+[1.816595] (-) TimerEvent: {}
+[1.917779] (-) TimerEvent: {}
+[2.021815] (-) TimerEvent: {}
+[2.123046] (-) TimerEvent: {}
+[2.224442] (-) TimerEvent: {}
+[2.325279] (-) TimerEvent: {}
+[2.426296] (-) TimerEvent: {}
+[2.527890] (-) TimerEvent: {}
+[2.628560] (-) TimerEvent: {}
+[2.729228] (-) TimerEvent: {}
+[2.834847] (-) TimerEvent: {}
+[2.936765] (-) TimerEvent: {}
+[3.037621] (-) TimerEvent: {}
+[3.138392] (-) TimerEvent: {}
+[3.239523] (-) TimerEvent: {}
+[3.341245] (-) TimerEvent: {}
+[3.346140] (rover_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/rover_controller', 'build', '--build-base', '/home/ros/workspace/src/build/rover_controller/build', 'install', '--record', '/home/ros/workspace/src/build/rover_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ros/workspace/src/rover_controller', 'env': {'HOSTNAME': 'raspberrypi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/home/ros/workspace', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/ros/workspace/install:/home/ros/test/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ros/workspace/install/rover_controller:/home/ros/workspace/install/rover_camera:/opt/ros/humble', 'PWD': '/home/ros/workspace/src/build/rover_controller', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/ros/workspace/src/build/rover_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages:/home/ros/workspace/install/rover_controller/lib/python3.10/site-packages:/home/ros/workspace/install/rover_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.356564] (rover_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/rover_camera', 'build', '--build-base', '/home/ros/workspace/src/build/rover_camera/build', 'install', '--record', '/home/ros/workspace/src/build/rover_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ros/workspace/src/rover_camera', 'env': {'HOSTNAME': 'raspberrypi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/home/ros/workspace', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/ros/workspace/install:/home/ros/test/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ros/workspace/install/rover_controller:/home/ros/workspace/install/rover_camera:/opt/ros/humble', 'PWD': '/home/ros/workspace/src/build/rover_camera', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/ros/workspace/src/build/rover_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages:/home/ros/workspace/install/rover_controller/lib/python3.10/site-packages:/home/ros/workspace/install/rover_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.441388] (-) TimerEvent: {}
+[3.542115] (-) TimerEvent: {}
+[3.642925] (-) TimerEvent: {}
+[3.743769] (-) TimerEvent: {}
+[3.846834] (-) TimerEvent: {}
+[3.947656] (-) TimerEvent: {}
+[4.051990] (-) TimerEvent: {}
+[4.153123] (-) TimerEvent: {}
+[4.254605] (-) TimerEvent: {}
+[4.339965] (rover_camera) StdoutLine: {'line': b'running egg_info\n'}
+[4.343174] (rover_camera) StdoutLine: {'line': b'writing ../build/rover_camera/rover_camera.egg-info/PKG-INFO\n'}
+[4.344909] (rover_camera) StdoutLine: {'line': b'writing dependency_links to ../build/rover_camera/rover_camera.egg-info/dependency_links.txt\n'}
+[4.347562] (rover_camera) StdoutLine: {'line': b'writing entry points to ../build/rover_camera/rover_camera.egg-info/entry_points.txt\n'}
+[4.348161] (rover_controller) StdoutLine: {'line': b'running egg_info\n'}
+[4.352155] (rover_controller) StdoutLine: {'line': b'writing ../build/rover_controller/rover_controller.egg-info/PKG-INFO\n'}
+[4.354898] (-) TimerEvent: {}
+[4.355752] (rover_controller) StdoutLine: {'line': b'writing dependency_links to ../build/rover_controller/rover_controller.egg-info/dependency_links.txt\n'}
+[4.357988] (rover_camera) StdoutLine: {'line': b'writing requirements to ../build/rover_camera/rover_camera.egg-info/requires.txt\n'}
+[4.360262] (rover_camera) StdoutLine: {'line': b'writing top-level names to ../build/rover_camera/rover_camera.egg-info/top_level.txt\n'}
+[4.360853] (rover_controller) StdoutLine: {'line': b'writing entry points to ../build/rover_controller/rover_controller.egg-info/entry_points.txt\n'}
+[4.361303] (rover_controller) StdoutLine: {'line': b'writing requirements to ../build/rover_controller/rover_controller.egg-info/requires.txt\n'}
+[4.361706] (rover_controller) StdoutLine: {'line': b'writing top-level names to ../build/rover_controller/rover_controller.egg-info/top_level.txt\n'}
+[4.362077] (rover_camera) StdoutLine: {'line': b"reading manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'\n"}
+[4.367185] (rover_camera) StdoutLine: {'line': b"writing manifest file '../build/rover_camera/rover_camera.egg-info/SOURCES.txt'\n"}
+[4.369187] (rover_camera) StdoutLine: {'line': b'running build\n'}
+[4.371143] (rover_camera) StdoutLine: {'line': b'running build_py\n'}
+[4.373389] (rover_camera) StdoutLine: {'line': b'copying rover_camera/rover_camera.py -> /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera\n'}
+[4.375503] (rover_camera) StdoutLine: {'line': b'running install\n'}
+[4.377605] (rover_camera) StdoutLine: {'line': b'running install_lib\n'}
+[4.380107] (rover_controller) StdoutLine: {'line': b"reading manifest file '../build/rover_controller/rover_controller.egg-info/SOURCES.txt'\n"}
+[4.382347] (rover_controller) StdoutLine: {'line': b"writing manifest file '../build/rover_controller/rover_controller.egg-info/SOURCES.txt'\n"}
+[4.382965] (rover_controller) StdoutLine: {'line': b'running build\n'}
+[4.383395] (rover_controller) StdoutLine: {'line': b'running build_py\n'}
+[4.383782] (rover_camera) StdoutLine: {'line': b'copying /home/ros/workspace/src/build/rover_camera/build/lib/rover_camera/rover_camera.py -> /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera\n'}
+[4.384186] (rover_controller) StdoutLine: {'line': b'copying rover_controller/rover_autonomous.py -> /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller\n'}
+[4.384584] (rover_controller) StdoutLine: {'line': b'copying rover_controller/rover_controller.py -> /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller\n'}
+[4.384984] (rover_controller) StdoutLine: {'line': b'running install\n'}
+[4.385370] (rover_camera) StdoutLine: {'line': b'byte-compiling /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera/rover_camera.py to rover_camera.cpython-310.pyc\n'}
+[4.385820] (rover_camera) StdoutLine: {'line': b'running install_data\n'}
+[4.386345] (rover_controller) StdoutLine: {'line': b'running install_lib\n'}
+[4.394108] (rover_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.395734] (rover_controller) StdoutLine: {'line': b'copying /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller/rover_autonomous.py -> /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller\n'}
+[4.396261] (rover_controller) StdoutLine: {'line': b'copying /home/ros/workspace/src/build/rover_controller/build/lib/rover_controller/rover_controller.py -> /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller\n'}
+[4.396694] (rover_controller) StdoutLine: {'line': b'byte-compiling /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller/rover_autonomous.py to rover_autonomous.cpython-310.pyc\n'}
+[4.397151] (rover_camera) StdoutLine: {'line': b"removing '/home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.397759] (rover_controller) StdoutLine: {'line': b'byte-compiling /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller/rover_controller.py to rover_controller.cpython-310.pyc\n'}
+[4.399359] (rover_controller) StdoutLine: {'line': b'running install_data\n'}
+[4.399855] (rover_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.400275] (rover_controller) StdoutLine: {'line': b"removing '/home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.400688] (rover_camera) StdoutLine: {'line': b'Copying ../build/rover_camera/rover_camera.egg-info to /home/ros/workspace/src/install/rover_camera/lib/python3.10/site-packages/rover_camera-0.0.0-py3.10.egg-info\n'}
+[4.401149] (rover_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[4.401567] (rover_controller) StdoutLine: {'line': b'Copying ../build/rover_controller/rover_controller.egg-info to /home/ros/workspace/src/install/rover_controller/lib/python3.10/site-packages/rover_controller-0.0.0-py3.10.egg-info\n'}
+[4.406553] (rover_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[4.455048] (-) TimerEvent: {}
+[4.472692] (rover_camera) StdoutLine: {'line': b"writing list of installed files to '/home/ros/workspace/src/build/rover_camera/install.log'\n"}
+[4.490316] (rover_controller) StdoutLine: {'line': b"writing list of installed files to '/home/ros/workspace/src/build/rover_controller/install.log'\n"}
+[4.555488] (-) TimerEvent: {}
+[4.638536] (rover_camera) CommandEnded: {'returncode': 0}
+[4.655842] (-) TimerEvent: {}
+[4.689482] (rover_camera) JobEnded: {'identifier': 'rover_camera', 'rc': 0}
+[4.693918] (rover_controller) CommandEnded: {'returncode': 0}
+[4.718236] (rover_controller) JobEnded: {'identifier': 'rover_controller', 'rc': 0}
+[4.720781] (-) EventReactorShutdown: {}

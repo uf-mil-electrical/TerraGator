@@ -1,0 +1,1 @@
+savedcmd_/home/raspberry/Mars-Rover/firmware/kernel_modules/gpio_interface.mod := printf '%s\n'   gpio_interface.o | awk '!x[$$0]++ { print("/home/raspberry/Mars-Rover/firmware/kernel_modules/"$$0) }' > /home/raspberry/Mars-Rover/firmware/kernel_modules/gpio_interface.mod

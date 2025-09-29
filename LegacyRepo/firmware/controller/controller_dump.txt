@@ -1,0 +1,670 @@
+BUTTONS: 
+------------------- B -------------------------------------------
+Button pressed: ['BTN_B', 'BTN_EAST']
+Raw event: event at 1727104213.413298, code 00, type 00, val 00
+Raw event: event at 1727104213.559458, code 04, type 04, val 589826
+Raw event: event at 1727104213.559458, code 305, type 01, val 00
+Button released: ['BTN_B', 'BTN_EAST']
+Raw event: event at 1727104213.559458, code 00, type 00, val 00
+Raw event: event at 1727104214.973234, code 04, type 04, val 589825
+Raw event: event at 1727104214.973234, code 304, type 01, val 01
+
+------------------- A -------------------------------------------
+Button pressed: ['BTN_A', 'BTN_GAMEPAD', 'BTN_SOUTH']
+Raw event: event at 1727104214.973234, code 00, type 00, val 00
+Raw event: event at 1727104215.119384, code 04, type 04, val 589825
+Raw event: event at 1727104215.119384, code 304, type 01, val 00
+Button released: ['BTN_A', 'BTN_GAMEPAD', 'BTN_SOUTH']
+Raw event: event at 1727104215.119384, code 00, type 00, val 00
+Raw event: event at 1727104216.630659, code 04, type 04, val 589828
+Raw event: event at 1727104216.630659, code 307, type 01, val 01
+
+------------------- X -------------------------------------------
+Button pressed: ['BTN_NORTH', 'BTN_X']
+Raw event: event at 1727104216.630659, code 00, type 00, val 00
+Raw event: event at 1727104216.776814, code 04, type 04, val 589828
+Raw event: event at 1727104216.776814, code 307, type 01, val 00
+Button released: ['BTN_NORTH', 'BTN_X']
+Raw event: event at 1727104216.776814, code 00, type 00, val 00
+Raw event: event at 1727104218.190534, code 04, type 04, val 589829
+Raw event: event at 1727104218.190534, code 308, type 01, val 01
+
+------------------- Y -------------------------------------------
+Button pressed: ['BTN_WEST', 'BTN_Y']
+Raw event: event at 1727104218.190534, code 00, type 00, val 00
+Raw event: event at 1727104218.288008, code 04, type 04, val 589829
+Raw event: event at 1727104218.288008, code 308, type 01, val 00
+Button released: ['BTN_WEST', 'BTN_Y']
+Raw event: event at 1727104218.288008, code 00, type 00, val 00
+Raw event: event at 1727104220.189378, code 09, type 03, val 170
+
+
+TOP LR BUTTONS:
+------------------- TOP FRONT RIGHT -------------------------------------------
+Button pressed: BTN_TR
+Raw event: event at 1727104223.552838, code 00, type 00, val 00
+Raw event: event at 1727104223.699013, code 04, type 04, val 589832
+Raw event: event at 1727104223.699013, code 311, type 01, val 00
+Button released: BTN_TR
+Raw event: event at 1727104223.699013, code 00, type 00, val 00
+Raw event: event at 1727104225.112791, code 04, type 04, val 589831
+Raw event: event at 1727104225.112791, code 310, type 01, val 01
+
+------------------- TOP BACK RIGHT -------------------------------------------
+Analog input: 9 - 1023
+Analog input: 9 - 0
+Analog input: 9 - 65
+Analog input: 9 - 77
+Analog input: 9 - 84
+Analog input: 9 - 70
+Analog input: 9 - 0
+Analog input: 9 - 32
+Analog input: 9 - 47
+
+------------------- TOP FRONT LEFT -------------------------------------------
+Button pressed: BTN_TL
+Raw event: event at 1727104225.112791, code 00, type 00, val 00
+Raw event: event at 1727104225.307737, code 04, type 04, val 589831
+Raw event: event at 1727104225.307737, code 310, type 01, val 00
+Button released: BTN_TL
+Raw event: event at 1727104225.307737, code 00, type 00, val 00
+Raw event: event at 1727104226.965364, code 04, type 04, val 589836
+Raw event: event at 1727104226.965364, code 315, type 01, val 01
+
+------------------- TOP BACK LEFT -------------------------------------------
+Analog input: 10 - 837
+Analog input: 10 - 1023
+Analog input: 10 - 0
+Analog input: 10 - 884
+Analog input: 10 - 1023
+Analog input: 10 - 62
+Analog input: 10 - 0
+
+
+MIDDLE BUTTONS:
+------------------- RIGHT -------------------------------------------
+Button pressed: BTN_START
+Raw event: event at 1727104226.965364, code 00, type 00, val 00
+Raw event: event at 1727104227.160202, code 04, type 04, val 589836
+Raw event: event at 1727104227.160202, code 315, type 01, val 00
+Button released: BTN_START
+Raw event: event at 1727104227.160202, code 00, type 00, val 00
+Raw event: event at 1727104228.525238, code 04, type 04, val 589835
+Raw event: event at 1727104228.525238, code 314, type 01, val 01
+
+------------------- LEFT -------------------------------------------
+Button pressed: BTN_SELECT
+Raw event: event at 1727104228.525238, code 00, type 00, val 00
+Raw event: event at 1727104228.720194, code 04, type 04, val 589835
+Raw event: event at 1727104228.720194, code 314, type 01, val 00
+Button released: BTN_SELECT
+Raw event: event at 1727104228.720194, code 00, type 00, val 00
+Raw event: event at 1727104230.182767, code 04, type 04, val 786610
+Raw event: event at 1727104230.182767, code 167, type 01, val 01
+
+------------------- MIDDLE -------------------------------------------
+Button pressed: KEY_RECORD
+Raw event: event at 1727104230.182767, code 00, type 00, val 00
+Raw event: event at 1727104230.328870, code 04, type 04, val 786610
+Raw event: event at 1727104230.328870, code 167, type 01, val 00
+Button released: KEY_RECORD
+Raw event: event at 1727104230.328870, code 00, type 00, val 00
+Raw event: event at 1727104232.425115, code 16, type 03, val 01
+
+
+GAMEPAD:
+------------------- RIGHT -------------------------------------------
+Analog input: 16 - 1
+Raw event: event at 1727104232.425115, code 00, type 00, val 00
+Raw event: event at 1727104232.620154, code 16, type 03, val 00
+Analog input: 16 - 0
+Raw event: event at 1727104232.620154, code 00, type 00, val 00
+Raw event: event at 1727104234.082549, code 16, type 03, val -1
+
+------------------- LEFT -------------------------------------------
+Analog input: 16 - -1
+Raw event: event at 1727104234.082549, code 00, type 00, val 00
+Raw event: event at 1727104234.326240, code 16, type 03, val 00
+Analog input: 16 - 0
+Raw event: event at 1727104234.326240, code 00, type 00, val 00
+Raw event: event at 1727104235.788720, code 17, type 03, val 01
+
+------------------- TOP -------------------------------------------
+Analog input: 17 - 1
+Raw event: event at 1727104235.788720, code 00, type 00, val 00
+Raw event: event at 1727104235.934868, code 17, type 03, val 00
+Analog input: 17 - 0
+Raw event: event at 1727104235.934868, code 00, type 00, val 00
+Raw event: event at 1727104237.591952, code 17, type 03, val -1
+
+------------------- BOTTOM -------------------------------------------
+Analog input: 17 - -1
+Raw event: event at 1727104237.591952, code 00, type 00, val 00
+Raw event: event at 1727104237.738588, code 17, type 03, val 00
+Analog input: 17 - 0
+Raw event: event at 1727104237.738588, code 00, type 00, val 00
+Raw event: event at 1727104239.444837, code 02, type 03, val 32639
+
+JOYSTICKS:
+------------------- RIGHT -------------------------------------------
+Analog input: 2 - 32639
+Raw event: event at 1727104239.444837, code 00, type 00, val 00
+Raw event: event at 1727104239.493467, code 02, type 03, val 31654
+Analog input: 2 - 31654
+Raw event: event at 1727104239.493467, code 00, type 00, val 00
+Raw event: event at 1727104239.542230, code 02, type 03, val 31590
+Analog input: 2 - 31590
+Raw event: event at 1727104239.542230, code 00, type 00, val 00
+Raw event: event at 1727104239.590955, code 02, type 03, val 31536
+Analog input: 2 - 31536
+Raw event: event at 1727104239.590955, code 05, type 03, val 32295
+Analog input: 5 - 32295
+Raw event: event at 1727104239.590955, code 00, type 00, val 00
+Raw event: event at 1727104239.688502, code 02, type 03, val 31314
+Analog input: 2 - 31314
+Raw event: event at 1727104239.688502, code 00, type 00, val 00
+Raw event: event at 1727104239.737275, code 02, type 03, val 30545
+Analog input: 2 - 30545
+Raw event: event at 1727104239.737275, code 05, type 03, val 31114
+Analog input: 5 - 31114
+Raw event: event at 1727104239.737275, code 00, type 00, val 00
+Raw event: event at 1727104239.786054, code 02, type 03, val 30366
+Analog input: 2 - 30366
+Raw event: event at 1727104239.786054, code 05, type 03, val 30549
+Analog input: 5 - 30549
+Raw event: event at 1727104239.786054, code 04, type 04, val 589839
+Raw event: event at 1727104239.786054, code 318, type 01, val 01
+Button pressed: BTN_THUMBR
+Raw event: event at 1727104239.786054, code 00, type 00, val 00
+Raw event: event at 1727104239.834728, code 02, type 03, val 30897
+Analog input: 2 - 30897
+Raw event: event at 1727104239.834728, code 05, type 03, val 28420
+Analog input: 5 - 28420
+Raw event: event at 1727104239.834728, code 00, type 00, val 00
+Raw event: event at 1727104239.883562, code 02, type 03, val 30864
+Analog input: 2 - 30864
+Raw event: event at 1727104239.883562, code 05, type 03, val 29042
+Analog input: 5 - 29042
+Raw event: event at 1727104239.883562, code 00, type 00, val 00
+Raw event: event at 1727104239.981061, code 02, type 03, val 31435
+Analog input: 2 - 31435
+Raw event: event at 1727104239.981061, code 05, type 03, val 33537
+Analog input: 5 - 33537
+Raw event: event at 1727104239.981061, code 04, type 04, val 589839
+Raw event: event at 1727104239.981061, code 318, type 01, val 00
+Button released: BTN_THUMBR
+Raw event: event at 1727104239.981061, code 00, type 00, val 00
+Raw event: event at 1727104241.443396, code 02, type 03, val 31471
+Analog input: 2 - 31471
+Raw event: event at 1727104241.443396, code 05, type 03, val 26613
+Analog input: 5 - 26613
+Raw event: event at 1727104241.443396, code 00, type 00, val 00
+Raw event: event at 1727104241.492094, code 02, type 03, val 32449
+Analog input: 2 - 32449
+Raw event: event at 1727104241.492094, code 05, type 03, val 11091
+Analog input: 5 - 11091
+Raw event: event at 1727104241.492094, code 00, type 00, val 00
+Raw event: event at 1727104241.540791, code 02, type 03, val 32489
+Analog input: 2 - 32489
+Raw event: event at 1727104241.540791, code 05, type 03, val 00
+Analog input: 5 - 0
+Raw event: event at 1727104241.540791, code 00, type 00, val 00
+Raw event: event at 1727104241.638289, code 02, type 03, val 30662
+Analog input: 2 - 30662
+Raw event: event at 1727104241.638289, code 00, type 00, val 00
+Raw event: event at 1727104241.735866, code 02, type 03, val 30492
+Analog input: 2 - 30492
+Raw event: event at 1727104241.735866, code 05, type 03, val 11444
+Analog input: 5 - 11444
+Raw event: event at 1727104241.735866, code 00, type 00, val 00
+Raw event: event at 1727104241.784585, code 02, type 03, val 32357
+Analog input: 2 - 32357
+Raw event: event at 1727104241.784585, code 05, type 03, val 31482
+Analog input: 5 - 31482
+Raw event: event at 1727104241.784585, code 00, type 00, val 00
+Raw event: event at 1727104241.833358, code 05, type 03, val 31705
+Analog input: 5 - 31705
+Raw event: event at 1727104241.833358, code 00, type 00, val 00
+Raw event: event at 1727104241.882069, code 05, type 03, val 31753
+Analog input: 5 - 31753
+Raw event: event at 1727104241.882069, code 00, type 00, val 00
+Raw event: event at 1727104242.710733, code 05, type 03, val 32342
+Analog input: 5 - 32342
+Raw event: event at 1727104242.710733, code 00, type 00, val 00
+Raw event: event at 1727104242.759556, code 05, type 03, val 32990
+Analog input: 5 - 32990
+Raw event: event at 1727104242.759556, code 00, type 00, val 00
+Raw event: event at 1727104242.808264, code 05, type 03, val 33574
+Analog input: 5 - 33574
+Raw event: event at 1727104242.808264, code 00, type 00, val 00
+Raw event: event at 1727104242.905765, code 05, type 03, val 34098
+Analog input: 5 - 34098
+Raw event: event at 1727104242.905765, code 00, type 00, val 00
+Raw event: event at 1727104242.954495, code 05, type 03, val 34141
+Analog input: 5 - 34141
+Raw event: event at 1727104242.954495, code 00, type 00, val 00
+Raw event: event at 1727104243.003230, code 05, type 03, val 34768
+Analog input: 5 - 34768
+Raw event: event at 1727104243.003230, code 00, type 00, val 00
+Raw event: event at 1727104243.051993, code 05, type 03, val 34986
+Analog input: 5 - 34986
+Raw event: event at 1727104243.051993, code 00, type 00, val 00
+Raw event: event at 1727104243.100725, code 05, type 03, val 35845
+Analog input: 5 - 35845
+Raw event: event at 1727104243.100725, code 00, type 00, val 00
+Raw event: event at 1727104243.198298, code 02, type 03, val 32397
+Analog input: 2 - 32397
+Raw event: event at 1727104243.198298, code 05, type 03, val 37214
+Analog input: 5 - 37214
+Raw event: event at 1727104243.198298, code 00, type 00, val 00
+Raw event: event at 1727104243.246967, code 05, type 03, val 38001
+Analog input: 5 - 38001
+Raw event: event at 1727104243.246967, code 00, type 00, val 00
+Raw event: event at 1727104243.295768, code 05, type 03, val 38249
+Analog input: 5 - 38249
+Raw event: event at 1727104243.295768, code 00, type 00, val 00
+Raw event: event at 1727104243.344486, code 05, type 03, val 39226
+Analog input: 5 - 39226
+Raw event: event at 1727104243.344486, code 00, type 00, val 00
+Raw event: event at 1727104243.393221, code 02, type 03, val 32448
+Analog input: 2 - 32448
+Raw event: event at 1727104243.393221, code 05, type 03, val 41239
+Analog input: 5 - 41239
+Raw event: event at 1727104243.393221, code 00, type 00, val 00
+Raw event: event at 1727104243.490743, code 02, type 03, val 32494
+Analog input: 2 - 32494
+Raw event: event at 1727104243.490743, code 05, type 03, val 42700
+Analog input: 5 - 42700
+Raw event: event at 1727104243.490743, code 00, type 00, val 00
+Raw event: event at 1727104243.539457, code 05, type 03, val 42736
+Analog input: 5 - 42736
+Raw event: event at 1727104243.539457, code 00, type 00, val 00
+Raw event: event at 1727104243.588205, code 05, type 03, val 42785
+Analog input: 5 - 42785
+Raw event: event at 1727104243.588205, code 00, type 00, val 00
+Raw event: event at 1727104243.636950, code 05, type 03, val 42976
+Analog input: 5 - 42976
+Raw event: event at 1727104243.636950, code 00, type 00, val 00
+Raw event: event at 1727104243.685714, code 02, type 03, val 31748
+Analog input: 2 - 31748
+Raw event: event at 1727104243.685714, code 05, type 03, val 46002
+Analog input: 5 - 46002
+Raw event: event at 1727104243.685714, code 00, type 00, val 00
+Raw event: event at 1727104243.783253, code 02, type 03, val 31032
+Analog input: 2 - 31032
+Raw event: event at 1727104243.783253, code 05, type 03, val 50128
+Analog input: 5 - 50128
+Raw event: event at 1727104243.783253, code 00, type 00, val 00
+Raw event: event at 1727104243.831980, code 02, type 03, val 30805
+Analog input: 2 - 30805
+Raw event: event at 1727104243.831980, code 05, type 03, val 53351
+Analog input: 5 - 53351
+Raw event: event at 1727104243.831980, code 00, type 00, val 00
+Raw event: event at 1727104243.880719, code 02, type 03, val 30090
+Analog input: 2 - 30090
+Raw event: event at 1727104243.880719, code 05, type 03, val 56987
+Analog input: 5 - 56987
+Raw event: event at 1727104243.880719, code 00, type 00, val 00
+Raw event: event at 1727104243.929524, code 02, type 03, val 28710
+Analog input: 2 - 28710
+Raw event: event at 1727104243.929524, code 05, type 03, val 65535
+Analog input: 5 - 65535
+Raw event: event at 1727104243.929524, code 00, type 00, val 00
+Raw event: event at 1727104244.221922, code 05, type 03, val 54611
+Analog input: 5 - 54611
+Raw event: event at 1727104244.221922, code 00, type 00, val 00
+Raw event: event at 1727104244.270701, code 02, type 03, val 32116
+Analog input: 2 - 32116
+Raw event: event at 1727104244.270701, code 05, type 03, val 33630
+Analog input: 5 - 33630
+Raw event: event at 1727104244.270701, code 00, type 00, val 00
+Raw event: event at 1727104245.050681, code 02, type 03, val 32922
+Analog input: 2 - 32922
+Raw event: event at 1727104245.050681, code 00, type 00, val 00
+Raw event: event at 1727104245.099425, code 02, type 03, val 33483
+Analog input: 2 - 33483
+Raw event: event at 1727104245.099425, code 00, type 00, val 00
+Raw event: event at 1727104245.148147, code 02, type 03, val 33736
+Analog input: 2 - 33736
+Raw event: event at 1727104245.148147, code 00, type 00, val 00
+Raw event: event at 1727104245.245801, code 02, type 03, val 34350
+Analog input: 2 - 34350
+Raw event: event at 1727104245.245801, code 00, type 00, val 00
+Raw event: event at 1727104245.343149, code 02, type 03, val 34410
+Analog input: 2 - 34410
+Raw event: event at 1727104245.343149, code 00, type 00, val 00
+Raw event: event at 1727104245.391897, code 02, type 03, val 35011
+Analog input: 2 - 35011
+Raw event: event at 1727104245.391897, code 00, type 00, val 00
+Raw event: event at 1727104245.440629, code 02, type 03, val 37771
+Analog input: 2 - 37771
+Raw event: event at 1727104245.440629, code 00, type 00, val 00
+Raw event: event at 1727104245.538157, code 02, type 03, val 45674
+Analog input: 2 - 45674
+Raw event: event at 1727104245.538157, code 05, type 03, val 33592
+Analog input: 5 - 33592
+Raw event: event at 1727104245.538157, code 00, type 00, val 00
+Raw event: event at 1727104245.586954, code 02, type 03, val 52212
+Analog input: 2 - 52212
+Raw event: event at 1727104245.586954, code 05, type 03, val 32361
+Analog input: 5 - 32361
+Raw event: event at 1727104245.586954, code 00, type 00, val 00
+Raw event: event at 1727104245.635724, code 02, type 03, val 57038
+Analog input: 2 - 57038
+Raw event: event at 1727104245.635724, code 05, type 03, val 30375
+Analog input: 5 - 30375
+Raw event: event at 1727104245.635724, code 00, type 00, val 00
+Raw event: event at 1727104245.684414, code 02, type 03, val 64128
+Analog input: 2 - 64128
+Raw event: event at 1727104245.684414, code 05, type 03, val 27157
+Analog input: 5 - 27157
+Raw event: event at 1727104245.684414, code 00, type 00, val 00
+Raw event: event at 1727104245.733139, code 02, type 03, val 65535
+Analog input: 2 - 65535
+Raw event: event at 1727104245.733139, code 05, type 03, val 26067
+Analog input: 5 - 26067
+Raw event: event at 1727104245.733139, code 00, type 00, val 00
+Raw event: event at 1727104245.830697, code 05, type 03, val 29566
+Analog input: 5 - 29566
+Raw event: event at 1727104245.830697, code 00, type 00, val 00
+Raw event: event at 1727104245.880521, code 02, type 03, val 65475
+Analog input: 2 - 65475
+Raw event: event at 1727104245.880521, code 05, type 03, val 30626
+Analog input: 5 - 30626
+Raw event: event at 1727104245.880521, code 00, type 00, val 00
+Raw event: event at 1727104245.928144, code 02, type 03, val 60410
+Analog input: 2 - 60410
+Raw event: event at 1727104245.928144, code 05, type 03, val 33309
+Analog input: 5 - 33309
+Raw event: event at 1727104245.928144, code 00, type 00, val 00
+Raw event: event at 1727104245.976865, code 02, type 03, val 58915
+Analog input: 2 - 58915
+Raw event: event at 1727104245.976865, code 00, type 00, val 00
+Raw event: event at 1727104246.025605, code 02, type 03, val 40556
+Analog input: 2 - 40556
+Raw event: event at 1727104246.025605, code 05, type 03, val 34071
+Analog input: 5 - 34071
+Raw event: event at 1727104246.025605, code 00, type 00, val 00
+Raw event: event at 1727104246.123275, code 02, type 03, val 34013
+Analog input: 2 - 34013
+Raw event: event at 1727104246.123275, code 05, type 03, val 33129
+Analog input: 5 - 33129
+Raw event: event at 1727104246.123275, code 00, type 00, val 00
+Raw event: event at 1727104246.220691, code 05, type 03, val 33092
+Analog input: 5 - 33092
+Raw event: event at 1727104246.220691, code 00, type 00, val 00
+Raw event: event at 1727104246.805791, code 02, type 03, val 33786
+Analog input: 2 - 33786
+Raw event: event at 1727104246.805791, code 00, type 00, val 00
+Raw event: event at 1727104246.854425, code 02, type 03, val 32639
+Analog input: 2 - 32639
+Raw event: event at 1727104246.854425, code 00, type 00, val 00
+Raw event: event at 1727104246.903168, code 02, type 03, val 31905
+Analog input: 2 - 31905
+Raw event: event at 1727104246.903168, code 00, type 00, val 00
+Raw event: event at 1727104247.000597, code 02, type 03, val 31680
+Analog input: 2 - 31680
+Raw event: event at 1727104247.000597, code 00, type 00, val 00
+Raw event: event at 1727104247.049327, code 02, type 03, val 31034
+Analog input: 2 - 31034
+Raw event: event at 1727104247.049327, code 00, type 00, val 00
+Raw event: event at 1727104247.098090, code 02, type 03, val 29994
+Analog input: 2 - 29994
+Raw event: event at 1727104247.098090, code 00, type 00, val 00
+Raw event: event at 1727104247.146911, code 02, type 03, val 27031
+Analog input: 2 - 27031
+Raw event: event at 1727104247.146911, code 05, type 03, val 32956
+Analog input: 5 - 32956
+Raw event: event at 1727104247.146911, code 00, type 00, val 00
+Raw event: event at 1727104247.195575, code 02, type 03, val 24765
+Analog input: 2 - 24765
+Raw event: event at 1727104247.195575, code 05, type 03, val 32895
+Analog input: 5 - 32895
+Raw event: event at 1727104247.195575, code 00, type 00, val 00
+Raw event: event at 1727104247.293119, code 02, type 03, val 20497
+Analog input: 2 - 20497
+Raw event: event at 1727104247.293119, code 05, type 03, val 32845
+Analog input: 5 - 32845
+Raw event: event at 1727104247.293119, code 00, type 00, val 00
+Raw event: event at 1727104247.341833, code 02, type 03, val 19640
+Analog input: 2 - 19640
+Raw event: event at 1727104247.341833, code 00, type 00, val 00
+Raw event: event at 1727104247.390560, code 02, type 03, val 18641
+Analog input: 2 - 18641
+Raw event: event at 1727104247.390560, code 00, type 00, val 00
+Raw event: event at 1727104247.439312, code 02, type 03, val 17123
+Analog input: 2 - 17123
+Raw event: event at 1727104247.439312, code 00, type 00, val 00
+Raw event: event at 1727104247.488074, code 02, type 03, val 14714
+Analog input: 2 - 14714
+Raw event: event at 1727104247.488074, code 00, type 00, val 00
+Raw event: event at 1727104247.585547, code 02, type 03, val 10311
+Analog input: 2 - 10311
+Raw event: event at 1727104247.585547, code 00, type 00, val 00
+Raw event: event at 1727104247.634317, code 02, type 03, val 6817
+Analog input: 2 - 6817
+Raw event: event at 1727104247.634317, code 00, type 00, val 00
+Raw event: event at 1727104247.683067, code 02, type 03, val 00
+Analog input: 2 - 0
+Raw event: event at 1727104247.683067, code 00, type 00, val 00
+Raw event: event at 1727104248.073041, code 02, type 03, val 1778
+Analog input: 2 - 1778
+Raw event: event at 1727104248.073041, code 00, type 00, val 00
+Raw event: event at 1727104248.170532, code 02, type 03, val 30725
+Analog input: 2 - 30725
+Raw event: event at 1727104248.170532, code 00, type 00, val 00
+Raw event: event at 1727104248.219275, code 02, type 03, val 30908
+Analog input: 2 - 30908
+Raw event: event at 1727104248.219275, code 05, type 03, val 32900
+Analog input: 5 - 32900
+Raw event: event at 1727104248.219275, code 00, type 00, val 00
+Raw event: event at 1727104248.268066, code 02, type 03, val 30960
+Analog input: 2 - 30960
+Raw event: event at 1727104248.268066, code 00, type 00, val 00
+Raw event: event at 1727104249.146087, code 02, type 03, val 31018
+Analog input: 2 - 31018
+Raw event: event at 1727104249.146087, code 00, type 00, val 00
+Raw event: event at 1727104249.194235, code 02, type 03, val 31068
+Analog input: 2 - 31068
+Raw event: event at 1727104249.194235, code 00, type 00, val 00
+Raw event: event at 1727104249.340529, code 01, type 03, val 32251
+
+------------------- LEFT -------------------------------------------
+Analog input: 1 - 32251
+Raw event: event at 1727104249.340529, code 00, type 00, val 00
+Raw event: event at 1727104249.389236, code 01, type 03, val 32933
+Analog input: 1 - 32933
+Raw event: event at 1727104249.389236, code 00, type 00, val 00
+Raw event: event at 1727104249.437971, code 00, type 03, val 33757
+Analog input: 0 - 33757
+Raw event: event at 1727104249.437971, code 01, type 03, val 32966
+Analog input: 1 - 32966
+Raw event: event at 1727104249.437971, code 00, type 00, val 00
+Raw event: event at 1727104249.486752, code 00, type 03, val 33951
+Analog input: 0 - 33951
+Raw event: event at 1727104249.486752, code 01, type 03, val 33787
+Analog input: 1 - 33787
+Raw event: event at 1727104249.486752, code 00, type 00, val 00
+Raw event: event at 1727104249.535474, code 00, type 03, val 34932
+Analog input: 0 - 34932
+Raw event: event at 1727104249.535474, code 01, type 03, val 33934
+Analog input: 1 - 33934
+Raw event: event at 1727104249.535474, code 00, type 00, val 00
+Raw event: event at 1727104249.632965, code 00, type 03, val 41022
+Analog input: 0 - 41022
+Raw event: event at 1727104249.632965, code 01, type 03, val 35453
+Analog input: 1 - 35453
+Raw event: event at 1727104249.632965, code 00, type 00, val 00
+Raw event: event at 1727104249.681735, code 00, type 03, val 46263
+Analog input: 0 - 46263
+Raw event: event at 1727104249.681735, code 01, type 03, val 40281
+Analog input: 1 - 40281
+Raw event: event at 1727104249.681735, code 00, type 00, val 00
+Raw event: event at 1727104249.730469, code 00, type 03, val 45649
+Analog input: 0 - 45649
+Raw event: event at 1727104249.730469, code 01, type 03, val 41474
+Analog input: 1 - 41474
+Raw event: event at 1727104249.730469, code 04, type 04, val 589838
+Raw event: event at 1727104249.730469, code 317, type 01, val 01
+Button pressed: BTN_THUMBL
+Raw event: event at 1727104249.730469, code 00, type 00, val 00
+Raw event: event at 1727104249.779312, code 00, type 03, val 38117
+Analog input: 0 - 38117
+Raw event: event at 1727104249.779312, code 01, type 03, val 36841
+Analog input: 1 - 36841
+Raw event: event at 1727104249.779312, code 00, type 00, val 00
+Raw event: event at 1727104249.828062, code 00, type 03, val 35365
+Analog input: 0 - 35365
+Raw event: event at 1727104249.828062, code 01, type 03, val 33672
+Analog input: 1 - 33672
+Raw event: event at 1727104249.828062, code 00, type 00, val 00
+Raw event: event at 1727104249.925523, code 00, type 03, val 37057
+Analog input: 0 - 37057
+Raw event: event at 1727104249.925523, code 01, type 03, val 31647
+Analog input: 1 - 31647
+Raw event: event at 1727104249.925523, code 04, type 04, val 589838
+Raw event: event at 1727104249.925523, code 317, type 01, val 00
+Button released: BTN_THUMBL
+Raw event: event at 1727104249.925523, code 00, type 00, val 00
+Raw event: event at 1727104249.974287, code 00, type 03, val 35507
+Analog input: 0 - 35507
+Raw event: event at 1727104249.974287, code 01, type 03, val 31602
+Analog input: 1 - 31602
+Raw event: event at 1727104249.974287, code 00, type 00, val 00
+Raw event: event at 1727104250.022972, code 00, type 03, val 33439
+Analog input: 0 - 33439
+Raw event: event at 1727104250.022972, code 01, type 03, val 31783
+Analog input: 1 - 31783
+Raw event: event at 1727104250.022972, code 00, type 00, val 00
+Raw event: event at 1727104250.071737, code 01, type 03, val 31829
+Analog input: 1 - 31829
+Raw event: event at 1727104250.071737, code 00, type 00, val 00
+Raw event: event at 1727104251.095431, code 00, type 03, val 33248
+Analog input: 0 - 33248
+Raw event: event at 1727104251.095431, code 01, type 03, val 34803
+Analog input: 1 - 34803
+Raw event: event at 1727104251.095431, code 00, type 00, val 00
+Raw event: event at 1727104251.144162, code 00, type 03, val 33392
+Analog input: 0 - 33392
+Raw event: event at 1727104251.144162, code 01, type 03, val 54794
+Analog input: 1 - 54794
+Raw event: event at 1727104251.144162, code 00, type 00, val 00
+Raw event: event at 1727104251.192920, code 01, type 03, val 65535
+Analog input: 1 - 65535
+Raw event: event at 1727104251.192920, code 00, type 00, val 00
+Raw event: event at 1727104251.436647, code 01, type 03, val 61815
+Analog input: 1 - 61815
+Raw event: event at 1727104251.436647, code 00, type 00, val 00
+Raw event: event at 1727104251.485428, code 00, type 03, val 32692
+Analog input: 0 - 32692
+Raw event: event at 1727104251.485428, code 01, type 03, val 35598
+Analog input: 1 - 35598
+Raw event: event at 1727104251.485428, code 00, type 00, val 00
+Raw event: event at 1727104251.534145, code 00, type 03, val 32655
+Analog input: 0 - 32655
+Raw event: event at 1727104251.534145, code 01, type 03, val 33981
+Analog input: 1 - 33981
+Raw event: event at 1727104251.534145, code 00, type 00, val 00
+Raw event: event at 1727104252.460481, code 01, type 03, val 33948
+Analog input: 1 - 33948
+Raw event: event at 1727104252.460481, code 00, type 00, val 00
+Raw event: event at 1727104252.557994, code 01, type 03, val 33897
+Analog input: 1 - 33897
+Raw event: event at 1727104252.557994, code 00, type 00, val 00
+Raw event: event at 1727104252.655444, code 01, type 03, val 33263
+Analog input: 1 - 33263
+Raw event: event at 1727104252.655444, code 00, type 00, val 00
+Raw event: event at 1727104252.704236, code 00, type 03, val 32691
+Analog input: 0 - 32691
+Raw event: event at 1727104252.704236, code 01, type 03, val 26180
+Analog input: 1 - 26180
+Raw event: event at 1727104252.704236, code 00, type 00, val 00
+Raw event: event at 1727104252.753035, code 00, type 03, val 31969
+Analog input: 0 - 31969
+Raw event: event at 1727104252.753035, code 01, type 03, val 4116
+Analog input: 1 - 4116
+Raw event: event at 1727104252.753035, code 00, type 00, val 00
+Raw event: event at 1727104252.850480, code 00, type 03, val 29280
+Analog input: 0 - 29280
+Raw event: event at 1727104252.850480, code 01, type 03, val 00
+Analog input: 1 - 0
+Raw event: event at 1727104252.850480, code 00, type 00, val 00
+Raw event: event at 1727104252.996675, code 00, type 03, val 29123
+Analog input: 0 - 29123
+Raw event: event at 1727104252.996675, code 01, type 03, val 18423
+Analog input: 1 - 18423
+Raw event: event at 1727104252.996675, code 00, type 00, val 00
+Raw event: event at 1727104253.045428, code 00, type 03, val 32337
+Analog input: 0 - 32337
+Raw event: event at 1727104253.045428, code 01, type 03, val 31248
+Analog input: 1 - 31248
+Raw event: event at 1727104253.045428, code 00, type 00, val 00
+Raw event: event at 1727104254.020499, code 01, type 03, val 31280
+Analog input: 1 - 31280
+Raw event: event at 1727104254.020499, code 00, type 00, val 00
+Raw event: event at 1727104254.215374, code 00, type 03, val 32568
+Analog input: 0 - 32568
+Raw event: event at 1727104254.215374, code 00, type 00, val 00
+Raw event: event at 1727104254.312990, code 00, type 03, val 46415
+Analog input: 0 - 46415
+Raw event: event at 1727104254.312990, code 01, type 03, val 29503
+Analog input: 1 - 29503
+Raw event: event at 1727104254.312990, code 00, type 00, val 00
+Raw event: event at 1727104254.361677, code 00, type 03, val 65535
+Analog input: 0 - 65535
+Raw event: event at 1727104254.361677, code 01, type 03, val 26477
+Analog input: 1 - 26477
+Raw event: event at 1727104254.361677, code 00, type 00, val 00
+Raw event: event at 1727104254.605377, code 00, type 03, val 32978
+Analog input: 0 - 32978
+Raw event: event at 1727104254.605377, code 01, type 03, val 31223
+Analog input: 1 - 31223
+Raw event: event at 1727104254.605377, code 00, type 00, val 00
+Raw event: event at 1727104254.654118, code 01, type 03, val 31442
+Analog input: 1 - 31442
+Raw event: event at 1727104254.654118, code 00, type 00, val 00
+Raw event: event at 1727104254.702895, code 01, type 03, val 31586
+Analog input: 1 - 31586
+Raw event: event at 1727104254.702895, code 00, type 00, val 00
+Raw event: event at 1727104254.751706, code 01, type 03, val 31630
+Analog input: 1 - 31630
+Raw event: event at 1727104254.751706, code 00, type 00, val 00
+Raw event: event at 1727104255.677851, code 00, type 03, val 32939
+Analog input: 0 - 32939
+Raw event: event at 1727104255.677851, code 01, type 03, val 31683
+Analog input: 1 - 31683
+Raw event: event at 1727104255.677851, code 00, type 00, val 00
+Raw event: event at 1727104255.775444, code 00, type 03, val 30692
+Analog input: 0 - 30692
+Raw event: event at 1727104255.775444, code 00, type 00, val 00
+Raw event: event at 1727104255.824103, code 00, type 03, val 27652
+Analog input: 0 - 27652
+Raw event: event at 1727104255.824103, code 01, type 03, val 31478
+Analog input: 1 - 31478
+Raw event: event at 1727104255.824103, code 00, type 00, val 00
+Raw event: event at 1727104255.872866, code 00, type 03, val 16111
+Analog input: 0 - 16111
+Raw event: event at 1727104255.872866, code 01, type 03, val 30375
+Analog input: 1 - 30375
+Raw event: event at 1727104255.872866, code 00, type 00, val 00
+Raw event: event at 1727104255.921573, code 00, type 03, val 00
+Analog input: 0 - 0
+Raw event: event at 1727104255.921573, code 01, type 03, val 30133
+Analog input: 1 - 30133
+Raw event: event at 1727104255.921573, code 00, type 00, val 00
+Raw event: event at 1727104255.970316, code 01, type 03, val 30087
+Analog input: 1 - 30087
+Raw event: event at 1727104255.970316, code 00, type 00, val 00
+Raw event: event at 1727104256.067839, code 01, type 03, val 30305
+Analog input: 1 - 30305
+Raw event: event at 1727104256.067839, code 00, type 00, val 00
+Raw event: event at 1727104256.116564, code 00, type 03, val 684
+Analog input: 0 - 684
+Raw event: event at 1727104256.116564, code 01, type 03, val 31412
+Analog input: 1 - 31412
+Raw event: event at 1727104256.116564, code 00, type 00, val 00
+Raw event: event at 1727104256.165304, code 00, type 03, val 31859
+Analog input: 0 - 31859
+Raw event: event at 1727104256.165304, code 01, type 03, val 33272
+Analog input: 1 - 33272
+Raw event: event at 1727104256.165304, code 00, type 00, val 00

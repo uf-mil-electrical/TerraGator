@@ -1,0 +1,1 @@
+savedcmd_/home/raspberry/Mars-Rover/firmware/kernel_test/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/raspberry/Mars-Rover/firmware/kernel_test/Module.symvers -T /home/raspberry/Mars-Rover/firmware/kernel_test/modules.order -i Module.symvers -e 
