@@ -1,4 +1,0 @@
-[console_scripts]
-rover_autonomous = rover_controller.rover_autonomous:main
-rover_controller = rover_controller.rover_controller:main
-

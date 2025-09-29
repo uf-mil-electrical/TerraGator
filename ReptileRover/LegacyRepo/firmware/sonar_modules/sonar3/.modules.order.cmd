@@ -1,1 +1,0 @@
-savedcmd_/home/raspberry/Mars-Rover/firmware/sonar_modules/sonar3/modules.order := {   echo /home/raspberry/Mars-Rover/firmware/sonar_modules/sonar3/sonar3.o; :; } > /home/raspberry/Mars-Rover/firmware/sonar_modules/sonar3/modules.order
