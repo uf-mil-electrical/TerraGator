@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=+5V Pin=X8-1
+Removed Pin From Net: NetName=GND Pin=X8-4
+Removed Pin From Net: NetName=Earth Pin=X8-S1
+Removed Pin From Net: NetName=Earth Pin=X8-S2
+Removed Member From Class: ClassName=Power Member=X8
+Added Component: Designator=X?([Port] USB Type-A Female)
+Added Pin To Net: NetName=+5V Pin=X?-1
+Added Pin To Net: NetName=GND Pin=X?-4
+Added Pin To Net: NetName=Earth Pin=X?-S1
+Added Pin To Net: NetName=Earth Pin=X?-S2
+Added Member To Class: ClassName=Power Member=Component X? Type A

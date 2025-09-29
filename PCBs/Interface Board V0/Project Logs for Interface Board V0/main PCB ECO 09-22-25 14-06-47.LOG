@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=Earth Pin=H2-MH1
+Removed Pin From Net: NetName=Earth Pin=H2-MH2
+Removed Pin From Net: NetName=Earth Pin=H3-MH1
+Removed Pin From Net: NetName=Earth Pin=H3-MH2
+Removed Pin From Net: NetName=Earth Pin=H4-MH1
+Removed Pin From Net: NetName=Earth Pin=H4-MH2
+Removed Pin From Net: NetName=Earth Pin=H5-MH1
+Removed Pin From Net: NetName=Earth Pin=H5-MH2
+Change Component Footprint: Designator=H2 Old Footprint=[Header] Shrouded 1x3 Right Angle Male New Footprint=[Header] Shrouded 1x3 Male
+Change Component Footprint: Designator=H3 Old Footprint=[Header] Shrouded 1x3 Right Angle Male New Footprint=[Header] Shrouded 1x3 Male
+Change Component Footprint: Designator=H4 Old Footprint=[Header] Shrouded 1x3 Right Angle Male New Footprint=[Header] Shrouded 1x3 Male
+Change Component Footprint: Designator=H5 Old Footprint=[Header] Shrouded 1x3 Right Angle Male New Footprint=[Header] Shrouded 1x3 Male
+Change Component Comment : Designator=H2 Old Comment=171975-0003 New Comment=1x3 Male
+Change Component Comment : Designator=H3 Old Comment=171975-0003 New Comment=1x3 Male
+Change Component Comment : Designator=H4 Old Comment=171975-0003 New Comment=1x3 Male
+Change Component Comment : Designator=H5 Old Comment=171975-0003 New Comment=1x3 Male
+Change component parameters: Designator = "H2" ("H2"); Footprint = "[Header] Shrouded 1x3 Right Angle Male"; UniqueID = "\BCFAENKN" ("\BCFAENKN")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4825-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H3" ("H3"); Footprint = "[Header] Shrouded 1x3 Right Angle Male"; UniqueID = "\ZSXXVXRX" ("\ZSXXVXRX")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4825-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H4" ("H4"); Footprint = "[Header] Shrouded 1x3 Right Angle Male"; UniqueID = "\DSRPANOG" ("\DSRPANOG")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4825-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H5" ("H5"); Footprint = "[Header] Shrouded 1x3 Right Angle Male"; UniqueID = "\HVBWIFTZ" ("\HVBWIFTZ")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4825-ND"; VariantName = "[No Variations]"

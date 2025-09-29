@@ -1,0 +1,282 @@
+Removed Pin From Net: NetName=NetC3_1 Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=U1-4
+Removed Pin From Net: NetName=NetC3_1 Pin=U3-3
+Removed Pin From Net: NetName=GND Pin=U3-4
+Removed Member From Class: ClassName=Motors Member=D5
+Removed Member From Class: ClassName=Motors Member=D14
+Removed Member From Class: ClassName=Motors Member=D23
+Removed Member From Class: ClassName=Motors Member=J7
+Removed Member From Class: ClassName=Motors Member=J12
+Removed Member From Class: ClassName=Motors Member=J13
+Removed Member From Class: ClassName=Motors Member=J14
+Removed Member From Class: ClassName=Motors Member=J16
+Removed Member From Class: ClassName=Motors Member=J18
+Removed Member From Class: ClassName=Motors Member=U1
+Removed Member From Class: ClassName=Motors Member=U3
+Change Component Footprint: Designator=C1 Old Footprint=FP-EEU-FC1V221L-MFG New Footprint=CAPC0603
+Change Component Footprint: Designator=C2 Old Footprint=FP-EEU-FC1V221L-MFG New Footprint=CAPC0603
+Change Component Footprint: Designator=C3 Old Footprint=FP-EEU-FC1V221L-MFG New Footprint=CAPC0603
+Change Component Footprint: Designator=C4 Old Footprint=FP-EEU-FC1V221L-MFG New Footprint=CAPC0603
+Change Component Footprint: Designator=C5 Old Footprint=FP-EEU-FC1V221L-MFG New Footprint=CAPC0603
+Change Component Footprint: Designator=C6 Old Footprint=FP-EEU-FC1V221L-MFG New Footprint=CAPC0603
+Change Component Footprint: Designator=R1 Old Footprint=FP-RC1005-IPC_A New Footprint=RES0603
+Change Component Footprint: Designator=R2 Old Footprint=FP-RC1005-IPC_A New Footprint=RES0603
+Change Component Footprint: Designator=R3 Old Footprint=FP-RC1005-IPC_A New Footprint=RES0603
+Change Component Comment : Designator=C1 Old Comment=EEU-FC1V221L New Comment=Cap
+Change Component Comment : Designator=C2 Old Comment=EEU-FC1V221L New Comment=Cap
+Change Component Comment : Designator=C3 Old Comment=EEU-FC1V221L New Comment=Cap
+Change Component Comment : Designator=C4 Old Comment=EEU-FC1V221L New Comment=Cap
+Change Component Comment : Designator=C5 Old Comment=EEU-FC1V221L New Comment=Cap
+Change Component Comment : Designator=C6 Old Comment=EEU-FC1V221L New Comment=Cap
+Change Component Comment : Designator=R1 Old Comment=RC1005F102CS New Comment=Res
+Change Component Comment : Designator=R2 Old Comment=RC1005F102CS New Comment=Res
+Change Component Comment : Designator=R3 Old Comment=RC1005F102CS New Comment=Res
+Change Managed Component Library Link : Designator=C1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B8A1D16A-C4A3-4FA1-A705-28825320FCBA New ItemGUID= Old RevisionGUID=DBE8F4BA-3BA3-489B-A97D-A6036C974A05 New RevisionGUID=
+Change Managed Component Library Link : Designator=C2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B8A1D16A-C4A3-4FA1-A705-28825320FCBA New ItemGUID= Old RevisionGUID=DBE8F4BA-3BA3-489B-A97D-A6036C974A05 New RevisionGUID=
+Change Managed Component Library Link : Designator=C3 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B8A1D16A-C4A3-4FA1-A705-28825320FCBA New ItemGUID= Old RevisionGUID=DBE8F4BA-3BA3-489B-A97D-A6036C974A05 New RevisionGUID=
+Change Managed Component Library Link : Designator=C4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B8A1D16A-C4A3-4FA1-A705-28825320FCBA New ItemGUID= Old RevisionGUID=DBE8F4BA-3BA3-489B-A97D-A6036C974A05 New RevisionGUID=
+Change Managed Component Library Link : Designator=C5 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B8A1D16A-C4A3-4FA1-A705-28825320FCBA New ItemGUID= Old RevisionGUID=DBE8F4BA-3BA3-489B-A97D-A6036C974A05 New RevisionGUID=
+Change Managed Component Library Link : Designator=C6 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B8A1D16A-C4A3-4FA1-A705-28825320FCBA New ItemGUID= Old RevisionGUID=DBE8F4BA-3BA3-489B-A97D-A6036C974A05 New RevisionGUID=
+Change Managed Component Library Link : Designator=R1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=09E32C22-0F4B-4BC1-B250-ADE8112EAD15 New ItemGUID= Old RevisionGUID=ECD14F9D-B827-48F7-8201-7278B9D7E891 New RevisionGUID=
+Change Managed Component Library Link : Designator=R2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=09E32C22-0F4B-4BC1-B250-ADE8112EAD15 New ItemGUID= Old RevisionGUID=ECD14F9D-B827-48F7-8201-7278B9D7E891 New RevisionGUID=
+Change Managed Component Library Link : Designator=R3 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=09E32C22-0F4B-4BC1-B250-ADE8112EAD15 New ItemGUID= Old RevisionGUID=ECD14F9D-B827-48F7-8201-7278B9D7E891 New RevisionGUID=
+Change component parameters: Designator = "C1" ("C1"); Footprint = "FP-EEU-FC1V221L-MFG"; UniqueID = "\CYSRHOVZ" ("\CYSRHOVZ")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "FP-EEU-FC1V221L-MFG"; UniqueID = "\XCVKLUKB" ("\XCVKLUKB")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "FP-EEU-FC1V221L-MFG"; UniqueID = "\AIDFLAKK" ("\AIDFLAKK")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "FP-EEU-FC1V221L-MFG"; UniqueID = "\FBUQXAST" ("\FBUQXAST")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "FP-EEU-FC1V221L-MFG"; UniqueID = "\REOEGPSO" ("\REOEGPSO")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "FP-EEU-FC1V221L-MFG"; UniqueID = "\MQTSOHLV" ("\MQTSOHLV")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "FP-RC1005-IPC_A"; UniqueID = "\KHLUQWQV" ("\KHLUQWQV")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "FP-RC1005-IPC_A"; UniqueID = "\RPSVFONG" ("\RPSVFONG")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "FP-RC1005-IPC_A"; UniqueID = "\KONDNAWG" ("\KONDNAWG")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=C7(CAPC0603)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES0603)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RES0603)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RES0603)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=U7(PCBComponent_1)
+Add component (AddParameter): Name = "Bits(#)"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "SCLS100E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "F @ Nom Voltage(Max)(Mhz)"; Value = "70"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Generic Part Number"; Value = "SN74HC86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ICC @ Nom Voltage(Max)(mA)"; Value = "0.02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "CMOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range(C)"; Value = "-40 to 85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Drive (IOL/IOH)(Max)(mA)"; Value = "5.2/-5.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "CMOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "N0014A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rating"; Value = "Catalog"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schmitt Trigger"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology Family"; Value = "HC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "tpd @ Nom Voltage(Max)(ns)"; Value = "21"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC(Max)(V)"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC(Min)(V)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage(Nom)(V)"; Value = "5"; VariantName = "[No Variations]"
+Added Component: Designator=U8(PCBComponent_1)
+Add component (AddParameter): Name = "Bits(#)"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "SCLS100E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "F @ Nom Voltage(Max)(Mhz)"; Value = "70"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Generic Part Number"; Value = "SN74HC86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ICC @ Nom Voltage(Max)(mA)"; Value = "0.02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "CMOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range(C)"; Value = "-40 to 85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Drive (IOL/IOH)(Max)(mA)"; Value = "5.2/-5.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "CMOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "N0014A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rating"; Value = "Catalog"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schmitt Trigger"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology Family"; Value = "HC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "tpd @ Nom Voltage(Max)(ns)"; Value = "21"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC(Max)(V)"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC(Min)(V)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage(Nom)(V)"; Value = "5"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=C4-1
+Added Pin To Net: NetName=+5 Pin=C5-1
+Added Pin To Net: NetName=+5 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D2-1
+Add Pin To Net: Unknown Pin: Pin D3-1
+Add Pin To Net: Unknown Pin: Pin D4-1
+Add Pin To Net: Unknown Pin: Pin D6-1
+Add Pin To Net: Unknown Pin: Pin D6-2
+Add Pin To Net: Unknown Pin: Pin D7-1
+Add Pin To Net: Unknown Pin: Pin D7-2
+Add Pin To Net: Unknown Pin: Pin D8-1
+Add Pin To Net: Unknown Pin: Pin D8-2
+Add Pin To Net: Unknown Pin: Pin D9-1
+Add Pin To Net: Unknown Pin: Pin D9-2
+Add Pin To Net: Unknown Pin: Pin D10-1
+Add Pin To Net: Unknown Pin: Pin D11-1
+Add Pin To Net: Unknown Pin: Pin D12-1
+Add Pin To Net: Unknown Pin: Pin D13-1
+Add Pin To Net: Unknown Pin: Pin D15-1
+Add Pin To Net: Unknown Pin: Pin D15-2
+Add Pin To Net: Unknown Pin: Pin D16-1
+Add Pin To Net: Unknown Pin: Pin D16-2
+Add Pin To Net: Unknown Pin: Pin D17-1
+Add Pin To Net: Unknown Pin: Pin D17-2
+Add Pin To Net: Unknown Pin: Pin D18-1
+Add Pin To Net: Unknown Pin: Pin D18-2
+Add Pin To Net: Unknown Pin: Pin D19-1
+Add Pin To Net: Unknown Pin: Pin D19-2
+Add Pin To Net: Unknown Pin: Pin D20-1
+Add Pin To Net: Unknown Pin: Pin D20-2
+Add Pin To Net: Unknown Pin: Pin D21-1
+Add Pin To Net: Unknown Pin: Pin D21-2
+Add Pin To Net: Unknown Pin: Pin D22-1
+Add Pin To Net: Unknown Pin: Pin D22-2
+Add Pin To Net: Unknown Pin: Pin D24-1
+Add Pin To Net: Unknown Pin: Pin D24-2
+Add Pin To Net: Unknown Pin: Pin D25-1
+Add Pin To Net: Unknown Pin: Pin D25-2
+Add Pin To Net: Unknown Pin: Pin D26-1
+Add Pin To Net: Unknown Pin: Pin D26-2
+Add Pin To Net: Unknown Pin: Pin D27-1
+Add Pin To Net: Unknown Pin: Pin D27-2
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=+5 Pin=U5-3
+Added Pin To Net: NetName=NetC3_1 Pin=U6-4
+Added Pin To Net: NetName=GND Pin=U7-7
+Added Pin To Net: NetName=+5 Pin=U7-14
+Added Pin To Net: NetName=GND Pin=U8-2
+Added Pin To Net: NetName=GND Pin=U8-7
+Added Pin To Net: NetName=GND Pin=U8-10
+Added Pin To Net: NetName=+5 Pin=U8-14
+Change Net Name : Old Net Name=+5 New Net Name=VReg
+Added Pin To Net: NetName=+5 Pin=U8-5
+Added Pin To Net: NetName=+5 Pin=U8-13
+Added Net: Name=+5
+Added Pin To Net: NetName=LeftDirection Pin=J2-1
+Added Pin To Net: NetName=LeftDirection Pin=U8-1
+Added Pin To Net: NetName=LeftDirection Pin=U8-4
+Added Net: Name=LeftDirection
+Added Pin To Net: NetName=LeftInOne Pin=U2-5
+Added Pin To Net: NetName=LeftInOne Pin=U2-10
+Added Pin To Net: NetName=LeftInOne Pin=U4-5
+Added Pin To Net: NetName=LeftInOne Pin=U7-3
+Added Net: Name=LeftInOne
+Added Pin To Net: NetName=LeftInTwo Pin=U2-7
+Added Pin To Net: NetName=LeftInTwo Pin=U2-12
+Added Pin To Net: NetName=LeftInTwo Pin=U4-7
+Added Pin To Net: NetName=LeftInTwo Pin=U7-6
+Added Net: Name=LeftInTwo
+Added Pin To Net: NetName=LeftPWM Pin=J2-2
+Added Pin To Net: NetName=LeftPWM Pin=U7-1
+Added Pin To Net: NetName=LeftPWM Pin=U7-4
+Added Net: Name=LeftPWM
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=U4-4
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetU7_2 Pin=U7-2
+Added Pin To Net: NetName=NetU7_2 Pin=U8-3
+Added Net: Name=NetU7_2
+Added Pin To Net: NetName=NetU7_5 Pin=U7-5
+Added Pin To Net: NetName=NetU7_5 Pin=U8-6
+Added Net: Name=NetU7_5
+Added Pin To Net: NetName=NetU7_10 Pin=U7-10
+Added Pin To Net: NetName=NetU7_10 Pin=U8-8
+Added Net: Name=NetU7_10
+Added Pin To Net: NetName=NetU7_13 Pin=U7-13
+Added Pin To Net: NetName=NetU7_13 Pin=U8-11
+Added Net: Name=NetU7_13
+Added Pin To Net: NetName=RightDirection Pin=J4-1
+Added Pin To Net: NetName=RightDirection Pin=U8-9
+Added Pin To Net: NetName=RightDirection Pin=U8-12
+Added Net: Name=RightDirection
+Added Pin To Net: NetName=RightInOne Pin=U4-10
+Added Pin To Net: NetName=RightInOne Pin=U6-5
+Added Pin To Net: NetName=RightInOne Pin=U6-10
+Added Pin To Net: NetName=RightInOne Pin=U7-8
+Added Net: Name=RightInOne
+Added Pin To Net: NetName=RightInTwo Pin=U4-12
+Added Pin To Net: NetName=RightInTwo Pin=U6-7
+Added Pin To Net: NetName=RightInTwo Pin=U6-12
+Added Pin To Net: NetName=RightInTwo Pin=U7-11
+Added Net: Name=RightInTwo
+Added Pin To Net: NetName=RightPWM Pin=J4-2
+Added Pin To Net: NetName=RightPWM Pin=U7-9
+Added Pin To Net: NetName=RightPWM Pin=U7-12
+Added Net: Name=RightPWM
+Added Pin To Net: NetName=VBat Pin=C1-1
+Added Pin To Net: NetName=VBat Pin=C7-1
+Added Pin To Net: NetName=VBat Pin=J1-2
+Added Pin To Net: NetName=VBat Pin=U2-4
+Added Pin To Net: NetName=VBat Pin=U5-1
+Added Net: Name=VBat
+Added Pin To Net: NetName=W1_enable Pin=J6-2
+Added Pin To Net: NetName=W1_enable Pin=R1-2
+Added Pin To Net: NetName=W1_enable Pin=U2-6
+Added Net: Name=W1_enable
+Added Pin To Net: NetName=W2_enable Pin=J6-1
+Added Pin To Net: NetName=W2_enable Pin=R2-2
+Added Pin To Net: NetName=W2_enable Pin=U2-11
+Added Net: Name=W2_enable
+Added Pin To Net: NetName=W3_enable Pin=J8-2
+Added Pin To Net: NetName=W3_enable Pin=R3-2
+Added Pin To Net: NetName=W3_enable Pin=U4-6
+Added Net: Name=W3_enable
+Added Pin To Net: NetName=W4_enable Pin=J8-1
+Added Pin To Net: NetName=W4_enable Pin=R4-2
+Added Pin To Net: NetName=W4_enable Pin=U4-11
+Added Net: Name=W4_enable
+Added Pin To Net: NetName=W5_enable Pin=J10-2
+Added Pin To Net: NetName=W5_enable Pin=R5-2
+Added Pin To Net: NetName=W5_enable Pin=U6-6
+Added Net: Name=W5_enable
+Added Pin To Net: NetName=W6_enable Pin=J10-1
+Added Pin To Net: NetName=W6_enable Pin=R6-2
+Added Pin To Net: NetName=W6_enable Pin=U6-11
+Added Net: Name=W6_enable
+Added Member To Class: ClassName=Motors Member=Component C7 Cap
+Added Member To Class: ClassName=Motors Member=Component R4 Res
+Added Member To Class: ClassName=Motors Member=Component R5 Res
+Added Member To Class: ClassName=Motors Member=Component R6 Res
+Added Member To Class: ClassName=Motors Member=Component U7 SN74HC86N
+Added Member To Class: ClassName=Motors Member=Component U8 SN74HC86N

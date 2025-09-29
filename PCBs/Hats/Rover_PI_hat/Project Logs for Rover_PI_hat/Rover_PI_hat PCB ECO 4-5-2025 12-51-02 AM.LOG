@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=30 Pin=RPI1-3
+Removed Pin From Net: NetName=30 Pin=RPI1-5
+Removed Pin From Net: NetName=30 Pin=RPI1-8
+Removed Pin From Net: NetName=30 Pin=RPI1-9
+Removed Pin From Net: NetName=30 Pin=RPI1-10
+Removed Pin From Net: NetName=30 Pin=RPI1-12
+Removed Pin From Net: NetName=30 Pin=RPI1-19
+Removed Pin From Net: NetName=30 Pin=RPI1-21
+Removed Pin From Net: NetName=30 Pin=RPI1-23
+Removed Pin From Net: NetName=30 Pin=RPI1-24
+Removed Pin From Net: NetName=30 Pin=RPI1-25
+Removed Pin From Net: NetName=30 Pin=RPI1-26
+Removed Pin From Net: NetName=30 Pin=RPI1-27
+Removed Pin From Net: NetName=30 Pin=RPI1-35
+Removed Pin From Net: NetName=30 Pin=RPI1-37
+Removed Pin From Net: NetName=30 Pin=RPI1-38
+Removed Pin From Net: NetName=30 Pin=RPI1-40
+Change Component Designator: OldDesignator=L1 NewDesignator=J1
+Change Component Designator: OldDesignator=L2 NewDesignator=J2
+Change Component Designator: OldDesignator=L3 NewDesignator=J3
+Change Component Designator: OldDesignator=R1 NewDesignator=J4
+Change Component Designator: OldDesignator=R2 NewDesignator=J5
+Change Component Designator: OldDesignator=R3 NewDesignator=J6
+Change Net Name : Old Net Name=1 New Net Name=3V3
+Change Net Name : Old Net Name=7 New Net Name=4
+Change Net Name : Old Net Name=11 New Net Name=17
+Change Net Name : Old Net Name=13 New Net Name=27
+Change Net Name : Old Net Name=15 New Net Name=22
+Change Net Name : Old Net Name=16 New Net Name=23
+Change Net Name : Old Net Name=18 New Net Name=24
+Change Net Name : Old Net Name=22 New Net Name=25
+Change Net Name : Old Net Name=29 New Net Name=5
+Change Net Name : Old Net Name=30 New Net Name=GND
+Change Net Name : Old Net Name=31 New Net Name=6
+Change Net Name : Old Net Name=32 New Net Name=12
+Change Net Name : Old Net Name=33 New Net Name=13
+Change Net Name : Old Net Name=36 New Net Name=16

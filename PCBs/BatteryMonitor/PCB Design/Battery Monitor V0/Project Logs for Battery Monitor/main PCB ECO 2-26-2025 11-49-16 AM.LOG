@@ -1,0 +1,18 @@
+Added Component: Designator=X2(1708828 Screw Terminal)
+Add component (AddParameter): Name = "Mouser Part #"; Value = "651-1708828"; VariantName = "[No Variations]"
+Added Component: Designator=X3(1708828 Screw Terminal)
+Add component (AddParameter): Name = "Mouser Part #"; Value = "651-1708828"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF2_2 Pin=X2-1
+Added Pin To Net: NetName=NetF2_2 Pin=X2-1
+Added Pin To Net: NetName=NetF2_2 Pin=X2-1
+Added Pin To Net: NetName=U3 GND Pin=X2-2
+Added Pin To Net: NetName=U3 GND Pin=X2-2
+Added Pin To Net: NetName=U3 GND Pin=X2-2
+Added Pin To Net: NetName=Load+ Pin=X3-1
+Added Pin To Net: NetName=Load+ Pin=X3-1
+Added Pin To Net: NetName=Load+ Pin=X3-1
+Added Pin To Net: NetName=U3 GND Pin=X3-2
+Added Pin To Net: NetName=U3 GND Pin=X3-2
+Added Pin To Net: NetName=U3 GND Pin=X3-2
+Added Member To Class: ClassName=Battery Monitoring Member=Component X2 1708828
+Added Member To Class: ClassName=Battery Monitoring Member=Component X3 1708828

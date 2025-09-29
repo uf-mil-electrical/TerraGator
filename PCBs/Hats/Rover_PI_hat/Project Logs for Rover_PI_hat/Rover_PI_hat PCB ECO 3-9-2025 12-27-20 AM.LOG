@@ -1,0 +1,110 @@
+Change component parameters: Designator = "RPI1" ("RPI1"); Footprint = "RPI"; UniqueID = "\HDOJLYBQ" ("\HDOJLYBQ")
+Change component parameters (AddParameter): Name = "Accessory Type"; Value = "Connector"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Development Boards, Kits, Programmers"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://cdn.sparkfun.com/datasheets/Dev/RaspberryPi/12313.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://cdn.sparkfun.com/datasheets/Dev/RaspberryPi/12313.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "For Use With/Related Products"; Value = "Raspberry Pi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "SparkFun Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "PRT-14017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Nils Minor"; Value = "author"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nilsminor@web.de"; Value = "mail"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=1.84 (EUR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "150"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1568-1462-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J1(MOLEX_35362-0450)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "35362-0450"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(MOLEX_35362-0450)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "35362-0450"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(MOLEX_35362-0450)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "35362-0450"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=RPI1-1
+Added Pin To Net: NetName=+5V Pin=RPI1-2
+Added Pin To Net: NetName=GND Pin=RPI1-3
+Added Pin To Net: NetName=+5V Pin=RPI1-4
+Added Pin To Net: NetName=GND Pin=RPI1-5
+Added Pin To Net: NetName=GND Pin=RPI1-6
+Added Pin To Net: NetName=GND Pin=RPI1-8
+Added Pin To Net: NetName=GND Pin=RPI1-9
+Added Pin To Net: NetName=GND Pin=RPI1-10
+Added Pin To Net: NetName=GND Pin=RPI1-12
+Added Pin To Net: NetName=GND Pin=RPI1-14
+Added Pin To Net: NetName=+3V3 Pin=RPI1-17
+Added Pin To Net: NetName=GND Pin=RPI1-19
+Added Pin To Net: NetName=GND Pin=RPI1-20
+Added Pin To Net: NetName=GND Pin=RPI1-21
+Added Pin To Net: NetName=GND Pin=RPI1-23
+Added Pin To Net: NetName=GND Pin=RPI1-24
+Added Pin To Net: NetName=GND Pin=RPI1-25
+Added Pin To Net: NetName=GND Pin=RPI1-26
+Added Pin To Net: NetName=GND Pin=RPI1-27
+Added Pin To Net: NetName=GND Pin=RPI1-30
+Added Pin To Net: NetName=GND Pin=RPI1-34
+Added Pin To Net: NetName=GND Pin=RPI1-35
+Added Pin To Net: NetName=GND Pin=RPI1-37
+Added Pin To Net: NetName=GND Pin=RPI1-38
+Added Pin To Net: NetName=GND Pin=RPI1-39
+Added Pin To Net: NetName=GND Pin=RPI1-40
+Added Pin To Net: NetName=7 Pin=J2-03
+Added Pin To Net: NetName=7 Pin=RPI1-7
+Added Net: Name=7
+Added Pin To Net: NetName=11 Pin=J2-04
+Added Pin To Net: NetName=11 Pin=RPI1-11
+Added Net: Name=11
+Added Pin To Net: NetName=13 Pin=J3-01
+Added Pin To Net: NetName=13 Pin=RPI1-13
+Added Net: Name=13
+Added Pin To Net: NetName=15 Pin=J3-02
+Added Pin To Net: NetName=15 Pin=RPI1-15
+Added Net: Name=15
+Added Pin To Net: NetName=16 Pin=J1-03
+Added Pin To Net: NetName=16 Pin=RPI1-16
+Added Net: Name=16
+Added Pin To Net: NetName=18 Pin=J1-04
+Added Pin To Net: NetName=18 Pin=RPI1-18
+Added Net: Name=18
+Added Pin To Net: NetName=22 Pin=J3-03
+Added Pin To Net: NetName=22 Pin=RPI1-22
+Added Net: Name=22
+Added Pin To Net: NetName=29 Pin=J1-01
+Added Pin To Net: NetName=29 Pin=RPI1-29
+Added Net: Name=29
+Added Pin To Net: NetName=31 Pin=J1-02
+Added Pin To Net: NetName=31 Pin=RPI1-31
+Added Net: Name=31
+Added Pin To Net: NetName=32 Pin=J2-01
+Added Pin To Net: NetName=32 Pin=RPI1-32
+Added Net: Name=32
+Added Pin To Net: NetName=33 Pin=J2-02
+Added Pin To Net: NetName=33 Pin=RPI1-33
+Added Net: Name=33
+Added Pin To Net: NetName=36 Pin=J3-04
+Added Pin To Net: NetName=36 Pin=RPI1-36
+Added Net: Name=36
+Added Class: Name=Rover_PI_hat
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2

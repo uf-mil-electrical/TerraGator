@@ -1,0 +1,145 @@
+Removed Pin From Net: NetName=VBat Pin=C4-1
+Removed Pin From Net: NetName=GND Pin=C4-2
+Removed Pin From Net: NetName=VBat Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=VBat Pin=D9-C
+Removed Pin From Net: NetName=VBat Pin=D10-C
+Removed Pin From Net: NetName=VBat Pin=D11-C
+Removed Pin From Net: NetName=VBat Pin=D12-C
+Removed Pin From Net: NetName=GND Pin=D13-A
+Removed Pin From Net: NetName=GND Pin=D14-A
+Removed Pin From Net: NetName=GND Pin=D15-A
+Removed Pin From Net: NetName=GND Pin=D16-A
+Removed Pin From Net: NetName=VBat Pin=D17-C
+Removed Pin From Net: NetName=VBat Pin=D18-C
+Removed Pin From Net: NetName=VBat Pin=D19-C
+Removed Pin From Net: NetName=VBat Pin=D20-C
+Removed Pin From Net: NetName=GND Pin=D21-A
+Removed Pin From Net: NetName=GND Pin=D22-A
+Removed Pin From Net: NetName=GND Pin=D23-A
+Removed Pin From Net: NetName=GND Pin=D24-A
+Removed Pin From Net: NetName=W2_enable Pin=J6-2
+Removed Pin From Net: NetName=GND Pin=R3-1
+Removed Pin From Net: NetName=GND Pin=R4-1
+Removed Pin From Net: NetName=GND Pin=R5-1
+Removed Pin From Net: NetName=GND Pin=R6-1
+Removed Pin From Net: NetName=W2_enable Pin=U1-11
+Removed Pin From Net: NetName=GND Pin=U3-1
+Removed Pin From Net: NetName=VBat Pin=U3-4
+Removed Pin From Net: NetName=GND Pin=U3-8
+Removed Pin From Net: NetName=VReg Pin=U3-9
+Removed Pin From Net: NetName=GND Pin=U3-15
+Removed Pin From Net: NetName=GND Pin=U6-1
+Removed Pin From Net: NetName=VBat Pin=U6-4
+Removed Pin From Net: NetName=GND Pin=U6-8
+Removed Pin From Net: NetName=VReg Pin=U6-9
+Removed Pin From Net: NetName=GND Pin=U6-15
+Change Component Comment : Designator=O1 Old Comment=OSTTC022162 (2) New Comment=OSTTC022162
+Change Component Designator: OldDesignator=C6 NewDesignator=C4
+Change Component Designator: OldDesignator=C7 NewDesignator=C5
+Change Component Designator: OldDesignator=J2 NewDesignator=J1
+Change Component Designator: OldDesignator=J3 NewDesignator=J2
+Change Component Designator: OldDesignator=J4 NewDesignator=J3
+Change Component Designator: OldDesignator=J5 NewDesignator=J4
+Change Component Designator: OldDesignator=J6 NewDesignator=J5
+Change Component Designator: OldDesignator=U4 NewDesignator=U3
+Change Component Designator: OldDesignator=U5 NewDesignator=U4
+Change component parameters: Designator = "O1" ("O1"); Footprint = "high_amp_conn"; UniqueID = "\HSCDZWEH" ("\HSCDZWEH")
+Change component parameters (AddParameter): Name = "Category"; Value = "Terminal Blocks"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/19454/2120647-19454560.pdf?src-supplier=Jameco"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/19454/2120647-19454560.pdf?src-supplier=Jameco"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/824/osttcxx2162-824893.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/824/osttcxx2162-824893.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = "15A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "10mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Color"; Value = "Blue"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Material"; Value = "Thermoplastic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "10.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "On-Shore Technology"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "OSTTC022162"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Current Rating"; Value = "15A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions Per Level"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "5.08mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Plating"; Value = "Steel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing"; Value = "1=0.88, 10=0.439, 25=0.352, 50=0.3046, 100=0.2691, 250=0.23536, 500=0.21714, 1000=0.20345, 5000=0.18339 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "OSTTC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock"; Value = "21701"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number"; Value = "ED2609-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "300V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "7.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Max)"; Value = "22AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Min)"; Value = "14AWG"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=LeftPWM New Net Name=W1PWM
+Change Net Name : Old Net Name=NetU4_3 New Net Name=NetU3_3
+Change Net Name : Old Net Name=NetU4_6 New Net Name=NetU3_6
+Change Net Name : Old Net Name=NetU4_8 New Net Name=NetU3_8
+Change Net Name : Old Net Name=NetU4_11 New Net Name=NetU3_11
+Change Net Name : Old Net Name=RightDirection New Net Name=W2Dir
+Added Pin To Net: NetName=W1Dir Pin=J1-1
+Added Pin To Net: NetName=W1Dir Pin=U3-1
+Added Pin To Net: NetName=W1Dir Pin=U3-4
+Added Net: Name=W1Dir
+Added Pin To Net: NetName=W1Enable Pin=J5-2
+Added Pin To Net: NetName=W1Enable Pin=R1-2
+Added Pin To Net: NetName=W1Enable Pin=U1-6
+Added Net: Name=W1Enable
+Added Pin To Net: NetName=W1InOne Pin=U1-5
+Added Pin To Net: NetName=W1InOne Pin=U4-3
+Added Net: Name=W1InOne
+Added Pin To Net: NetName=W1InTwo Pin=U1-7
+Added Pin To Net: NetName=W1InTwo Pin=U4-6
+Added Net: Name=W1InTwo
+Added Pin To Net: NetName=W2Enable Pin=J5-1
+Added Pin To Net: NetName=W2Enable Pin=U1-11
+Added Net: Name=W2Enable
+Added Pin To Net: NetName=W2InOne Pin=U1-10
+Added Pin To Net: NetName=W2InOne Pin=U4-8
+Added Net: Name=W2InOne
+Added Pin To Net: NetName=W2InTwo Pin=U1-12
+Added Pin To Net: NetName=W2InTwo Pin=U4-11
+Added Net: Name=W2InTwo
+Added Pin To Net: NetName=W2PWM Pin=J2-2
+Added Pin To Net: NetName=W2PWM Pin=U4-9
+Added Pin To Net: NetName=W2PWM Pin=U4-12
+Added Net: Name=W2PWM
+Added Member To Class: ClassName=Motors Member=Component C1 Cap
+Added Member To Class: ClassName=Motors Member=Component C2 Cap
+Added Member To Class: ClassName=Motors Member=Component C3 Cap
+Added Member To Class: ClassName=Motors Member=Component C4 Cap
+Added Member To Class: ClassName=Motors Member=Component C5 Cap
+Added Member To Class: ClassName=Motors Member=Component D1 Diode
+Added Member To Class: ClassName=Motors Member=Component D2 Diode
+Added Member To Class: ClassName=Motors Member=Component D3 Diode
+Added Member To Class: ClassName=Motors Member=Component D4 Diode
+Added Member To Class: ClassName=Motors Member=Component D5 Diode
+Added Member To Class: ClassName=Motors Member=Component D6 Diode
+Added Member To Class: ClassName=Motors Member=Component D7 Diode
+Added Member To Class: ClassName=Motors Member=Component D8 Diode
+Added Member To Class: ClassName=Motors Member=Component J1 1725656
+Added Member To Class: ClassName=Motors Member=Component J2 1725656
+Added Member To Class: ClassName=Motors Member=Component J3 1725656
+Added Member To Class: ClassName=Motors Member=Component J4 1725656
+Added Member To Class: ClassName=Motors Member=Component J5 1725656
+Added Member To Class: ClassName=Motors Member=Component O1 OSTTC022162
+Added Member To Class: ClassName=Motors Member=Component R1 Res
+Added Member To Class: ClassName=Motors Member=Component R2 Res
+Added Member To Class: ClassName=Motors Member=Component U1 L298N
+Added Member To Class: ClassName=Motors Member=Component U2 L78M05CDT-TR
+Added Member To Class: ClassName=Motors Member=Component U3 SN74HC86N
+Added Member To Class: ClassName=Motors Member=Component U4 SN74HC86N
