@@ -1,0 +1,75 @@
+Removed Pin From Net: NetName=29 Pin=L1-L2-01
+Removed Pin From Net: NetName=31 Pin=L1-L2-02
+Removed Pin From Net: NetName=16 Pin=L1-L2-03
+Removed Pin From Net: NetName=18 Pin=L1-L2-04
+Removed Pin From Net: NetName=32 Pin=L3-R1-01
+Removed Pin From Net: NetName=33 Pin=L3-R1-02
+Removed Pin From Net: NetName=7 Pin=L3-R1-03
+Removed Pin From Net: NetName=11 Pin=L3-R1-04
+Removed Pin From Net: NetName=13 Pin=R2-R3-01
+Removed Pin From Net: NetName=15 Pin=R2-R3-02
+Removed Pin From Net: NetName=22 Pin=R2-R3-03
+Removed Pin From Net: NetName=36 Pin=R2-R3-04
+Change Component Designator: OldDesignator=L1-L2 NewDesignator=J1
+Change Component Designator: OldDesignator=L3-R1 NewDesignator=J2
+Change Component Designator: OldDesignator=R2-R3 NewDesignator=J3
+Added Component: Designator=J4(MOLEX_35362-0450)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "35362-0450"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(MOLEX_35362-0450)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "35362-0450"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(MOLEX_35362-0450)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "35362-0450"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/35362-0450/Molex/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=29 Pin=J1-02
+Added Pin To Net: NetName=31 Pin=J1-03
+Added Pin To Net: NetName=GND Pin=J1-04
+Added Pin To Net: NetName=16 Pin=J2-02
+Added Pin To Net: NetName=18 Pin=J2-03
+Added Pin To Net: NetName=GND Pin=J2-04
+Added Pin To Net: NetName=32 Pin=J3-02
+Added Pin To Net: NetName=33 Pin=J3-03
+Added Pin To Net: NetName=GND Pin=J3-04
+Added Pin To Net: NetName=7 Pin=J4-02
+Added Pin To Net: NetName=11 Pin=J4-03
+Added Pin To Net: NetName=GND Pin=J4-04
+Added Pin To Net: NetName=13 Pin=J5-02
+Added Pin To Net: NetName=15 Pin=J5-03
+Added Pin To Net: NetName=GND Pin=J5-04
+Added Pin To Net: NetName=22 Pin=J6-02
+Added Pin To Net: NetName=36 Pin=J6-03
+Added Pin To Net: NetName=GND Pin=J6-04
+Change Net Name : Old Net Name=GND New Net Name=30
+Added Pin To Net: NetName=1 Pin=J1-01
+Added Pin To Net: NetName=1 Pin=J2-01
+Added Pin To Net: NetName=1 Pin=J3-01
+Added Pin To Net: NetName=1 Pin=J4-01
+Added Pin To Net: NetName=1 Pin=J5-01
+Added Pin To Net: NetName=1 Pin=J6-01
+Added Pin To Net: NetName=1 Pin=RPI1-1
+Added Pin To Net: NetName=1 Pin=RPI1-17
+Added Net: Name=1
+Added Member To Class: ClassName=Rover_PI_hat Member=Component J4 MOLEX HEADER 4POS
+Added Member To Class: ClassName=Rover_PI_hat Member=Component J5 MOLEX HEADER 4POS
+Added Member To Class: ClassName=Rover_PI_hat Member=Component J6 MOLEX HEADER 4POS
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4

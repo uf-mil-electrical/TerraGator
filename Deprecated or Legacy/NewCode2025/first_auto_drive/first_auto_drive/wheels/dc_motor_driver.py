@@ -71,7 +71,6 @@ class DCMotor:
         # self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 0"])
         return f"{self.gpio_one} 0", f"{self.gpio_two} 0"
 
-
     def set_speed(self, pwm_percent):
         pwm_percent = abs(pwm_percent)
 
@@ -79,7 +78,6 @@ class DCMotor:
 
         pwm.set_pwm_percent(self.channel, pwm_percent)
 
-    
 if __name__ == '__main__':
     a_dc_motor = DCMotor(0, 20, 21)
 

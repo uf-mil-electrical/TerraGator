@@ -1,0 +1,9 @@
+Added Component: Designator=X4(Jst Female 3pin)
+Added Pin To Net: NetName=U3 GND Pin=X4-3
+Added Pin To Net: NetName=RXD1 Pin=U1-45
+Added Pin To Net: NetName=RXD1 Pin=X4-2
+Added Net: Name=RXD1
+Added Pin To Net: NetName=TXD1 Pin=U1-46
+Added Pin To Net: NetName=TXD1 Pin=X4-1
+Added Net: Name=TXD1
+Added Member To Class: ClassName=Primary MCU Member=Component X4 JST Female 3 Pin

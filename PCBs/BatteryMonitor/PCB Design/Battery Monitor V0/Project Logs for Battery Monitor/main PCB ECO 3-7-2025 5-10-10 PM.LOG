@@ -1,0 +1,7 @@
+Change Component Description : Designator=D2 Old Description=Part #: CD1206-S01575
+JLC Part #: C75465 New Description=Part #: CD1206-S01575
+Change component parameters: Designator = "C2" ("C2"); Footprint = "SMD Capacitor [1210]"; UniqueID = "\WTFYTVCJ" ("\WTFYTVCJ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = "80-C1210X105K5RAUTO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"

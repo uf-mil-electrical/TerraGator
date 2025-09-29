@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=X8 Old Footprint=[Port] USB Type-A Female New Footprint=[Port] USB Type-B Thru-Hole
+Change Component Comment : Designator=X8 Old Comment=Type A New Comment=Type B

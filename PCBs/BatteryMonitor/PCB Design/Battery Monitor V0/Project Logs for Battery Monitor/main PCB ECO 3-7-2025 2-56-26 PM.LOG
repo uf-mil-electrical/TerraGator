@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=+3V3 Pin=U3-5
+Removed Pin From Net: NetName=Op B (-) Input Pin=U3-6
+Added Pin To Net: NetName=16U2_AVCC Pin=C9-2
+Added Pin To Net: NetName=16U2_AVCC Pin=C16-1
+Added Pin To Net: NetName=16U2_AVCC Pin=Q1-2
+Added Pin To Net: NetName=Op B (-) Input Pin=U3-5
+Added Pin To Net: NetName=+3V3 Pin=U3-6
+Added Pin To Net: NetName=16U2_AVCC Pin=U4-1
+Added Pin To Net: NetName=16U2_AVCC Pin=U4-3
+Change Net Name : Old Net Name=Op B (-) Input New Net Name=Op B (+) Input
+Added Member To Class: ClassName=USB Programmer Member=Component U1 [MCU] ATMega16U2_AUR

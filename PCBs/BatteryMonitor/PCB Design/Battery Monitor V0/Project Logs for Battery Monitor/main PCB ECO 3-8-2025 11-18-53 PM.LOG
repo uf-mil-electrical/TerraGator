@@ -1,0 +1,16 @@
+Change Component Footprint: Designator=L2 Old Footprint=SMD Inductor [0603] New Footprint=SMD Inductor [1210]
+Change component parameters: Designator = "C22" ("C22"); Footprint = "SMD Capacitor [1210]"; UniqueID = "\RBRVYFLN" ("\RBRVYFLN")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "0.47uF (470nF)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = "80-C1210C474K1RAUTO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C24" ("C24"); Footprint = "SMD Capacitor [1210]"; UniqueID = "\UTHFPNOP" ("\UTHFPNOP")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = "80-C1210X105K5RAUTO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2" ("L2"); Footprint = "SMD Inductor [0603]"; UniqueID = "\EZXYMICA" ("\EZXYMICA")
+Change component parameters (AddParameter): Name = "Inductance"; Value = "10uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"

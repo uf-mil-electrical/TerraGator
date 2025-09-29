@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=16U2_AVCC Pin=U7-13
+Removed Pin From Net: NetName=16U2_AVCC Pin=U7-14
+Removed Pin From Net: NetName=U3 GND Pin=U9-8
+Removed Pin From Net: NetName=16U2_AVCC Pin=U9-10
+Removed Pin From Net: NetName=PA2 Pin=U9-11
+Removed Pin From Net: NetName=PA1 Pin=U9-12
+Removed Pin From Net: NetName=U3 GND Pin=U9-13
+Removed Pin From Net: NetName=PA0 Pin=U9-14
+Removed Pin From Net: NetName=16U2_AVCC Pin=U9-16
+Removed Pin From Net: NetName=U3 GND Pin=U11-8
+Removed Pin From Net: NetName=16U2_AVCC Pin=U11-10
+Removed Pin From Net: NetName=PA5 Pin=U11-11
+Removed Pin From Net: NetName=PA4 Pin=U11-12
+Removed Pin From Net: NetName=U3 GND Pin=U11-13
+Removed Pin From Net: NetName=PA3 Pin=U11-14
+Removed Pin From Net: NetName=16U2_AVCC Pin=U11-16
+Removed Pin From Net: NetName=16U2_AVCC Pin=U12-13
+Removed Pin From Net: NetName=16U2_AVCC Pin=U12-14
+Removed Pin From Net: NetName=U3 GND Pin=U14-8
+Removed Pin From Net: NetName=16U2_AVCC Pin=U14-10
+Removed Pin From Net: NetName=PC7 Pin=U14-11
+Removed Pin From Net: NetName=PA7 Pin=U14-12
+Removed Pin From Net: NetName=U3 GND Pin=U14-13
+Removed Pin From Net: NetName=PA6 Pin=U14-14
+Removed Pin From Net: NetName=16U2_AVCC Pin=U14-16
+Removed Pin From Net: NetName=U3 GND Pin=U16-8
+Removed Pin From Net: NetName=16U2_AVCC Pin=U16-10
+Removed Pin From Net: NetName=PC4 Pin=U16-11
+Removed Pin From Net: NetName=PC5 Pin=U16-12
+Removed Pin From Net: NetName=U3 GND Pin=U16-13
+Removed Pin From Net: NetName=PC6 Pin=U16-14
+Removed Pin From Net: NetName=16U2_AVCC Pin=U16-16

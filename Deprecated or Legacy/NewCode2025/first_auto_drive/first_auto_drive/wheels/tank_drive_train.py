@@ -197,5 +197,3 @@ class TankDriveTrain():
         commands.append(b)
 
         self.send("\n".join(commands))
-
-
