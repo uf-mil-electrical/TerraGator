@@ -71,33 +71,12 @@ class DCMotor:
         # self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 0"])
         return f"{self.gpio_one} 0", f"{self.gpio_two} 0"
 
-    def force_coast(self):
-        return f"{self.gpio_one} 1", f"{self.gpio_two} 1"
-    
     def set_speed(self, pwm_percent):
         pwm_percent = abs(pwm_percent)
 
         assert pwm_percent <= 1.0, "pwm greater than 1"
 
         pwm.set_pwm_percent(self.channel, pwm_percent)
-
-    def set_speed_direction(self, pwm_percent):
-        if pwm_percent > 1.0:
-            pwm_percent = 1.0
-        elif pwm_percent < -1.0:
-            pwm_percent = -1.0
-
-        pwm.set_pwm_percent(self.channel, abs(pwm_percent))
-
-        if pwm_percent > 0:
-            return self.go_forward()
-        elif pwm_percent < 0:
-            return self.go_backwards()
-        else:
-            return self.force_break()
-
-
-
 
 if __name__ == '__main__':
     a_dc_motor = DCMotor(0, 20, 21)

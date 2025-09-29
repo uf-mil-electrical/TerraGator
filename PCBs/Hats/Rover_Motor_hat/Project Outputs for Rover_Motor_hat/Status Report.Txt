@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Rover_Motor_hat.PrjPcb]
+   Generated File[Rover_Motor_hat.TXT]
+   Generated File[Rover_Motor_hat.DRL]
+   Generated File[Rover_Motor_hat.LDP]
+   Generated File[Rover_Motor_hat.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 1:01:11 AM On 4/5/2025

@@ -197,36 +197,3 @@ class TankDriveTrain():
         commands.append(b)
 
         self.send("\n".join(commands))
-
-    def arcade(self, forward, turn):
-        commands = []
-
-        a, b = self.L1.set_speed_direction(forward + turn)
-        commands.append(a)
-        commands.append(b)
-
-        a, b = self.L2.set_speed_direction(forward + turn)
-        commands.append(a)
-        commands.append(b)
-
-        a, b = self.L3.set_speed_direction(forward + turn)
-        commands.append(a)
-        commands.append(b)
-
-        a, b = self.R1.set_speed_direction(forward - turn)
-        commands.append(a)
-        commands.append(b)
-
-        a, b = self.R2.set_speed_direction(forward - turn)
-        commands.append(a)
-        commands.append(b)
-
-        a, b = self.R3.set_speed_direction(forward - turn)
-        commands.append(a)
-        commands.append(b)
-
-        self.send("\n".join(commands))
-
-
-
-
