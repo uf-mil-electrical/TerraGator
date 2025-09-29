@@ -1,6 +1,0 @@
-# Ignore Altium backup files
-*.PcbDoc.Zip
-*.SchDoc.Zip
-*.PrjPcb.Zip
-*.LOG
-*.SchDocPreview
