@@ -8,5 +8,6 @@
 # Ignore certain files from "New code2025" branch
 stim300-driver
 log
+venv
 install
 build

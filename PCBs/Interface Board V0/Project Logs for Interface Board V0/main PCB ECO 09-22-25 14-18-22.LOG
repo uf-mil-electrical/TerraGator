@@ -1,0 +1,14 @@
+Change Component Designator: OldDesignator=X? NewDesignator=X8
+Added Component: Designator=C20([Cap] SMD 0805)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=H20([Header] Shrouded 1x4 Male)
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=+5V Pin=C20-2
+Added Pin To Net: NetName=+5V Pin=H20-1
+Added Pin To Net: NetName=SDA Pin=H20-2
+Added Pin To Net: NetName=SCL Pin=H20-3
+Added Pin To Net: NetName=GND Pin=H20-4
+Added Member To Class: ClassName=I2C Connections Member=Component C20 SMD Nonpolarized
+Added Member To Class: ClassName=I2C Connections Member=Component H20 1x4 Male
