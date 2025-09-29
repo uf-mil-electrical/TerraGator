@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NetF2_2 Pin=X2-2
+Removed Pin From Net: NetName=NetF2_2 Pin=X2-3
+Removed Pin From Net: NetName=U3 GND Pin=X2-4
+Removed Pin From Net: NetName=U3 GND Pin=X2-5
+Removed Pin From Net: NetName=U3 GND Pin=X2-6
+Removed Pin From Net: NetName=Load+ Pin=X3-2
+Removed Pin From Net: NetName=Load+ Pin=X3-3
+Removed Pin From Net: NetName=U3 GND Pin=X3-4
+Removed Pin From Net: NetName=U3 GND Pin=X3-5
+Removed Pin From Net: NetName=U3 GND Pin=X3-6
+Change Component Footprint: Designator=F2 Old Footprint=Blade Fuse [Standard] New Footprint=Blade Fuse [1]
+Change component parameters: Designator = "F2" ("F2"); Footprint = "Blade Fuse [Standard]"; UniqueID = "\NXCMHUJU" ("\NXCMHUJU")
+Change component parameters (AddParameter): Name = "Capacity"; Value = "20A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = "576-178.6165.0002"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=U3 GND Pin=X2-2
+Added Pin To Net: NetName=U3 GND Pin=X3-2

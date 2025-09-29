@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=X2 Old Footprint=1708828 Screw Terminal New Footprint=Screw Terminal [1996236]
+Change Component Footprint: Designator=X3 Old Footprint=1708828 Screw Terminal New Footprint=Screw Terminal [1996236]
+Change Component Comment : Designator=X2 Old Comment=1708828 New Comment=1996236
+Change Component Comment : Designator=X3 Old Comment=1708828 New Comment=1996236
+Change component parameters: Designator = "X2" ("X2"); Footprint = "1708828 Screw Terminal"; UniqueID = "\SLMXTXLY" ("\SLMXTXLY")
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = "651-1996236"; VariantName = "[No Variations]"
+Change component parameters: Designator = "X3" ("X3"); Footprint = "1708828 Screw Terminal"; UniqueID = "\UWRWDOBN" ("\UWRWDOBN")
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = "651-1996236"; VariantName = "[No Variations]"

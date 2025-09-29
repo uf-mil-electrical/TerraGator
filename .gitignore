@@ -1,3 +1,11 @@
+# Ignore Altium backup files
+*.PcbDoc.Zip
+*.SchDoc.Zip
+*.PrjPcb.Zip
+*.LOG
+*.SchDocPreview
+
+# Ignore certain files from "New code2025" branch
 stim300-driver
 log
 install

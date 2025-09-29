@@ -1,0 +1,76 @@
+Change Component Footprint: Designator=D1 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D2 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D3 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D4 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D5 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D6 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D7 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D8 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change component parameters: Designator = "D1" ("D1"); Footprint = "US1K-13-F"; UniqueID = "\ATGTMDQS" ("\ATGTMDQS")
+Change component parameters: Designator = "D2" ("D2"); Footprint = "US1K-13-F"; UniqueID = "\INLKHVKO" ("\INLKHVKO")
+Change component parameters: Designator = "D3" ("D3"); Footprint = "US1K-13-F"; UniqueID = "\COARVYSD" ("\COARVYSD")
+Change component parameters: Designator = "D4" ("D4"); Footprint = "US1K-13-F"; UniqueID = "\XTUHZJIU" ("\XTUHZJIU")
+Change component parameters: Designator = "D5" ("D5"); Footprint = "US1K-13-F"; UniqueID = "\IWKPTWXO" ("\IWKPTWXO")
+Change component parameters: Designator = "D6" ("D6"); Footprint = "US1K-13-F"; UniqueID = "\FFDFSASW" ("\FFDFSASW")
+Change component parameters: Designator = "D7" ("D7"); Footprint = "US1K-13-F"; UniqueID = "\HSLUDPSX" ("\HSLUDPSX")
+Change component parameters: Designator = "D8" ("D8"); Footprint = "US1K-13-F"; UniqueID = "\HEOEXXHE" ("\HEOEXXHE")
+Added Pin To Net: NetName=VBat Pin=D1-C
+Added Pin To Net: NetName=VBat Pin=D2-C
+Added Pin To Net: NetName=VBat Pin=D3-C
+Added Pin To Net: NetName=VBat Pin=D4-C
+Added Pin To Net: NetName=GND Pin=D5-A
+Added Pin To Net: NetName=GND Pin=D6-A
+Added Pin To Net: NetName=GND Pin=D7-A
+Added Pin To Net: NetName=GND Pin=D8-A
+Add Pin To Net: Unknown Pin: Pin D9-1
+Add Pin To Net: Unknown Pin: Pin D9-2
+Add Pin To Net: Unknown Pin: Pin D10-1
+Add Pin To Net: Unknown Pin: Pin D10-2
+Add Pin To Net: Unknown Pin: Pin D11-1
+Add Pin To Net: Unknown Pin: Pin D11-2
+Add Pin To Net: Unknown Pin: Pin D12-1
+Add Pin To Net: Unknown Pin: Pin D12-2
+Add Pin To Net: Unknown Pin: Pin D13-1
+Add Pin To Net: Unknown Pin: Pin D13-2
+Add Pin To Net: Unknown Pin: Pin D14-1
+Add Pin To Net: Unknown Pin: Pin D14-2
+Add Pin To Net: Unknown Pin: Pin D15-1
+Add Pin To Net: Unknown Pin: Pin D15-2
+Add Pin To Net: Unknown Pin: Pin D16-1
+Add Pin To Net: Unknown Pin: Pin D16-2
+Add Pin To Net: Unknown Pin: Pin D17-1
+Add Pin To Net: Unknown Pin: Pin D17-2
+Add Pin To Net: Unknown Pin: Pin D18-1
+Add Pin To Net: Unknown Pin: Pin D18-2
+Add Pin To Net: Unknown Pin: Pin D19-1
+Add Pin To Net: Unknown Pin: Pin D19-2
+Add Pin To Net: Unknown Pin: Pin D20-1
+Add Pin To Net: Unknown Pin: Pin D20-2
+Add Pin To Net: Unknown Pin: Pin D21-1
+Add Pin To Net: Unknown Pin: Pin D21-2
+Add Pin To Net: Unknown Pin: Pin D22-1
+Add Pin To Net: Unknown Pin: Pin D22-2
+Add Pin To Net: Unknown Pin: Pin D23-1
+Add Pin To Net: Unknown Pin: Pin D23-2
+Add Pin To Net: Unknown Pin: Pin D24-1
+Add Pin To Net: Unknown Pin: Pin D24-2
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=D5-C
+Added Pin To Net: NetName=NetD1_A Pin=J4-1
+Added Pin To Net: NetName=NetD1_A Pin=U1-2
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=D8-C
+Added Pin To Net: NetName=NetD2_A Pin=J4-2
+Added Pin To Net: NetName=NetD2_A Pin=U1-3
+Added Net: Name=NetD2_A
+Added Pin To Net: NetName=NetD3_A Pin=D3-A
+Added Pin To Net: NetName=NetD3_A Pin=D6-C
+Added Pin To Net: NetName=NetD3_A Pin=J5-1
+Added Pin To Net: NetName=NetD3_A Pin=U1-13
+Added Net: Name=NetD3_A
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=D7-C
+Added Pin To Net: NetName=NetD4_A Pin=J5-2
+Added Pin To Net: NetName=NetD4_A Pin=U1-14
+Added Net: Name=NetD4_A

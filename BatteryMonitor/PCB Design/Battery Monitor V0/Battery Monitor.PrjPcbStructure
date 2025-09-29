@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=Battery Monitoring.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Battery Monitoring.SchDoc|FileName=DC Step-Down Converter.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Battery Monitoring.SchDoc|FileName=Primary MCU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Battery Monitoring.SchDoc|FileName=Seven-Seg Displays.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=Battery Monitoring.SchDoc|FileName=USB Programmer.SchDoc|SheetNumber=2

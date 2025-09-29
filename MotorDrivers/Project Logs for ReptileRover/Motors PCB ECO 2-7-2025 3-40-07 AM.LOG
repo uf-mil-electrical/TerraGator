@@ -1,0 +1,88 @@
+Change Component Footprint: Designator=D9 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D10 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D11 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D12 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D13 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D14 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D15 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D16 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D17 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D18 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D19 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D20 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D21 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D22 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D23 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change Component Footprint: Designator=D24 Old Footprint=US1K-13-F New Footprint=MBRS360SMB
+Change component parameters: Designator = "D9" ("D9"); Footprint = "US1K-13-F"; UniqueID = "\SLHWTCFH" ("\SLHWTCFH")
+Change component parameters: Designator = "D10" ("D10"); Footprint = "US1K-13-F"; UniqueID = "\ZWTDNPSC" ("\ZWTDNPSC")
+Change component parameters: Designator = "D11" ("D11"); Footprint = "US1K-13-F"; UniqueID = "\QFQACFFG" ("\QFQACFFG")
+Change component parameters: Designator = "D12" ("D12"); Footprint = "US1K-13-F"; UniqueID = "\ZRJHKFQG" ("\ZRJHKFQG")
+Change component parameters: Designator = "D13" ("D13"); Footprint = "US1K-13-F"; UniqueID = "\IARQKLOY" ("\IARQKLOY")
+Change component parameters: Designator = "D14" ("D14"); Footprint = "US1K-13-F"; UniqueID = "\ZHUZFXON" ("\ZHUZFXON")
+Change component parameters: Designator = "D15" ("D15"); Footprint = "US1K-13-F"; UniqueID = "\NPNLNPXH" ("\NPNLNPXH")
+Change component parameters: Designator = "D16" ("D16"); Footprint = "US1K-13-F"; UniqueID = "\UEPPYESP" ("\UEPPYESP")
+Change component parameters: Designator = "D17" ("D17"); Footprint = "US1K-13-F"; UniqueID = "\EFTBTJNI" ("\EFTBTJNI")
+Change component parameters: Designator = "D18" ("D18"); Footprint = "US1K-13-F"; UniqueID = "\GGDBYBYW" ("\GGDBYBYW")
+Change component parameters: Designator = "D19" ("D19"); Footprint = "US1K-13-F"; UniqueID = "\LXQGTIRZ" ("\LXQGTIRZ")
+Change component parameters: Designator = "D20" ("D20"); Footprint = "US1K-13-F"; UniqueID = "\FBXSGTPY" ("\FBXSGTPY")
+Change component parameters: Designator = "D21" ("D21"); Footprint = "US1K-13-F"; UniqueID = "\PTYNXCVE" ("\PTYNXCVE")
+Change component parameters: Designator = "D22" ("D22"); Footprint = "US1K-13-F"; UniqueID = "\HCEBJCZX" ("\HCEBJCZX")
+Change component parameters: Designator = "D23" ("D23"); Footprint = "US1K-13-F"; UniqueID = "\FUJEHJIK" ("\FUJEHJIK")
+Change component parameters: Designator = "D24" ("D24"); Footprint = "US1K-13-F"; UniqueID = "\EXSOZGWP" ("\EXSOZGWP")
+Added Pin To Net: NetName=VBat Pin=D9-C
+Added Pin To Net: NetName=VBat Pin=D10-C
+Added Pin To Net: NetName=VBat Pin=D11-C
+Added Pin To Net: NetName=VBat Pin=D12-C
+Added Pin To Net: NetName=GND Pin=D13-A
+Added Pin To Net: NetName=GND Pin=D14-A
+Added Pin To Net: NetName=GND Pin=D15-A
+Added Pin To Net: NetName=GND Pin=D16-A
+Added Pin To Net: NetName=VBat Pin=D17-C
+Added Pin To Net: NetName=VBat Pin=D18-C
+Added Pin To Net: NetName=VBat Pin=D19-C
+Added Pin To Net: NetName=VBat Pin=D20-C
+Added Pin To Net: NetName=GND Pin=D21-A
+Added Pin To Net: NetName=GND Pin=D22-A
+Added Pin To Net: NetName=GND Pin=D23-A
+Added Pin To Net: NetName=GND Pin=D24-A
+Added Pin To Net: NetName=NetD9_A Pin=D9-A
+Added Pin To Net: NetName=NetD9_A Pin=D14-C
+Added Pin To Net: NetName=NetD9_A Pin=J9-2
+Added Pin To Net: NetName=NetD9_A Pin=U3-3
+Added Net: Name=NetD9_A
+Added Pin To Net: NetName=NetD10_A Pin=D10-A
+Added Pin To Net: NetName=NetD10_A Pin=D15-C
+Added Pin To Net: NetName=NetD10_A Pin=J10-1
+Added Pin To Net: NetName=NetD10_A Pin=U3-13
+Added Net: Name=NetD10_A
+Added Pin To Net: NetName=NetD11_A Pin=D11-A
+Added Pin To Net: NetName=NetD11_A Pin=D16-C
+Added Pin To Net: NetName=NetD11_A Pin=J10-2
+Added Pin To Net: NetName=NetD11_A Pin=U3-14
+Added Net: Name=NetD11_A
+Added Pin To Net: NetName=NetD12_A Pin=D12-A
+Added Pin To Net: NetName=NetD12_A Pin=D13-C
+Added Pin To Net: NetName=NetD12_A Pin=J9-1
+Added Pin To Net: NetName=NetD12_A Pin=U3-2
+Added Net: Name=NetD12_A
+Added Pin To Net: NetName=NetD17_A Pin=D17-A
+Added Pin To Net: NetName=NetD17_A Pin=D24-C
+Added Pin To Net: NetName=NetD17_A Pin=J12-1
+Added Pin To Net: NetName=NetD17_A Pin=U6-13
+Added Net: Name=NetD17_A
+Added Pin To Net: NetName=NetD18_A Pin=D18-A
+Added Pin To Net: NetName=NetD18_A Pin=D23-C
+Added Pin To Net: NetName=NetD18_A Pin=J12-2
+Added Pin To Net: NetName=NetD18_A Pin=U6-14
+Added Net: Name=NetD18_A
+Added Pin To Net: NetName=NetD19_A Pin=D19-A
+Added Pin To Net: NetName=NetD19_A Pin=D21-C
+Added Pin To Net: NetName=NetD19_A Pin=J11-1
+Added Pin To Net: NetName=NetD19_A Pin=U6-2
+Added Net: Name=NetD19_A
+Added Pin To Net: NetName=NetD20_A Pin=D20-A
+Added Pin To Net: NetName=NetD20_A Pin=D22-C
+Added Pin To Net: NetName=NetD20_A Pin=J11-2
+Added Pin To Net: NetName=NetD20_A Pin=U6-3
+Added Net: Name=NetD20_A

@@ -1,0 +1,52 @@
+Removed Member From Class: ClassName=DC Step-Down Converter Member=C2
+Removed Member From Class: ClassName=Primary MCU Member=C3
+Removed Member From Class: ClassName=Primary MCU Member=C4
+Removed Member From Class: ClassName=Primary MCU Member=C6
+Removed Member From Class: ClassName=Battery Monitoring Member=C21
+Removed Member From Class: ClassName=USB Programmer Member=D3
+Removed Member From Class: ClassName=Primary MCU Member=D8
+Removed Member From Class: ClassName=USB Programmer Member=L2
+Removed Member From Class: ClassName=Primary MCU Member=O1
+Removed Member From Class: ClassName=Primary MCU Member=P1
+Removed Member From Class: ClassName=Primary MCU Member=P4
+Removed Member From Class: ClassName=Primary MCU Member=R1
+Removed Member From Class: ClassName=Primary MCU Member=R3
+Removed Member From Class: ClassName=Primary MCU Member=R5
+Removed Member From Class: ClassName=Primary MCU Member=R6
+Removed Member From Class: ClassName=USB Programmer Member=R10
+Removed Member From Class: ClassName=Primary MCU Member=R14
+Removed Member From Class: ClassName=USB Programmer Member=U2
+Change Net Color : Old Net Color=Aqua New Net Color=RGB(224, 102, 102)
+Change Net Color : Old Net Color=Fuchsia New Net Color=RGB(106, 168, 79)
+Added Member To Class: ClassName=Primary MCU Member=Component C8 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C9 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C10 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C11 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C14 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C16 SMD Cap - Polarized
+Added Member To Class: ClassName=Primary MCU Member=Component C18 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C19 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component C20 Thru-Hole Cap - Polarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C24 SMD Cap - Nonpolarized
+Added Member To Class: ClassName=USB Programmer Member=Component D1 SMD Diode
+Added Member To Class: ClassName=Primary MCU Member=Component D2 SMD Diode
+Added Member To Class: ClassName=Primary MCU Member=Component D5 LED
+Added Member To Class: ClassName=Primary MCU Member=Component D6 LED
+Added Member To Class: ClassName=USB Programmer Member=Component D7 LED
+Added Member To Class: ClassName=USB Programmer Member=Component L1 SMD Ferrite Bead
+Added Member To Class: ClassName=Primary MCU Member=Component O2 SMD 16MHz Oscillator
+Added Member To Class: ClassName=Primary MCU Member=Component P2 Header 3X2
+Added Member To Class: ClassName=Primary MCU Member=Component P3 JST Female 3 Pin
+Added Member To Class: ClassName=USB Programmer Member=Component R2 SMD Resistor
+Added Member To Class: ClassName=USB Programmer Member=Component R4 SMD Resistor
+Added Member To Class: ClassName=USB Programmer Member=Component R7 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R8 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R9 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R11 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R12 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R13 SMD Resistor
+Added Member To Class: ClassName=USB Programmer Member=Component R15 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R16 SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R17 SMD Resistor
+Added Member To Class: ClassName=USB Programmer Member=Component U1 [MCU] ATMega16U2_AUR
+Added Member To Class: ClassName=Battery Monitoring Member=Component X2 1996236
