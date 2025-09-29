@@ -1,0 +1,12 @@
+Added Component: Designator=U1(MOTOR_DRIVER_HAT)
+Added Pin To Net: NetName=1 Pin=U1-1
+Added Pin To Net: NetName=2 Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=5 Pin=U1-5
+Added Pin To Net: NetName=6 Pin=U1-6
+Added Pin To Net: NetName=7 Pin=U1-7
+Added Pin To Net: NetName=8 Pin=U1-8
+Added Pin To Net: NetName=9 Pin=U1-9
+Added Pin To Net: NetName=10 Pin=U1-10
+Added Member To Class: ClassName=Rover_Motor_hat Member=Component U1 MOTOR_DRIVER_HAT
