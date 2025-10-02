@@ -101,7 +101,7 @@ GenerateClassCluster=0
 DocumentUniqueId=BZXHYHVB
 
 [Document4]
-DocumentPath=I2C Connections.SchDoc
+DocumentPath=Peripheral Connections.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
