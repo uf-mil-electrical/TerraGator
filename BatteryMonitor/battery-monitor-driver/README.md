@@ -2,6 +2,7 @@
 
 The following code contains the means for operating TerraGator's Battery Monitor Board. The current project structure is listed below:
 
+``` pgssql
 battery_monitor/
 │
 ├── CMakeLists.txt
@@ -18,5 +19,5 @@ battery_monitor/
 │   │   └── voltage_sens.c / voltage_sens.h
 │   └── 
 └── 
-
+```
 
