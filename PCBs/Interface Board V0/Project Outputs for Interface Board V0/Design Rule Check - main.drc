@@ -1,0 +1,101 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\russe\Repositories\MIL\TerraGator\PCBs\Interface Board V0\main.PcbDoc
+Date     : 10/04/25
+Time     : 22:23:41
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (not InAnyDifferentialPair),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (not InAnyDifferentialPair),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C21-1(29.083mm,50.281mm) on Top Layer [Unplated] And Via (31mm,51mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetC6_2 Between Pad U1-1(27.19mm,55.75mm) on Bottom Layer [Unplated] And Pad U1-6(33.54mm,55.75mm) on Bottom Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net NetC32_2 Between Pad U2-1(14.19mm,55.75mm) on Bottom Layer [Unplated] And Pad U2-6(20.54mm,55.75mm) on Bottom Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net +5V Between Pad X8-1(7.5mm,79.5mm) on Multi-Layer And Via (32.5mm,62.75mm) from Top Layer to Bottom Layer 
+Rule Violations :4
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mm) (Max=100mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.263mm) (Max=0.379mm) (Preferred=0.379mm) (InNetClass('nRF Signal'))
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+   Violation between Net Antennae: Track (4.5mm,49.5mm)(7.269mm,49.5mm) on Layer 2 
+   Violation between Net Antennae: Track (80.772mm,48.768mm)(83.566mm,48.768mm) on Layer 2 
+   Violation between Net Antennae: Via (24.5mm,53.7mm) from Top Layer to Bottom Layer 
+Rule Violations :3
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad Radio1-X(80mm,131.795mm) on Multi-Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "Radio1" (66.482mm,187.214mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "RFD900x" (73.335mm,112.145mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (0mm,25mm)(18mm,25mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (18mm,0mm)(18mm,25mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (-5.51mm,68.75mm)(3.24mm,68.75mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (-5.51mm,68.75mm)(-5.51mm,83.25mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (-5.51mm,83.25mm)(3.24mm,83.25mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (51mm,0mm)(51mm,25mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (51mm,25mm)(99mm,25mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (65mm,132.395mm)(65mm,134.395mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (65mm,134.395mm)(67mm,134.395mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (84.25mm,46mm)(99mm,46mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (84.25mm,67mm)(99mm,67mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (93mm,134.395mm)(95mm,134.395mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (95mm,132.395mm)(95mm,134.395mm) on Top Overlay 
+Rule Violations :16
+
+Processing Rule : Delay Constraint (Min=0ps) (Max=10000ps) (All)
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Delay Tolerance=100ps) (InDifferentialPairClass('Ethernet_Pairs') or InDifferentialPairClass('USB_Pairs') or InDifferentialPairClass('CAN_Pairs'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 23
+Waived Violations : 0
+Time Elapsed        : 00:00:01

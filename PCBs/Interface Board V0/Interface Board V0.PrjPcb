@@ -101,7 +101,7 @@ GenerateClassCluster=0
 DocumentUniqueId=BZXHYHVB
 
 [Document4]
-DocumentPath=I2C Connections.SchDoc
+DocumentPath=Peripheral Connections.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -150,6 +150,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VOLXFXBC
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Interface Board V0\Design Rule Check - main.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
