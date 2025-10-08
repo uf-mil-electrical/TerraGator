@@ -151,6 +151,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VOLXFXBC
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Interface Board V0\Design Rule Check - main.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
