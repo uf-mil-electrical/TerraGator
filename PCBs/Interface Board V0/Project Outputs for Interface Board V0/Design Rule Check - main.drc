@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\russe\Repositories\MIL\TerraGator\PCBs\Interface Board V0\main.PcbDoc
 Date     : 10/08/25
-Time     : 14:33:28
+Time     : 20:43:02
 
 Processing Rule : Clearance Constraint (Gap=0.3mm) (not InAnyDifferentialPair),(All)
 Rule Violations :0
@@ -61,7 +61,8 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-Rule Violations :0
+   Violation between Board Outline Clearance(Outline Edge): (0.198mm < 0.2mm) Between Board Edge And Text "H23" (3.741mm,0.566mm) on Top Overlay 
+Rule Violations :1
 
 Processing Rule : Delay Constraint (Min=0ps) (Max=10000ps) (All)
 Rule Violations :0
@@ -77,6 +78,6 @@ Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
 Waived Violations :1
 
 
-Violations Detected : 0
+Violations Detected : 1
 Waived Violations : 1
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:11
