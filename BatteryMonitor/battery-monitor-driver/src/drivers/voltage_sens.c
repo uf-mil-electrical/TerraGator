@@ -1,4 +1,5 @@
-
+#include "board_config.h"
+#include "hardware/i2c.h"
 
 // initialize the voltage sensing IC over I2C
 void voltage_sens_init()
@@ -16,5 +17,4 @@ void voltage_sens_init()
     // set alert limit register for bus voltage over-limit (BOL)
     // BOL is set if mask/enable register
     
-
 }

@@ -44,12 +44,11 @@
 #define VS_SLAVE_ADDR 0x40 // A0 and A1 are tied to GND
 
 // V_OUT (ADC) = sensitivity * input current + V_REF
-// => input current = (V_OUT (ADC) - V_REF) / sens
-#define ADC_VREF 5f
+#define CS_VREF 0
+#define ADC_VREF 3.3f
 #define ADC_RESOLUTION 12
-const float DtoA_conv_factor = ADC_VREF / (1 << ADC_RESOLUTION); 
-// The TMCS1100A3 has a sensitivity of 200mV / A
-const float CS_sens = .2; // V/A
+// The TMCS1100A1 has a sensitivity of 50mV / A
+const float CS_sens = .05; // V/A
 
 // ------------------------ GPIO ------------------------------------
 // LEDs connected for operating region indication
@@ -58,6 +57,7 @@ const float CS_sens = .2; // V/A
 #define GREEN_LED 19
 
 // ------------------ FUNCTION PROTOTYPES --------------------------
+// initializes all modules used on the Battery Monitor Board
 void board_config(); 
 
 #endif

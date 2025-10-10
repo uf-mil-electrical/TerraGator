@@ -10,12 +10,16 @@
 // (1) you have the VREF on the current sensing IC configured s.t. 
 // the linear measurement range is +- 11.5A (bidirectional). How do we want to indicate 
 // negative currents on the 7SEGs? 
+// >  program assuming A1 chip configured for unidirectional measurement 1A - 96A
+// > 
 // (2) The issue mentioned acceptable and unacceptable ranges. What 
 // explicitly are these ranges? 
+// > V: 22.-24.6 V (GREEN); YELLOW slightly outside; RED widely outside  
+// > I: determine on own 
 
 int main()
 {
-    board_init();  
+    board_config();  
 
     // get ADC data 
     uint16_t result = adc_read(); 
