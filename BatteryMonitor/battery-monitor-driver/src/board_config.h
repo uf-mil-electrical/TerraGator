@@ -16,17 +16,18 @@
 // ------------------------ UART ------------------------------------
 // UART for communication with RPi5
 // By default the stdout UART is `uart0`, so we will use the second one
-#define UART_ID uart1
+#define UART_ID uart0
 #define UART_BAUDRATE 115200
 #define UART_TX_PIN 16
 #define UART_RX_PIN 17
 
 // ------------------------- I2C ------------------------------------
 // I2C defines for the voltage sensing (VS) IC
-#define VS_I2C_PORT i2c0
+#define VS_I2C_PORT i2c1
 #define VS_I2C_SDA 10
 #define VS_I2C_SCL 11
-#define VS_ALERT   9 
+#define VS_ALERT   9  
+#define VS_VBUS_UNDER_VOLTAGE_LIMIT 21.0f
 #define I2C_BAUDRATE 100000 // 100kbps for standard operation mode
 
 // ------------------------- SPI ------------------------------------
@@ -41,7 +42,6 @@
 // ADC1 for current sensing IC
 #define CS_ADC 27
 #define ADC_CH 1
-#define VS_SLAVE_ADDR 0x40 // A0 and A1 are tied to GND
 
 // V_OUT (ADC) = sensitivity * input current + V_REF
 #define CS_VREF 0

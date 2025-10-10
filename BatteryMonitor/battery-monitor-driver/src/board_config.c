@@ -22,6 +22,8 @@ void board_config()
     gpio_set_function(VS_I2C_SCL, GPIO_FUNC_I2C);
     gpio_pull_up(VS_I2C_SDA);
     gpio_pull_up(VS_I2C_SCL);
+    // alert limit pin is connected to GPIO 9 
+    gpio_set_dir(VS_ALERT, GPIO_IN);
     // For more examples of I2C use see https://github.com/raspberrypi/pico-examples/tree/master/i2c
 
     // ---------------- 7SEG DRIVER [SPI] ------------------- //

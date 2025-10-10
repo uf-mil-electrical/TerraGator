@@ -14,7 +14,7 @@
 // > 
 // (2) The issue mentioned acceptable and unacceptable ranges. What 
 // explicitly are these ranges? 
-// > V: 22.-24.6 V (GREEN); YELLOW slightly outside; RED widely outside  
+// > V: 22.4-24.6 V (GREEN); YELLOW slightly outside; RED widely outside  
 // > I: determine on own 
 
 int main()
@@ -22,20 +22,18 @@ int main()
     board_config();  
 
     // get ADC data 
-    uint16_t result = adc_read(); 
-    float cs_current = (result * DtoA_conv_factor - CS_VREF)/ CS_sens;
-
+    
     // get voltage data 
 
-    // check if we're outside acceptable range 
+    // check if we're outside acceptable range(s) 
 
     // change LED state based on voltage and current measurements 
 
-    
     // output voltage and current values to LED driver over SPI every ~100 ms
 
     // communicate with RPi5 over UART regarding non-ideal ranges 
 
+    // repeat
     
 }
 
