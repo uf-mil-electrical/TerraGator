@@ -8,8 +8,6 @@ Important links
 Thanks!
 
 ## Folders
-`MotorDrivers` contains an altium project for the motor driver board
+`PCBs` contain PCBs designed for the rover. Deprecated PCBs should be stored in the *Deprecated or Legacy* folder.
 
-`BatteryMonitor` contains LTSpice and altium files for a battery monitor board (or at least it will in the future)
-
-`LegacyRepo` contains the old rover repository, which has old documentation, software, CAD, and images
+`Deprecated or Legacy` contains old documentation, software, CAD, and images.
