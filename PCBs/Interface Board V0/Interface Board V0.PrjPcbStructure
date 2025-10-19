@@ -1,2 +1,5 @@
-Record=TopLevelDocument|FileName=Misc.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Misc.SchDoc|FileName=Raspberry Pi 5.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=CubePilot and Motor Drivers.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=CubePilot and Motor Drivers.SchDoc|FileName=Misc.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=CubePilot and Motor Drivers.SchDoc|FileName=Peripheral Connections.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CubePilot and Motor Drivers.SchDoc|FileName=Power.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=CubePilot and Motor Drivers.SchDoc|FileName=Raspberry Pi and RF Devices.SchDoc|SheetNumber=1
