@@ -1,6 +1,0 @@
-Added Component: Designator=X9([Screw Terminal] 4pin 5mm)
-Added Pin To Net: NetName=+5V Pin=X9-1
-Added Pin To Net: NetName=+3V3 Pin=X9-2
-Added Pin To Net: NetName=GND Pin=X9-3
-Added Pin To Net: NetName=GND Pin=X9-4
-Added Member To Class: ClassName=Power Member=Component X9 4pin Screw Terminal
