@@ -54,11 +54,7 @@ pico_enable_stdio_usb(battery-monitor-driver 0)
 
 # Add the standard library to the build
 target_link_libraries(battery-monitor-driver
-        pico_stdlib      
-        hardware_adc   
-        hardware_gpio 
-        hardware_spi  
-        hardware_i2c  
+        pico_stdlib       
         )
 
 # Add the standard include files to the build
@@ -70,6 +66,8 @@ target_include_directories(battery-monitor-driver PRIVATE
 target_link_libraries(battery-monitor-driver 
         hardware_spi
         hardware_i2c
+        hardware_adc
+        hardware_gpio
         )
 
 pico_add_extra_outputs(battery-monitor-driver)

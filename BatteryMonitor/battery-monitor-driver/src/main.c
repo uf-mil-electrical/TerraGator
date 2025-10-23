@@ -19,10 +19,14 @@
 
 int main()
 {
-    board_config();  
+    board_config(); 
+
+    // test 1: just LEDs to ensure proper display 
+
 
     // get ADC data 
     
+
     // get voltage data 
 
     // check if we're outside acceptable range(s) 

@@ -11,6 +11,8 @@
 #include "hardware/adc.h"
 #include "board_config.h"
 
+extern const float CS_sens;
+
 // ------------------------------------------------------------------
 // Name: BOARD CONFIGURATION
 // Purpose: Define all pin mappings, configurations, and device-specific
@@ -51,8 +53,6 @@
 #define CS_VREF 0
 #define ADC_VREF 3.3f
 #define ADC_RESOLUTION 12
-// The TMCS1100A1 has a sensitivity of 50mV / A
-const float CS_sens = .05; // V/A
 
 // ------------------------ GPIO ------------------------------------
 // LEDs connected for operating region indication

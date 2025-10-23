@@ -2,6 +2,9 @@
 #include "board_config.h"
 #include "hardware/adc.h"
 
+// The TMCS1100A1 has a sensitivity of 50mV / A
+const float CS_sens = 0.05; 
+
 float get_current_sens_reading()
 {
     // => input current = (V_OUT (analog) - V_REF) / sens

@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include "pico/stdlib.h"
 #include "board_config.h"
 #include "hardware/i2c.h"
 #include "voltage_sens.h"
@@ -64,7 +65,7 @@ bool poll_alert_limit()
 {
     // get GPIO state 
     // active low, so if low, we have reached the alert 
-    if(get_gpio(VS_ALERT)) // returns state (high == true)
+    if(gpio_get(VS_ALERT)) // returns state (high == true)
     {
         return false; 
     }
