@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include "board_config.h"
 #include "hardware/i2c.h"
 #include "voltage_sens.h"

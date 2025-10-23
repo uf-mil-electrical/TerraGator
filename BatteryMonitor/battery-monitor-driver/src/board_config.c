@@ -1,4 +1,7 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
+#include "pico/binary_info.h"
+#include "hardware/gpio.h"
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 #include "hardware/uart.h"
@@ -16,7 +19,7 @@ void board_config()
     adc_select_input(ADC_CH);   // select the ADC channel to be used
 
     // ---------------- VOLTAGE SENSING [I2C] --------------- //
-    
+
     i2c_init(VS_I2C_PORT, I2C_BAUDRATE);
     gpio_set_function(VS_I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(VS_I2C_SCL, GPIO_FUNC_I2C);

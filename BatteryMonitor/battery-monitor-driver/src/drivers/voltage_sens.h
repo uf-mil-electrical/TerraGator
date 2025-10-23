@@ -107,7 +107,7 @@ typedef enum mode
 void ina226_write_register(uint8_t reg, uint16_t value);
 
 // general i2c function to read from the 16-bit addresses of the INA226
-uint16_t ina226_read_register(uint8_t reg)
+uint16_t ina226_read_register(uint8_t reg);
 
 // initialize the voltage sensing IC over I2C
 // includes configuring configuration register, mask enable, and alert limit register

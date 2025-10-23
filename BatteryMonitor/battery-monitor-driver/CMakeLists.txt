@@ -35,7 +35,15 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(battery-monitor-driver battery-monitor-driver.c )
+add_executable(battery-monitor-driver 
+    src/main.c 
+    src/board_config.c
+    src/drivers/current_sens.c
+    src/drivers/led.c
+    src/drivers/rpi5_comm.c
+    src/drivers/sseg.c
+    src/drivers/voltage_sens.c
+    )
 
 pico_set_program_name(battery-monitor-driver "battery-monitor-driver")
 pico_set_program_version(battery-monitor-driver "0.1")
@@ -46,11 +54,16 @@ pico_enable_stdio_usb(battery-monitor-driver 0)
 
 # Add the standard library to the build
 target_link_libraries(battery-monitor-driver
-        pico_stdlib)
+        pico_stdlib      
+        hardware_adc   
+        hardware_gpio 
+        hardware_spi  
+        hardware_i2c  
+        )
 
 # Add the standard include files to the build
 target_include_directories(battery-monitor-driver PRIVATE
-        ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}/src
 )
 
 # Add any user requested libraries
