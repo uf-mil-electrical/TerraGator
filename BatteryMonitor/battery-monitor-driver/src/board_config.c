@@ -32,6 +32,7 @@ void board_config()
     // ---------------- 7SEG DRIVER [SPI] ------------------- //
     
     spi_init(SPI_PORT, SPI_BAUDRATE);
+    spi_set_format(SPI_PORT, 16, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST); //according to LED driver protocol 
     gpio_set_function(CS_7SEG,   GPIO_FUNC_SIO);
     gpio_set_function(PIN_SCK,  GPIO_FUNC_SPI);
     gpio_set_function(PIN_MOSI, GPIO_FUNC_SPI);
@@ -45,4 +46,5 @@ void board_config()
     // Set the TX and RX pins by using the function select on the GPIO
     gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
     gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+
 }

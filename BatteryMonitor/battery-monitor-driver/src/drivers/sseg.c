@@ -1,5 +1,6 @@
 #include "board_config.h"
 #include "hardware/spi.h"
+#include <math.h> 
 #include "sseg.h"
 
 void max7219_write(uint8_t reg, uint8_t data)
@@ -12,6 +13,7 @@ void max7219_write(uint8_t reg, uint8_t data)
     uint16_t reg_config = (reg << REG_ADDR_MAP_BP) | (data); 
     // assert CS
     gpio_put(CS_7SEG, 0); 
+
     spi_write16_blocking(SPI_PORT, &reg_config, 1); 
     // deassert CS
     gpio_put(CS_7SEG, 1);
@@ -25,6 +27,9 @@ void sseg_init()
 
     // set decode mode for digits 0-3
     max7219_write(MAX7219_DECODE_MODE, DECODE_MODE_0_3_DECODE_MODE_GC); 
+
+    // set for medium LED intensity 
+    max7219_write(MAX7219_INTENSITY, 0x08); 
 
     // configure test mode to be off 
     max7219_write(MAX7219_DISPLAY_TEST, 0x00); 
@@ -48,7 +53,7 @@ void max7219_voltage_current_write(float voltage, float current)
     if (voltage < 10)
     {   
         dig0_value = (uint8_t)(voltage); // integer portion
-        dig1_value = (uint8_t)((voltage - (float)(dig0_value)) * 10); //fractional portion
+        dig1_value = (uint8_t)roundf((voltage - (float)(dig0_value)) * 10); //fractional portion
         dig0_value |= (1 << DP_BP); // add decimal point    
     }
     else 
@@ -61,13 +66,13 @@ void max7219_voltage_current_write(float voltage, float current)
     if (current < 10)
     {
         dig2_value = (uint8_t)(current); // ones place 
-        dig3_value = (uint8_t)((current - (float)(dig2_value)) * 10); //tenths place  
+        dig3_value = (uint8_t)roundf((current - (float)(dig2_value)) * 10); //tenths place  
         dig2_value |= (1 << DP_BP); // add decimal point 
     }
     else
     {
         dig2_value = (uint8_t)(current/10); // tens place 
-        dig3_value = (uint8_t)(current - (float)(dig0_value * 10)); // ones place
+        dig3_value = (uint8_t)(current - (float)(dig2_value * 10)); // ones place
     }
 
     // write digits to each 7seg display 

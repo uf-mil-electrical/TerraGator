@@ -1,39 +1,43 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 #include "hardware/uart.h"
 #include "hardware/adc.h"
 #include "board_config.h"
+#include "drivers/current_sens.h"
+#include "drivers/voltage_sens.h"
+#include "drivers/sseg.h"
+#include "drivers/rpi5_comm.h"
+#include "drivers/led.h"
 
-// Questions for Russell
-// (1) you have the VREF on the current sensing IC configured s.t. 
-// the linear measurement range is +- 11.5A (bidirectional). How do we want to indicate 
-// negative currents on the 7SEGs? 
-// >  program assuming A1 chip configured for unidirectional measurement 1A - 96A
-// > 
+
 // (2) The issue mentioned acceptable and unacceptable ranges. What 
 // explicitly are these ranges? 
-// > V: 22.4-24.6 V (GREEN); YELLOW slightly outside; RED widely outside  
-// > I: determine on own 
+
+
 
 int main()
 {
-    board_config(); 
-
-    // test 1: just LEDs to ensure proper display 
-
-
-    // get ADC data 
+    // initialization procedures 
+    board_config();  
+    sseg_init(); 
+    voltage_sens_init(); 
+    // current sens is just ADC, which is configured in board_config()
+    led_init();
+    uart_init(); 
     
-
-    // get voltage data 
-
-    // check if we're outside acceptable range(s) 
-
-    // change LED state based on voltage and current measurements 
+    // get voltage and durrent data 
+    float voltage = read_bus_voltage(); 
+    float current = get_current_sens_reading(); 
 
     // output voltage and current values to LED driver over SPI every ~100 ms
+    usleep(100000); 
+    max7219_voltage_current_write(voltage, current); 
+
+
+        
 
     // communicate with RPi5 over UART regarding non-ideal ranges 
 
