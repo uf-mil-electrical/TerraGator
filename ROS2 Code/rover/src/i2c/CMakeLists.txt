@@ -7,9 +7,16 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rover_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+ament_target_dependencies(motor_driver_control_node
+  rclcpp
+  std_msgs
+  rover_msgs
+)
 
 add_executable(i2c src/i2c.cpp)
 target_include_directories(i2c PUBLIC

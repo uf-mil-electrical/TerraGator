@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(motor_driver_control)
+project(debug)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -18,13 +18,13 @@ ament_target_dependencies(motor_driver_control_node
   rover_msgs
 )
 
-add_executable(motor_driver_control src/motor_driver_control.cpp)
-target_include_directories(motor_driver_control PUBLIC
+add_executable(debug src/debug.cpp)
+target_include_directories(debug PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
-target_compile_features(motor_driver_control PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(debug PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS motor_driver_control
+install(TARGETS debug
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
