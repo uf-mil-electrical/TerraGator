@@ -16,32 +16,31 @@
 // (2) The issue mentioned acceptable and unacceptable ranges. What 
 // explicitly are these ranges? 
 
-
-
 int main()
 {
-    // initialization procedures 
-    board_config();  
-    sseg_init(); 
-    voltage_sens_init(); 
-    // current sens is just ADC, which is configured in board_config()
-    led_init();
-    uart_init(); 
-    
-    // get voltage and durrent data 
-    float voltage = read_bus_voltage(); 
-    float current = get_current_sens_reading(); 
-
-    // output voltage and current values to LED driver over SPI every ~100 ms
-    usleep(100000); 
-    max7219_voltage_current_write(voltage, current); 
-
-
+    while(1)
+    {
+        // initialization procedures 
+        board_config();  
+        sseg_init(); 
+        voltage_sens_init(); 
+        // current sens is just ADC, which is configured in board_config();
+        led_init();
+        //uart_init(); 
         
+        // get voltage and durrent data 
+        float voltage = read_bus_voltage(); 
+        float current = get_current_sens_reading(); 
 
-    // communicate with RPi5 over UART regarding non-ideal ranges 
+        // output voltage and current values to LED driver over SPI every ~100 ms
+        sleep_ms(1000); 
+        max7219_voltage_current_write(voltage, current); 
 
-    // repeat
+        // communicate with RPi5 over UART regarding non-ideal ranges 
+
+        // repeat
+    }
+    
     
 }
 
