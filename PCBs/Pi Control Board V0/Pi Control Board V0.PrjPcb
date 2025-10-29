@@ -60,13 +60,30 @@ AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BHXWOYXM
 
 [Document2]
+DocumentPath=Power.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=8
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KKMCKOOG
+
+[Document3]
 DocumentPath=RP2350.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VKSCRYNB
 
-[Document3]
+[Document4]
 DocumentPath=NRF24L01P.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KHIDHSPG
 
-[Document4]
+[Document5]
 DocumentPath=ESP32-S2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QEEZWCAL
 
-[Document5]
+[Document6]
 DocumentPath=USB Hub.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=STYWGXLG
 
-[Document6]
+[Document7]
 DocumentPath=Safety Devices.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NWUFWSBP
 
-[Document7]
+[Document8]
 DocumentPath=Motor Drivers.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +185,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BZXSWMAM
 
-[Document8]
+[Document9]
+DocumentPath=Peripheral Connections.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=9
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JMRVUXRQ
+
+[Document10]
 DocumentPath=Pi Control Board V0.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document11]
 DocumentPath=main.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1142,8 +1176,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=RADM Components.IntLib
-ComponentDesignItemID0=[XTAL] SMD 4MHz
-ComponentSymbolReference0=[XTAL] SMD 4MHz
+ComponentDesignItemID0=[Switch] Pushbutton
+ComponentSymbolReference0=[Switch] Pushbutton
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1174,7 +1208,7 @@ ParameterUpdate5=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=[XTAL] SMD 4 MHz
+ModelName0=[Switch] Pushbutton
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]
