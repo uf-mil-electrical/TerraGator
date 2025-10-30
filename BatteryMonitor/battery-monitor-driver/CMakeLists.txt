@@ -40,7 +40,6 @@ add_executable(battery-monitor-driver
     src/board_config.c
     src/drivers/current_sens.c
     src/drivers/led.c
-    src/drivers/rpi5_comm.c
     src/drivers/sseg.c
     src/drivers/voltage_sens.c
     )

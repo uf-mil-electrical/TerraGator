@@ -21,7 +21,6 @@ extern const float CS_sens;
 
 // ------------------------ UART ------------------------------------
 // UART for communication with RPi5
-// By default the stdout UART is `uart0`, so we will use the second one
 #define UART_ID uart0
 #define UART_BAUDRATE 115200
 #define UART_TX_PIN 16

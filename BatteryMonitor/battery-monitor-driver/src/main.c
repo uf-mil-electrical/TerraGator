@@ -9,26 +9,22 @@
 #include "drivers/current_sens.h"
 #include "drivers/voltage_sens.h"
 #include "drivers/sseg.h"
-#include "drivers/rpi5_comm.h"
 #include "drivers/led.h"
-
-
-// (2) The issue mentioned acceptable and unacceptable ranges. What 
-// explicitly are these ranges? 
 
 int main()
 {
+    // initialization procedures 
+    board_config();  
+    sseg_init(); 
+    voltage_sens_init(); 
+    // current sens is just ADC, which is configured in board_config();
+    led_init();
+
+    // small delay before beginning to read to allow initializations time to settle 
+    sleep_ms(10);
     while(1)
     {
-        // initialization procedures 
-        board_config();  
-        sseg_init(); 
-        voltage_sens_init(); 
-        // current sens is just ADC, which is configured in board_config();
-        led_init();
-        //uart_init(); 
-        
-        // get voltage and durrent data 
+        // get voltage and current data 
         float voltage = read_bus_voltage(); 
         float current = get_current_sens_reading(); 
 
@@ -36,11 +32,11 @@ int main()
         sleep_ms(1000); 
         max7219_voltage_current_write(voltage, current); 
 
-        // communicate with RPi5 over UART regarding non-ideal ranges 
+        // update status LEDs onboard battery monitor
+        uint8_t status = change_led_indicators(voltage, current);
 
-        // repeat
+        // send LED status to RPi5 
+        uart_putc_raw(uart0, status);
     }
-    
-    
 }
 
