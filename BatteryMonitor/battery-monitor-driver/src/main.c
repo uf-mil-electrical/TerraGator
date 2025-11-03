@@ -34,7 +34,7 @@ int main()
 
         // update status LEDs onboard battery monitor
         uint8_t status = change_led_indicators(voltage, current);
-
+        
         // send LED status to RPi5 
         uart_putc_raw(uart0, status);
     }

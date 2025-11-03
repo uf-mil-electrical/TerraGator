@@ -59,7 +59,7 @@ void max7219_voltage_current_write(float voltage, float current)
     else 
     {
         dig0_value = (uint8_t)(voltage/10); // tens place 
-        dig1_value = (uint8_t)(voltage - (float)(dig0_value * 10)); // ones place
+        dig1_value = (uint8_t)roundf((voltage - (float)(dig0_value * 10))); // ones place
     }
 
     // current conversion 
@@ -72,7 +72,7 @@ void max7219_voltage_current_write(float voltage, float current)
     else
     {
         dig2_value = (uint8_t)(current/10); // tens place 
-        dig3_value = (uint8_t)(current - (float)(dig2_value * 10)); // ones place
+        dig3_value = (uint8_t)roundf((current - (float)(dig2_value * 10))); // ones place
     }
 
     // write digits to each 7seg display 
