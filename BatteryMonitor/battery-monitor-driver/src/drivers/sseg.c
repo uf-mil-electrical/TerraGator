@@ -9,7 +9,6 @@ void max7219_write(uint8_t reg, uint8_t data)
     // | D15 - D12 | D11 - D8 |  D7  -  D0   |
     // |  X X X X  |  ADDRESS | MSB DATA LSB | 
 
-
     uint16_t reg_config = (reg << REG_ADDR_MAP_BP) | (data); 
     // assert CS
     gpio_put(CS_7SEG, 0); 
@@ -55,6 +54,11 @@ void max7219_voltage_current_write(float voltage, float current)
     {   
         dig0_value = (uint8_t)(voltage); // integer portion
         dig1_value = (uint8_t)roundf((voltage - (float)(dig0_value)) * 10); //fractional portion
+        if(dig1_value >= 10) // round up 
+        {
+            dig0_value += 1;
+            dig1_value = 0; 
+        }  
         dig0_value |= (1 << DP_BP); // add decimal point    
     }   
     else 
@@ -68,7 +72,12 @@ void max7219_voltage_current_write(float voltage, float current)
     if (current < 10)
     {
         dig2_value = (uint8_t)(current); // ones place 
-        dig3_value = (uint8_t)roundf((current - (float)(dig2_value)) * 10); //tenths place  
+        dig3_value = (uint8_t)roundf((current - (float)(dig2_value)) * 10); //tenths place 
+        if(dig3_value >= 10) //round up 
+        {
+            dig2_value += 1;
+            dig3_value = 0; 
+        }  
         dig2_value |= (1 << DP_BP); // add decimal point 
     }
     else

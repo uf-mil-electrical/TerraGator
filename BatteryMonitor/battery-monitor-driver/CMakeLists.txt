@@ -39,7 +39,7 @@ add_executable(battery-monitor-driver
     src/main.c 
     src/board_config.c
     src/drivers/current_sens.c
-    src/drivers/led.c
+    src/drivers/status.c
     src/drivers/sseg.c
     src/drivers/voltage_sens.c
     )
@@ -69,5 +69,10 @@ target_link_libraries(battery-monitor-driver
         hardware_gpio
         )
 
+# uncomment below for serial communication over USB
+#pico_enable_stdio_usb(battery-monitor-driver 1)
+#pico_enable_stdio_uart(battery-monitor-driver 0)
+pico_enable_stdio_uart(battery-monitor-driver 1)
 pico_add_extra_outputs(battery-monitor-driver)
+
 

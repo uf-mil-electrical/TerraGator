@@ -1,5 +1,5 @@
-#ifndef LED_H_
-#define LED_H_
+#ifndef STATUS_H_
+#define STATUS_H_
 
 #include "board_config.h"
 #include "hardware/gpio.h"
@@ -20,6 +20,7 @@
 void led_init(); 
 
 // changes the LED state based on voltage and current values provided
+// returns a status code using the bitmasks defined above 
 uint8_t change_led_indicators (float voltage, float current); 
 
 #endif
