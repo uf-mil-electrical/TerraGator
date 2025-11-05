@@ -37,7 +37,7 @@ int main()
         float filtered_voltage = running_average_update(&voltage_filter, raw_voltage);
         float filtered_current = running_average_update(&current_filter, raw_current); 
         
-        /* serial outputs for debugging left for future access
+        /* serial outputs for debugging. Commented for future debugging use
         printf("Voltage reading: %f\n", raw_voltage); 
         printf("Current reading: %f\n", raw_current);
         printf("Filtered voltage: %f\n", filtered_voltage); 

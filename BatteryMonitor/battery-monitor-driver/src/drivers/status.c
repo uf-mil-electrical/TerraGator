@@ -48,7 +48,7 @@ void led_init()
 
 uint8_t change_led_indicators (float voltage, float current)
 {
-    uint8_t status = BMS_STATUS_OK;
+    uint8_t status = 0x00;
     // change LED state based on voltage and current measurements 
     // FLASH voltage indicators and use SOLID current indicators (voltage has priority over current for LiPo protection)
     // check if we're outside acceptable range(s) 
@@ -68,6 +68,7 @@ uint8_t change_led_indicators (float voltage, float current)
         GYR_led_toggle_flag[0] = true;
         GYR_led_toggle_flag[1] = false;
         GYR_led_toggle_flag[2] = false; 
+        status |= BMS_STATUS_VOLTAGE_OK;  
     }
     else if (voltage < 22.8 && voltage >= 21.0)
     {
@@ -76,12 +77,19 @@ uint8_t change_led_indicators (float voltage, float current)
         GYR_led_toggle_flag[2] = false; 
         status |= BMS_STATUS_VOLTAGE_NEAR_AIR_LANDING;   
     }   
-    else if (voltage > 24.6 || voltage < 21.0)
+    else if (voltage < 21.0)
     {
         GYR_led_toggle_flag[0] = false;
         GYR_led_toggle_flag[1] = false;
         GYR_led_toggle_flag[2] = true;  
         status |= BMS_STATUS_VOLTAGE_NEAR_DEEP_DISCHARGE;  
+    }
+    else if (voltage > 24.6)
+    {
+        GYR_led_toggle_flag[0] = false;
+        GYR_led_toggle_flag[1] = false;
+        GYR_led_toggle_flag[2] = true;  
+        status |= BMS_STATUS_VOLTAGE_OVERCHARGED;
     }
 
     // } CURRENT RANGES
@@ -93,6 +101,7 @@ uint8_t change_led_indicators (float voltage, float current)
         GYR_current_flag[0] = true; 
         GYR_current_flag[1] = false; 
         GYR_current_flag[2] = false; 
+        status |= BMS_STATUS_CURRENT_OK; 
     }
     else if (current >= 10 && current < 15)
     {

@@ -48,6 +48,7 @@ pico_set_program_name(battery-monitor-driver "battery-monitor-driver")
 pico_set_program_version(battery-monitor-driver "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
+# toggle 1 and 0 for serial communication over USB
 pico_enable_stdio_uart(battery-monitor-driver 1)
 pico_enable_stdio_usb(battery-monitor-driver 0)
 
@@ -69,10 +70,6 @@ target_link_libraries(battery-monitor-driver
         hardware_gpio
         )
 
-# uncomment below for serial communication over USB
-#pico_enable_stdio_usb(battery-monitor-driver 1)
-#pico_enable_stdio_uart(battery-monitor-driver 0)
-pico_enable_stdio_uart(battery-monitor-driver 1)
 pico_add_extra_outputs(battery-monitor-driver)
 
 
