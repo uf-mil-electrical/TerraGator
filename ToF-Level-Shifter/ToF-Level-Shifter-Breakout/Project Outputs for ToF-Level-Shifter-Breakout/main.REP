@@ -120,7 +120,7 @@ Generating : Top Solder
 
 
 Used DCodes :
-    D10
+    D12
     D29
     D30
     D31
@@ -213,9 +213,9 @@ Generating : Mechanical 13
 
 
 Used DCodes :
-    D22
     D23
-    D27
+    D24
+    D25
     D39
     D40
     D41
@@ -229,9 +229,9 @@ Generating : Mechanical 15
 
 
 Used DCodes :
-    D22
-    D25
+    D23
     D26
+    D27
     D42
 *************************************************************
 
@@ -265,7 +265,7 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D27
+    D25
     D47
 *************************************************************
 
@@ -279,6 +279,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D27
+    D25
 *************************************************************
 
