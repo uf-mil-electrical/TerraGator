@@ -1,0 +1,106 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\russe\Repositories\MIL\TerraGator\PCBs\Pi Control Board V0\main.PcbDoc
+Date     : 11/19/25
+Time     : 13:09:56
+
+Processing Rule : Clearance Constraint (Gap=0mm) (not InAnyDifferentialPair),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (not InAnyDifferentialPair),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mm) (Max=100mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.263mm) (Max=0.35mm) (Preferred=0.35mm) (InNetClass('nRF Signal'))
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Delay Constraint (Min=0ps) (Max=10000ps) (All)
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Delay Tolerance=100ps) (InDifferentialPairClass('Ethernet_Pairs') or InDifferentialPairClass('USB_Pairs') or InDifferentialPairClass('CAN_Pairs'))
+Rule Violations :0
+
+Processing Rule : Room Peripheral Connections (Bounding Region = (33.438mm, 61.623mm, 172.702mm, 124.137mm) (InComponentClass('Peripheral Connections'))
+Rule Violations :0
+
+Processing Rule : Room Motor Drivers (Bounding Region = (50.498mm, 96.128mm, 85.066mm, 124.302mm) (InComponentClass('Motor Drivers'))
+Rule Violations :0
+
+Processing Rule : Room USB Hub (Bounding Region = (53.498mm, 25.748mm, 83.802mm, 73.652mm) (InComponentClass('USB Hub'))
+Rule Violations :0
+
+Processing Rule : Room Safety Devices (Bounding Region = (58.348mm, 77.998mm, 78.402mm, 103.277mm) (InComponentClass('Safety Devices'))
+Rule Violations :0
+
+Processing Rule : Room Power (Bounding Region = (25.748mm, 26.171mm, 54.202mm, 64.552mm) (InComponentClass('Power'))
+Rule Violations :0
+
+Processing Rule : Room NRF24L01P (Bounding Region = (18.248mm, 78.639mm, 57.447mm, 92.802mm) (InComponentClass('NRF24L01P'))
+Rule Violations :0
+
+Processing Rule : Room ESP32-S2 (Bounding Region = (18.248mm, 88.023mm, 55.902mm, 113.802mm) (InComponentClass('ESP32-S2'))
+Rule Violations :0
+
+Processing Rule : Room RP2350 (Bounding Region = (25.248mm, 50.674mm, 62.527mm, 77.277mm) (InComponentClass('RP2350'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad Radio1-X(92.795mm,54mm) on Multi-Layer Waived by Russell MacGregor at 11/09/25 20:10:08this pad isn't necessary for supporting the radio module
+Waived Violations :1
+
+
+Violations Detected : 0
+Waived Violations : 1
+Time Elapsed        : 00:00:10

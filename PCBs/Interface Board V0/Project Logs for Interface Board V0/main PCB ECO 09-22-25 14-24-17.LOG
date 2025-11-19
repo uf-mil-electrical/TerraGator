@@ -1,8 +1,0 @@
-Added Component: Designator=C7([Cap] SMD Polarized, 4mm)
-Add component (AddParameter): Name = "Capacitance"; Value = "47uF"; VariantName = "[No Variations]"
-Add component (AddParameter): Name = "Diameter"; Value = "4mm"; VariantName = "[No Variations]"
-Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
-Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
-Added Pin To Net: NetName=Battery VIN Pin=C7-1
-Added Pin To Net: NetName=GND Pin=C7-2
-Added Member To Class: ClassName=Power Member=Component C7 SMD Polarized

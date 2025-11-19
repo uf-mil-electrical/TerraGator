@@ -57,7 +57,7 @@ typedef enum vshct_conv_time
     INA226_VSHCT_2_116ms,
     INA226_VSHCT_4_156ms,
     INA226_VSHCT_8_244ms 
-} ina226_vbus_conv_time_t; 
+} ina226_vshct_conv_time_t; 
 
 typedef enum mode
 {
@@ -65,7 +65,7 @@ typedef enum mode
     INA226_VSHUNT_TRIG,
     INA226_VBUS_TRIG,
     INA226_VSHUNT_VBUS_TRIG,
-    INA226_POWERDOWN,
+    INA226_POWERDOWN_2,
     INA226_VSHUNT_CONT,
     INA226_VBUS_CONT,
     INA226_VSHUNT_VBUS_CONT 
@@ -99,7 +99,7 @@ typedef enum mode
 
 
 // [0x08] Manufacturer ID register
-#define INA226_MANUFACTURER_ID 0b0101010001001001
+#define INA226_MANUFACTURER_ID_VAL 0b0101010001001001
 
 // --------------------- FUNCTION PROTOTYPES ------------------- //
 
@@ -107,7 +107,7 @@ typedef enum mode
 void ina226_write_register(uint8_t reg, uint16_t value);
 
 // general i2c function to read from the 16-bit addresses of the INA226
-uint16_t ina226_read_register(uint8_t reg)
+uint16_t ina226_read_register(uint8_t reg);
 
 // initialize the voltage sensing IC over I2C
 // includes configuring configuration register, mask enable, and alert limit register

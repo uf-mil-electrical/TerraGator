@@ -1,4 +1,7 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
+#include "pico/binary_info.h"
+#include "hardware/gpio.h"
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 #include "hardware/uart.h"
@@ -16,7 +19,7 @@ void board_config()
     adc_select_input(ADC_CH);   // select the ADC channel to be used
 
     // ---------------- VOLTAGE SENSING [I2C] --------------- //
-    
+
     i2c_init(VS_I2C_PORT, I2C_BAUDRATE);
     gpio_set_function(VS_I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(VS_I2C_SCL, GPIO_FUNC_I2C);
@@ -29,6 +32,7 @@ void board_config()
     // ---------------- 7SEG DRIVER [SPI] ------------------- //
     
     spi_init(SPI_PORT, SPI_BAUDRATE);
+    spi_set_format(SPI_PORT, 16, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST); //according to LED driver protocol 
     gpio_set_function(CS_7SEG,   GPIO_FUNC_SIO);
     gpio_set_function(PIN_SCK,  GPIO_FUNC_SPI);
     gpio_set_function(PIN_MOSI, GPIO_FUNC_SPI);
@@ -42,4 +46,5 @@ void board_config()
     // Set the TX and RX pins by using the function select on the GPIO
     gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
     gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+
 }

@@ -1,3 +1,5 @@
+#include <stdint.h>
+#include "pico/stdlib.h"
 #include "board_config.h"
 #include "hardware/i2c.h"
 #include "voltage_sens.h"
@@ -27,7 +29,8 @@ uint16_t ina226_read_register(uint8_t reg)
     i2c_read_blocking(VS_I2C_PORT, VS_SLAVE_ADDR, data, 2, false);
 
     // MSB sent first 
-    return ((data[0] << 8) | data[1]); 
+    // data bits only from bit 14 - bit 0, so mask with 0x7FFF
+    return ((data[0] << 8) | data[1]) & 0x7FFF; 
 } 
 
 // initialize the voltage sensing IC over I2C
@@ -63,7 +66,7 @@ bool poll_alert_limit()
 {
     // get GPIO state 
     // active low, so if low, we have reached the alert 
-    if(get_gpio(VS_ALERT)) // returns state (high == true)
+    if(gpio_get(VS_ALERT)) // returns state (high == true)
     {
         return false; 
     }

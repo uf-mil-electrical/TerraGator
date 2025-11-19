@@ -20,4 +20,4 @@ battery_monitor/
 │   └── 
 └── 
 ```
-
+For more detailed information on driver, visit [this MILwiki link](https://milwiki.cbrxyz.com/wiki/Battery_Monitor_Board_V1_Driver)
