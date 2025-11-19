@@ -35,29 +35,41 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(battery-monitor-driver battery-monitor-driver.c )
+add_executable(battery-monitor-driver 
+    src/main.c 
+    src/board_config.c
+    src/drivers/current_sens.c
+    src/drivers/status.c
+    src/drivers/sseg.c
+    src/drivers/voltage_sens.c
+    )
 
 pico_set_program_name(battery-monitor-driver "battery-monitor-driver")
 pico_set_program_version(battery-monitor-driver "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
+# toggle 1 and 0 for serial communication over USB
 pico_enable_stdio_uart(battery-monitor-driver 1)
 pico_enable_stdio_usb(battery-monitor-driver 0)
 
 # Add the standard library to the build
 target_link_libraries(battery-monitor-driver
-        pico_stdlib)
+        pico_stdlib       
+        )
 
 # Add the standard include files to the build
 target_include_directories(battery-monitor-driver PRIVATE
-        ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}/src
 )
 
 # Add any user requested libraries
 target_link_libraries(battery-monitor-driver 
         hardware_spi
         hardware_i2c
+        hardware_adc
+        hardware_gpio
         )
 
 pico_add_extra_outputs(battery-monitor-driver)
+
 

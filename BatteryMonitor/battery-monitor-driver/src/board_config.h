@@ -1,11 +1,17 @@
 #ifndef BOARD_CONFIG_H
 #define BOARD_CONFIG_H
 
+#include <stdio.h>
 #include "pico/stdlib.h"
+#include "pico/binary_info.h"
+#include "hardware/gpio.h"
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 #include "hardware/uart.h"
 #include "hardware/adc.h"
+#include "board_config.h"
+
+extern const float CS_sens;
 
 // ------------------------------------------------------------------
 // Name: BOARD CONFIGURATION
@@ -15,7 +21,6 @@
 
 // ------------------------ UART ------------------------------------
 // UART for communication with RPi5
-// By default the stdout UART is `uart0`, so we will use the second one
 #define UART_ID uart0
 #define UART_BAUDRATE 115200
 #define UART_TX_PIN 16
@@ -47,8 +52,6 @@
 #define CS_VREF 0
 #define ADC_VREF 3.3f
 #define ADC_RESOLUTION 12
-// The TMCS1100A1 has a sensitivity of 50mV / A
-const float CS_sens = .05; // V/A
 
 // ------------------------ GPIO ------------------------------------
 // LEDs connected for operating region indication

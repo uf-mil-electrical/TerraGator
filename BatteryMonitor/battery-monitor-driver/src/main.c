@@ -1,39 +1,66 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 #include "hardware/uart.h"
 #include "hardware/adc.h"
 #include "board_config.h"
-
-// Questions for Russell
-// (1) you have the VREF on the current sensing IC configured s.t. 
-// the linear measurement range is +- 11.5A (bidirectional). How do we want to indicate 
-// negative currents on the 7SEGs? 
-// >  program assuming A1 chip configured for unidirectional measurement 1A - 96A
-// > 
-// (2) The issue mentioned acceptable and unacceptable ranges. What 
-// explicitly are these ranges? 
-// > V: 22.4-24.6 V (GREEN); YELLOW slightly outside; RED widely outside  
-// > I: determine on own 
+#include "drivers/current_sens.h"
+#include "drivers/voltage_sens.h"
+#include "drivers/sseg.h"
+#include "drivers/status.h"
 
 int main()
 {
+    // initialization procedures 
     board_config();  
+    sseg_init(); 
+    voltage_sens_init(); 
+    // current sens is just ADC, which is configured in board_config();
+    led_init();
+    // initialize running average filter
+    struct runningAverageFilter current_filter;
+    struct runningAverageFilter voltage_filter; 
+    running_average_init(&current_filter); 
+    running_average_init(&voltage_filter); 
 
-    // get ADC data 
-    
-    // get voltage data 
+    //printf("Beginning serial output..."); 
 
-    // check if we're outside acceptable range(s) 
+    // small delay before beginning to read to allow initializations time to settle 
+    sleep_ms(10);
+    while(1)
+    {
+        // get voltage and current data 
+        float raw_voltage = read_bus_voltage(); 
+        float raw_current = get_current_sens_reading(); 
+        float filtered_voltage = running_average_update(&voltage_filter, raw_voltage);
+        float filtered_current = running_average_update(&current_filter, raw_current); 
+        
+        /* serial outputs for debugging. Commented for future debugging use
+        printf("Voltage reading: %f\n", raw_voltage); 
+        printf("Current reading: %f\n", raw_current);
+        printf("Filtered voltage: %f\n", filtered_voltage); 
+        printf("Filtered current: %f\n", filtered_current);
+        printf("--RA current structure attributes--\n"); 
+        printf("val_count, %d\t", current_filter.val_count); 
+        printf("index, %d\t", current_filter.index);
+        printf("sum, %f\n", current_filter.sum); 
+        printf("--RA voltage structure attributes--\n"); 
+        printf("val_count, %d\t", voltage_filter.val_count); 
+        printf("index, %d\t", voltage_filter.index);
+        printf("sum, %f\n", voltage_filter.sum); 
+        */
+       
+        // output voltage and current values to LED driver over SPI every ~100 ms
+        sleep_ms(100); 
+        max7219_voltage_current_write(filtered_voltage, filtered_current); 
 
-    // change LED state based on voltage and current measurements 
-
-    // output voltage and current values to LED driver over SPI every ~100 ms
-
-    // communicate with RPi5 over UART regarding non-ideal ranges 
-
-    // repeat
-    
+        // update status LEDs onboard battery monitor
+        uint8_t status = change_led_indicators(filtered_voltage, filtered_current);
+        
+        // send LED status to RPi5 
+        uart_putc_raw(uart0, status);
+    }
 }
 
