@@ -1,3 +1,0 @@
-Change Component Footprint: Designator=H1 Old Footprint=[Header] 1x14 Right Angle Male New Footprint=[Header] 1x14 Right Angle Female
-Change Component Comment : Designator=H1 Old Comment=1x14 Male Right Angle New Comment=1x14 Female Right Angle
-Change Component Designator: OldDesignator=H? NewDesignator=H19
