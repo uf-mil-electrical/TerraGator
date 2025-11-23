@@ -98,21 +98,14 @@ int main()
     
 
     //**************</Motor Init>**************
-    sleep_ms(1000);
+    sleep_ms(5000);
+    printf("\n\n\n");
+    printf("> Initializing rover...\n");
     initMotors();
-
-    setMotorSpeed(1, 20);
-    setMotorSpeed(2, 40);
-    setMotorSpeed(3, 60);
-    setMotorSpeed(4, 80);
-    setMotorSpeed(5, 100);
-    setMotorSpeed(6, 0);
-
-    setMotorMode('L', 'F');
-    //setMotorMode('R', 'R');
     //**************</Motor Init>**************
     
     // Run main program
     while (true) {
+        runMenu();
     }
 }

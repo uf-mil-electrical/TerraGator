@@ -96,8 +96,8 @@ void initMotors() {
     // Fifth, indicate that initMotors() has been run
         motors_initialized = true;
 
-    // Sixth, print motor PWM data
-        printMotorDetails();
+    // Sixth, print debug message
+        printf("Motors initialized\n");
 }
 
 
@@ -174,7 +174,7 @@ void setMotorMode(char motor_set, char mode){
             return;
         }
 
-        if ((mode != 'F') && (mode != 'R') && (mode != 'B')){
+        if ((mode != 'F') && (mode != 'R') && (mode != 'B') && (mode != 'N')){
             printf("setMotorMode(): invalid mode argument (%c)", mode);
             return;
         }
@@ -188,8 +188,12 @@ void setMotorMode(char motor_set, char mode){
         bool affect_left = false;
         bool affect_right = false;
 
-        if ((motor_set == 'L') || (motor_set == 'A')){affect_left = true;}
-        if ((motor_set == 'R') || (motor_set == 'A')){affect_right = true;}
+        if ((motor_set == 'L') || (motor_set == 'A')){
+            affect_left = true;
+        }
+        if ((motor_set == 'R') || (motor_set == 'A')){
+            affect_right = true;
+        }
     
     // Third, update affected logic pins
         switch(mode){
@@ -198,11 +202,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, true);
                     gpio_put(LEFT_MOTOR_CONTROL_2, false);
+                    printf("setMotorMode(): left motors set to forward\n");
                 }
 
                 if (affect_right){
                     gpio_put(RIGHT_MOTOR_CONTROL_1, true);
                     gpio_put(RIGHT_MOTOR_CONTROL_2, false);
+                    printf("setMotorMode(): right motors set to forward\n");
                 }
 
                 break;
@@ -212,11 +218,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, false);
                     gpio_put(LEFT_MOTOR_CONTROL_2, true);
+                    printf("setMotorMode(): left motors set to reverse\n");
                 }
 
                 if (affect_right){
                     gpio_put(RIGHT_MOTOR_CONTROL_1, false);
                     gpio_put(RIGHT_MOTOR_CONTROL_2, true);
+                    printf("setMotorMode(): right motors set to reverse\n");
                 }
 
                 break;
@@ -226,11 +234,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, false);
                     gpio_put(LEFT_MOTOR_CONTROL_2, false);
+                    printf("setMotorMode(): left motors set to brake\n");
                 }
 
                 if (affect_right){
                     gpio_put(RIGHT_MOTOR_CONTROL_1, false);
                     gpio_put(RIGHT_MOTOR_CONTROL_2, false);
+                    printf("setMotorMode(): right motors set to brake\n");
                 }
 
                 break;
@@ -240,11 +250,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, true);
                     gpio_put(LEFT_MOTOR_CONTROL_2, true);
+                    printf("setMotorMode(): left motors set to neutral\n");
                 }
 
                 if (affect_right){
                     gpio_put(RIGHT_MOTOR_CONTROL_1, true);
                     gpio_put(RIGHT_MOTOR_CONTROL_2, true);
+                    printf("setMotorMode(): right motors set to neutral\n");
                 }
 
                 break;
@@ -291,6 +303,7 @@ void setMotorSpeed(uint8_t ID, uint8_t speed) {
 
         if (motor_found == false){
             printf("setMotorSpeed(): invalid motor ID\n");
+            return;
         }
 
     // Second, get PWM slice, channel, and wrap value (period)
@@ -305,7 +318,7 @@ void setMotorSpeed(uint8_t ID, uint8_t speed) {
         pwm_set_chan_level(slice, channel, level);
 
     // Fifth, print update
-        printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u\n", ID, speed);
+        printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u%%\n", ID, speed);
 
     // Lastly, return to main program
         return;

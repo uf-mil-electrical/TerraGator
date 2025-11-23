@@ -10,6 +10,13 @@
 ******************</Summary>*****************/
 
 
+/******************<Dependencies>*****************/
+#include <stdio.h>
+#include <stdint.h>
+#include "pico/stdlib.h"
+/******************</Dependencies>*****************/
+
+
 /******************<Values for Code>*****************/
 #define NUM_MOTORS              6       // Number of (controllable) motors
 #define PWM_WRAP                6000    // PWM wrap value (PWM period = clock_sys / wrap value)
@@ -34,6 +41,11 @@
 /******************</GPIO Definitions>*****************/
 
 
+
+/******************<Functions>*****************/
+uint8_t read_digit_serial(void);
+void runMenu(void);
+/******************</Functions>*****************/
 
 
 #endif // SYSTEM_GENERAL_H
