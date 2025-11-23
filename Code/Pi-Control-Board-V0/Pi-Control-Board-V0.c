@@ -16,13 +16,20 @@ $$$$$$$$\                                      $$$$$$\             $$\
                        
 
 
-//*****************<Includes>*****************
+//*****************<Includes>***************** */
 #include <stdio.h>
 #include "pico/stdlib.h"
+
+#include "pico/time.h"
+#include "hardware/irq.h"
+
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 #include "hardware/uart.h"
-#include "C:\Users\russe\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_pwm\include\hardware\pwm.h"
+#include "hardware/pwm.h"
+
+#include "system_general.h"
+#include "motor_speed_control.h"
 //*****************</Includes>*****************
 
 
@@ -58,6 +65,8 @@ int main()
     //**************<Peripheral Init>**************
     stdio_init_all();
 
+    printf("YE\n");
+
     // <SPI Init>
     spi_init(SPI_PORT, 1000*1000);                  // initialize SPI at 1MHz
     gpio_set_function(PIN_MISO, GPIO_FUNC_SPI);
@@ -85,29 +94,25 @@ int main()
     uart_puts(UART_ID, " Hello, UART!\n");          // Print UART debug message
     // </UART Init>
 
-
-    // <PWM Init>
-    gpio_set_function(MOTOR1_PWM, GPIO_FUNC_PWM);                   // Init MOTOR1_PWM pin as PWM
-
-    uint motor1_pwm_slice = 0;
-    typedef pwm_chan;
-    pwm_chan motor1_pwm_channel;
-    pwm_set_gpio_level(motor1_pwm_slice, motor1_pwm_channel);       // Get PWM slice # and channel for MOTOR1_PWM
-
-    pwm_set_wrap(motor1_pwm_slice, 3);                              // set period of 4 cycles (0 to 3 inclusive)
-    pwm_set_chan_level(motor1_pwm_slice, motor1_pwm_channel, 1);    // set channel A output high for one cycle before dropping
-    pwm_set_enabled(motor1_pwm_slice, true);                        // set PWM running
-    // </PWM Init>
     //**************</Peripheral Init>**************
     
+
+    //**************</Motor Init>**************
+    sleep_ms(1000);
+    initMotors();
+
+    setMotorSpeed(1, 20);
+    setMotorSpeed(2, 40);
+    setMotorSpeed(3, 60);
+    setMotorSpeed(4, 80);
+    setMotorSpeed(5, 100);
+    setMotorSpeed(6, 0);
+
+    setMotorMode('L', 'F');
+    //setMotorMode('R', 'R');
+    //**************</Motor Init>**************
     
     // Run main program
     while (true) {
-        main_program();
     }
-}
-
-
-void main_program(){
-    //
 }
