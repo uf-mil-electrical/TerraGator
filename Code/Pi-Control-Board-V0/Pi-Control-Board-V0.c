@@ -24,12 +24,15 @@ $$$$$$$$\                                      $$$$$$\             $$\
 #include "hardware/irq.h"
 
 #include "hardware/spi.h"
-#include "hardware/i2c.h"
 #include "hardware/uart.h"
 #include "hardware/pwm.h"
 
 #include "system_general.h"
-#include "motor_speed_control.h"
+
+#include "peripherals/ESP32.h"
+#include "peripherals/motor_speed_control.h"
+#include "peripherals/rover_cli.h"
+#include "peripherals/rover_i2c.h"
 //*****************</Includes>*****************
 
 
@@ -41,11 +44,6 @@ $$$$$$$$\                                      $$$$$$\             $$\
 #define PIN_MOSI 11             // GPIO11 = MOSI
 #define PIN_MISO 12             // GPIO12 = MISO
 #define PIN_CS   13             // GPIO13 = CS
-
-// I2C
-#define I2C_PORT i2c1           // I2C Port 1
-#define I2C_SDA 2               // GPIO2 = SDA
-#define I2C_SCL 3               // GPIO3 = SCL
 
 // UART
 #define UART_ID uart1           // UART Port 1
@@ -65,8 +63,6 @@ int main()
     //**************<Peripheral Init>**************
     stdio_init_all();
 
-    printf("YE\n");
-
     // <SPI Init>
     spi_init(SPI_PORT, 1000*1000);                  // initialize SPI at 1MHz
     gpio_set_function(PIN_MISO, GPIO_FUNC_SPI);
@@ -76,15 +72,6 @@ int main()
     gpio_set_dir(PIN_CS, GPIO_OUT);                 // initialize CS to be high (active low)
     gpio_put(PIN_CS, 1);
     // </SPI Init>
-
-
-    // <I2C Init>
-    i2c_init(I2C_PORT, 400*1000);                   // initialize I2C at 400 kHz
-    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-    gpio_pull_up(I2C_SDA);
-    gpio_pull_up(I2C_SCL);
-    // </I2C Init>
 
 
     // <UART Init>
@@ -101,7 +88,7 @@ int main()
     sleep_ms(5000);
     printf("\n\n\n");
     printf("> Initializing rover...\n");
-    initMotors();
+    motor_init();
     //**************</Motor Init>**************
     
     // Run main program

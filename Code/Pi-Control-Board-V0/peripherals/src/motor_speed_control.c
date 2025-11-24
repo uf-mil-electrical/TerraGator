@@ -1,4 +1,4 @@
-#include "motor_speed_control.h"
+#include "peripherals/motor_speed_control.h"
 
 /******************<Private variables>*****************/
 bool motors_initialized = false;           // keeps track of whether or not initMotors has been called
@@ -10,7 +10,7 @@ motor_str motors[NUM_MOTORS];
 
 /******************<Function definitions>*****************/
 
-/*******initMotors*******
+/*******motor_init*******
  * Description
         > initializes all motor PWM stuff
  * Arguments
@@ -18,7 +18,7 @@ motor_str motors[NUM_MOTORS];
  * Returns
         > N/A
 */
-void initMotors() {
+void motor_init() {
 
     // First, set GPIO pins for each motor
         motors[0].motor_ID = 1;                         // Motor #1

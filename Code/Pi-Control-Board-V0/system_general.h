@@ -5,6 +5,7 @@
  * Name: system_general.h
  * Purpose:
  *      > Defines values and functions for use throughout other parts of the rover code
+ *      > Define values for peripheral and GPIO assignment HERE
  * Written / updated by:
  *      > Russell
 ******************</Summary>*****************/
@@ -14,14 +15,25 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "pico/stdlib.h"
+
+#include "hardware/i2c.h"
+
+#include "system_general.h"
 /******************</Dependencies>*****************/
 
 
-/******************<Values for Code>*****************/
-#define NUM_MOTORS              6       // Number of (controllable) motors
-#define PWM_WRAP                6000    // PWM wrap value (PWM period = clock_sys / wrap value)
-/******************</Values for Code>*****************/
+/******************<Motor Setup>*****************/
+#define NUM_MOTORS              6           // Number of (controllable) motors
+#define PWM_WRAP                6000        // PWM wrap value (PWM period = clock_sys / wrap value)
+/******************</Motor Setup>*****************/
 
+
+/******************<I2C Setup>*****************/
+#define I2C_BAUDRATE            400*1000    // initialize I2C at 400 kHz
+#define I2C_PORT                i2c1        // I2C port to use for I2C communication (i2c0 or i2c1, depends on which GPIO pins are used)
+#define RP2350_I2C_ADDRESS      0x40        // I2C address for this board
+#define ESP32_I2C_ADDRESS       0x20        // I2C address for ESP32
+/******************</I2C Setup>*****************/
 
 
 /******************<GPIO Definitions>*****************/
@@ -38,6 +50,10 @@
 #define LEFT_MOTOR_CONTROL_2    7
 #define RIGHT_MOTOR_CONTROL_1   8
 #define RIGHT_MOTOR_CONTROL_2   9
+
+// I2C pins
+#define I2C_SDA                 10
+#define I2C_SCL                 11
 /******************</GPIO Definitions>*****************/
 
 
