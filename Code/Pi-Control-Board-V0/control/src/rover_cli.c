@@ -1,5 +1,5 @@
 /******************<Dependencies>*****************/
-#include "peripherals/rover_cli.h"
+#include "control/rover_cli.h"
 /******************<Dependencies>*****************/
 
 
@@ -61,6 +61,7 @@ void runMenu(void){
         printf("2: change motor speed\n");
         printf("3: print motor details\n");
         printf("4: read values from ESP32\n");
+        printf("5: toggle relay control pin\n");
         printf("Input: ");
 
         uint8_t input = read_digit_serial();
@@ -108,7 +109,7 @@ void runMenu(void){
                     uint8_t i2c_data[2];
 
                 // ii: read data from ESP32 over I2C
-                    i2c_read_remoteXY(i2c_data, 2);
+                    i2c_read_esp32(i2c_data, 2);
 
                 // iii: parse and print received data
                     int8_t velocity = (int8_t)i2c_data[0];
@@ -117,6 +118,23 @@ void runMenu(void){
                     printf("> Data from ESP32:\n");
                     printf("\tvelocity: %d\n", velocity);
                     printf("\tmode: %u\n", mode);
+
+                break;
+            }
+
+            case 5: {   // toggle value of relay control pin
+                // i: get relay state
+                    bool relay_state = getRelayState();
+                
+                // ii: toggle relay pin, print message
+                    if (relay_state == false){
+                        enableRelay();
+                        printf("> Relay is now ON");
+                    }
+                    else {
+                        killRelay();
+                        printf("> Relay is now OFF");
+                    }
 
                 break;
             }

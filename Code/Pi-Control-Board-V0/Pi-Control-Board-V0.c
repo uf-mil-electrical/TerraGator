@@ -31,12 +31,14 @@ $$$$$$$$\                                      $$$$$$\             $$\
 
 #include "peripherals/ESP32.h"
 #include "peripherals/motor_speed_control.h"
-#include "peripherals/rover_cli.h"
 #include "peripherals/rover_i2c.h"
+
+#include "control/RemoteXY_control.h"
+#include "control/rover_cli.h"
 //*****************</Includes>*****************
 
 
-
+/*
 //*****************<Pin Definitions>*****************
 // SPI
 #define SPI_PORT spi1           // SPI Port 1
@@ -50,11 +52,8 @@ $$$$$$$$\                                      $$$$$$\             $$\
 #define BAUD_RATE 115200        // UART Baud rate
 #define UART_TX_PIN 4           // GPIO4 = TX
 #define UART_RX_PIN 5           // GPIO5 = RX
-
-// PWM
-#define MOTOR1_PWM  0           // Pin 0 = PWM for Motor 1
-#define MOTOR2_PWM  1           // Pin 1 = PWM for Motor 2
 //*****************</Pin Definitions>*****************
+*/
 
 
 
@@ -62,6 +61,8 @@ int main()
 {
     //**************<Peripheral Init>**************
     stdio_init_all();
+
+    /*
 
     // <SPI Init>
     spi_init(SPI_PORT, 1000*1000);                  // initialize SPI at 1MHz
@@ -81,18 +82,26 @@ int main()
     uart_puts(UART_ID, " Hello, UART!\n");          // Print UART debug message
     // </UART Init>
 
+    */
+
     //**************</Peripheral Init>**************
     
+
 
     //**************</Motor Init>**************
     sleep_ms(5000);
     printf("\n\n\n");
     printf("> Initializing rover...\n");
     motor_init();
+    init_rover_i2c();
+    initRelay();
     //**************</Motor Init>**************
     
     // Run main program
     while (true) {
-        runMenu();
+        //runMenu();
+        runRover_RemoteXYControl();
+        sleep_ms(50);        
     }
+
 }

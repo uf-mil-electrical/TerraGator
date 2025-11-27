@@ -1,10 +1,11 @@
-#ifndef ROVER_CLI_H
-#define ROVER_CLI_H
+#ifndef REMOTEXY_CONTROL_H
+#define REMOTEXY_CONTROL_H
 
 /******************<Summary>*****************
- * Name: rover_cli.h
+ * Name: RemoteXY_control.h
  * Purpose:
- *      > Functions for rover CLI and debug control
+ *      > Defines functions for use when rover should be controlled
+ *          by RemoteXY app
  * Written / updated by:
  *      > Russell
 ******************</Summary>*****************/
@@ -15,19 +16,20 @@
 #include <stdint.h>
 #include "pico/stdlib.h"
 
-#include "hardware/i2c.h"
-
 #include "system_general.h"
-#include "peripherals/motor_speed_control.h"
 #include "peripherals/rover_i2c.h"
+#include "peripherals/ESP32.h"
+#include "peripherals/motor_speed_control.h"
+#include "peripherals/safety_devices.h"
 /******************</Dependencies>*****************/
+
+/******************<Defines>*****************/
+/******************</Defines>*****************/
 
 
 /******************<Functions>*****************/
-uint8_t read_digit_serial(void);
-void runMenu(void);
+void runRover_RemoteXYControl();
 /******************</Functions>*****************/
 
 
-
-#endif // ROVER_CLI_H
+#endif // REMOTEXY_CONTROL_H

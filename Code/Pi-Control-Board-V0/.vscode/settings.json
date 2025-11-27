@@ -38,9 +38,8 @@
     "raspberry-pi-pico.cmakePath": "${HOME}/.pico-sdk/cmake/v3.31.5/bin/cmake",
     "raspberry-pi-pico.ninjaPath": "${HOME}/.pico-sdk/ninja/v1.12.1/ninja",
     "files.associations": {
-        "system_general.h": "c",
-        "rover_cli.h": "c",
-        "esp32.h": "c",
-        "motor_speed_control.h": "c"
+        "rover_i2c.h": "c",
+        "safety_devices.h": "c",
+        "esp32.h": "c"
     }
 }

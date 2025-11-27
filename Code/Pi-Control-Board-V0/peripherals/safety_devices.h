@@ -1,10 +1,11 @@
-#ifndef ROVER_I2C_H
-#define ROVER_I2C_H
+#ifndef SAFETY_DEVICES_H
+#define SAFETY_DEVICES_H
 
 /******************<Summary>*****************
- * Name: rover_i2c.h
+ * Name: safety_devices.h
  * Purpose:
- *      > Functions for I2C communication
+ *      > Functions for safety-related devices for the rover
+ *      > Primarily, relay and buzzer control
  * Written / updated by:
  *      > Russell
 ******************</Summary>*****************/
@@ -15,23 +16,23 @@
 #include <stdint.h>
 #include "pico/stdlib.h"
 
-#include "hardware/i2c.h"
-
 #include "system_general.h"
+
+#include "hardware/gpio.h"
 /******************</Dependencies>*****************/
 
 
 /******************<Defines>*****************/
-#define I2C_TIMEOUT_DELAY       1000     // for I2C read: wait 1000us, then proceed if no data is captured
 /******************</Defines>*****************/
 
 
 /******************<Functions>*****************/
-void init_rover_i2c(void);
-void i2c_read_esp32(uint8_t* data, uint8_t num_bytes);
-void i2c_write_esp32(uint8_t* data, uint8_t num_bytes);
+void initRelay();
+bool getRelayState();
+void enableRelay();
+void killRelay();
 /******************</Functions>*****************/
 
 
 
-#endif // ROVER_I2C_H
+#endif // SAFETY_DEVICES_H

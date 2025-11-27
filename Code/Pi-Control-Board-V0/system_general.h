@@ -18,8 +18,14 @@
 
 #include "hardware/i2c.h"
 
-#include "system_general.h"
 /******************</Dependencies>*****************/
+
+/******************<General macros>*****************/
+#define SET_GPIO_OUTPUT         true        // for use with gpio_set_dir
+#define SET_GPIO_INPUT          false       // for use with gpio_set_dir
+#define GPIO_SET_LOW            0           // for use with gpio_put
+#define GPIO_SET_HIGH           1           // for use with gpio_put
+/******************</General macros>*****************/
 
 
 /******************<Motor Setup>*****************/
@@ -29,7 +35,7 @@
 
 
 /******************<I2C Setup>*****************/
-#define I2C_BAUDRATE            400*1000    // initialize I2C at 400 kHz
+#define I2C_BAUDRATE            100*1000    // initialize I2C at 1 kHz
 #define I2C_PORT                i2c1        // I2C port to use for I2C communication (i2c0 or i2c1, depends on which GPIO pins are used)
 #define RP2350_I2C_ADDRESS      0x40        // I2C address for this board
 #define ESP32_I2C_ADDRESS       0x20        // I2C address for ESP32
@@ -51,9 +57,12 @@
 #define RIGHT_MOTOR_CONTROL_1   8
 #define RIGHT_MOTOR_CONTROL_2   9
 
+// Relay control pin
+#define RELAY_CONTROL           22
+
 // I2C pins
-#define I2C_SDA                 10
-#define I2C_SCL                 11
+#define I2C_SDA                 18
+#define I2C_SCL                 19
 /******************</GPIO Definitions>*****************/
 
 

@@ -1,12 +1,18 @@
+/******************<Dependencies>*****************/
 #include "peripherals/motor_speed_control.h"
+/******************</Dependencies>*****************/
+
 
 /******************<Private variables>*****************/
 bool motors_initialized = false;           // keeps track of whether or not initMotors has been called
+char current_motor_mode = ' ';             // keeps track of motor mode (only updated when mode for both sides is updated)
 /******************</Private variables>*****************/
 
 
-// Global array of motor structs
-motor_str motors[NUM_MOTORS];
+/******************<Public variables>*****************/
+motor_str motors[NUM_MOTORS];               // Global array of motor structs
+/******************</Public variables>*****************/
+
 
 /******************<Function definitions>*****************/
 
@@ -211,6 +217,8 @@ void setMotorMode(char motor_set, char mode){
                     printf("setMotorMode(): right motors set to forward\n");
                 }
 
+                if (motor_set == 'A'){current_motor_mode = 'F';}
+
                 break;
             }
             case 'R': { // IN1 = 0, IN2 = 1 
@@ -226,6 +234,8 @@ void setMotorMode(char motor_set, char mode){
                     gpio_put(RIGHT_MOTOR_CONTROL_2, true);
                     printf("setMotorMode(): right motors set to reverse\n");
                 }
+
+                if (motor_set == 'A'){current_motor_mode = 'R';}
 
                 break;
             }
@@ -243,6 +253,8 @@ void setMotorMode(char motor_set, char mode){
                     printf("setMotorMode(): right motors set to brake\n");
                 }
 
+                if (motor_set == 'A'){current_motor_mode = 'B';}
+
                 break;
             }
             case 'N': { // IN1 = 1, IN2 = 1
@@ -259,6 +271,8 @@ void setMotorMode(char motor_set, char mode){
                     printf("setMotorMode(): right motors set to neutral\n");
                 }
 
+                if (motor_set == 'A'){current_motor_mode = 'N';}
+
                 break;
             }
         }
@@ -267,6 +281,33 @@ void setMotorMode(char motor_set, char mode){
         return;
 }
 
+/*******getMotorMode*******
+ * Description
+        > returns the current rover mode
+        > note: is only updated when all mode for both sides is modified in setMotorMode
+ * Arguments
+        > N/A
+ * Returns
+        > char: motor mode ('F', 'R', 'B', 'N')
+*/
+char getMotorMode(){
+    return current_motor_mode;
+}
+
+
+/*******setMotorSpeed_all*******
+ * Description
+        > changes speed of all motors
+ * Arguments
+        > speed: value from 0-100, where 0 means off and 100 means max speed
+ * Returns
+        > N/A
+*/
+void setMotorSpeed_all(uint8_t speed){
+    for (uint8_t i = 1; i <= NUM_MOTORS; i++){
+        setMotorSpeed(i, speed);
+    }
+}
 
 
 /*******setMotorSpeed*******
@@ -276,7 +317,7 @@ void setMotorMode(char motor_set, char mode){
         > ID: motor ID of target motor
         > speed: value from 0-100, where 0 means off and 100 means max speed
  * Returns
-        > error code if an input is invalid
+        > N/A
 */
 void setMotorSpeed(uint8_t ID, uint8_t speed) {
 

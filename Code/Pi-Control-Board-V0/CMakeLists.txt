@@ -41,8 +41,10 @@ target_sources(Pi-Control-Board-V0 PRIVATE
     system_general.c
     peripherals/src/ESP32.c
     peripherals/src/motor_speed_control.c
-    peripherals/src/rover_cli.c
     peripherals/src/rover_i2c.c
+    peripherals/src/safety_devices.c
+    control/src/RemoteXY_control.c
+    control/src/rover_cli.c
 )
 
 pico_set_program_name(Pi-Control-Board-V0 "Pi-Control-Board-V0")

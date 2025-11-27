@@ -1,10 +1,10 @@
-#ifndef ROVER_I2C_H
-#define ROVER_I2C_H
+#ifndef ROVER_CLI_H
+#define ROVER_CLI_H
 
 /******************<Summary>*****************
- * Name: rover_i2c.h
+ * Name: rover_cli.h
  * Purpose:
- *      > Functions for I2C communication
+ *      > Functions for rover CLI and debug control
  * Written / updated by:
  *      > Russell
 ******************</Summary>*****************/
@@ -18,20 +18,17 @@
 #include "hardware/i2c.h"
 
 #include "system_general.h"
+#include "peripherals/motor_speed_control.h"
+#include "peripherals/rover_i2c.h"
+#include "peripherals/safety_devices.h"
 /******************</Dependencies>*****************/
 
 
-/******************<Defines>*****************/
-#define I2C_TIMEOUT_DELAY       1000     // for I2C read: wait 1000us, then proceed if no data is captured
-/******************</Defines>*****************/
-
-
 /******************<Functions>*****************/
-void init_rover_i2c(void);
-void i2c_read_esp32(uint8_t* data, uint8_t num_bytes);
-void i2c_write_esp32(uint8_t* data, uint8_t num_bytes);
+uint8_t read_digit_serial(void);
+void runMenu(void);
 /******************</Functions>*****************/
 
 
 
-#endif // ROVER_I2C_H
+#endif // ROVER_CLI_H
