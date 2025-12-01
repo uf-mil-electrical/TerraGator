@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "Rover Power Board V0-altium-import")(type "KiCad")(uri "${KIPRJMOD}/Rover Power Board V0-altium-import.kicad_sym")(options "")(descr ""))
+)

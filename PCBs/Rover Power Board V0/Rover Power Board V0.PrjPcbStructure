@@ -1,2 +1,4 @@
-Record=TopLevelDocument|FileName=Misc.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Misc.SchDoc|FileName=Power.SchDoc|SheetNumber=2
+Record=TopLevelDocument|FileName=Overview.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Overview.SchDoc|FileName=Power Connections.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Overview.SchDoc|FileName=Servo Level Shifter.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Overview.SchDoc|FileName=Voltage Regulators.SchDoc|SheetNumber=3

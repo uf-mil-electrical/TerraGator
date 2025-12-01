@@ -77,7 +77,7 @@ AnnotateOrder=8
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -94,7 +94,7 @@ AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -111,7 +111,7 @@ AnnotateOrder=2
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -145,7 +145,7 @@ AnnotateOrder=4
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -162,7 +162,7 @@ AnnotateOrder=5
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -179,7 +179,7 @@ AnnotateOrder=7
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -196,7 +196,7 @@ AnnotateOrder=9
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -253,110 +253,114 @@ DocumentPath=main 11-09-25 20-19-18.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Pi Control Board V0\main.DRR
+DocumentPath=main 11-28-25 15-09-37.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Pi Control Board V0\main.EXTREP
+DocumentPath=Project Outputs for Pi Control Board V0\main.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Pi Control Board V0\main.LDP
+DocumentPath=Project Outputs for Pi Control Board V0\main.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for Pi Control Board V0\main.REP
+DocumentPath=Project Outputs for Pi Control Board V0\main.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Pi Control Board V0\main.TXT
+DocumentPath=Project Outputs for Pi Control Board V0\main.REP
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_1.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_2.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_Bot.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_2.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_Top.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Drawing_1.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Copper_Signal_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Drillmap_1.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Drawing_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Keep-out.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Drillmap_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Legend_Bot.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Keep-out.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Legend_Top.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Legend_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Mechanical_1.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Legend_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Mechanical_13.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Mechanical_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Mechanical_15.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Mechanical_13.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for Pi Control Board V0\main_NPTH_Drill.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Mechanical_15.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Pads_Bot.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_NPTH_Drill.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Pads_Top.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Pads_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Paste_Bot.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Pads_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Paste_Top.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Paste_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Poly_Pour_Planning.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Paste_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Profile.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Poly_Pour_Planning.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for Pi Control Board V0\main_PTH_Drill.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_Profile.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for Pi Control Board V0\main_Soldermask_Bot.gbr
+DocumentPath=Project Outputs for Pi Control Board V0\main_PTH_Drill.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument31]
+DocumentPath=Project Outputs for Pi Control Board V0\main_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument32]
 DocumentPath=Project Outputs for Pi Control Board V0\main_Soldermask_Top.gbr
 DItemRevisionGUID=
 
