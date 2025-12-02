@@ -134,6 +134,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QLHIXTSS
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Rover Power Board V0\Design Rule Check - main.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=main 12-02-25 14-35-52.WAS
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
