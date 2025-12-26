@@ -1,4 +1,0 @@
-Added Component: Designator=S1(Thru-Hole Pushbutton)
-Added Pin To Net: NetName=Reset Pin=S1-1
-Added Pin To Net: NetName=U3 GND Pin=S1-3
-Added Member To Class: ClassName=Primary MCU Member=Component S1 Thru-Hole Pushbutton
