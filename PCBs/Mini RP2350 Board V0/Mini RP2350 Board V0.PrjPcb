@@ -22,7 +22,7 @@ DefaultPcbProtel=1
 DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
-PowerPortNamesTakePriority=0
+PowerPortNamesTakePriority=1
 AutoSheetNumbering=1
 AutoCrossReferences=1
 NewIndexingOfSheetSymbols=1
@@ -73,7 +73,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -90,7 +90,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=2
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -99,6 +99,52 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UQMWFMBN
+
+[Document4]
+DocumentPath=Main.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BGDYEPCY
+
+[Document5]
+DocumentPath=Mini RP2350 Board V0.SCHLIB
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LCEREYKS
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Mini RP2350 Board V0\Design Rule Check - Main.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Main 12-26-25 14-27-30.WAS
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Main 12-26-25 14-27-39.WAS
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources

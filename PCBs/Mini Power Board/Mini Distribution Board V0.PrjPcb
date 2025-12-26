@@ -100,6 +100,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LBMBVTVF
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Mini Distribution Board V0\Design Rule Check - Main.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Main 12-22-25 14-45-16.WAS
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
