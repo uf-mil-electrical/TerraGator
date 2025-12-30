@@ -1,5 +1,0 @@
-Change Footprint: Footprint Not Found Small Blue LED
-Change Component Description : Designator=D2 Old Description=Part #: CD1206-S01575
-JLC Part #: C75465 New Description=Part #: CD1206-S01575
-Change component parameters: Designator = "D5" ("D5"); Footprint = "Small Yellow LED"; UniqueID = "\RTXKDSJN" ("\RTXKDSJN")
-Change component parameters (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
