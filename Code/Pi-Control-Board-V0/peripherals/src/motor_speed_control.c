@@ -212,8 +212,8 @@ void setMotorMode(char motor_set, char mode){
                 }
 
                 if (affect_right){
-                    gpio_put(RIGHT_MOTOR_CONTROL_1, true);
-                    gpio_put(RIGHT_MOTOR_CONTROL_2, false);
+                    gpio_put(RIGHT_MOTOR_CONTROL_1, false);
+                    gpio_put(RIGHT_MOTOR_CONTROL_2, true);
                     printf("setMotorMode(): right motors set to forward\n");
                 }
 
@@ -230,8 +230,8 @@ void setMotorMode(char motor_set, char mode){
                 }
 
                 if (affect_right){
-                    gpio_put(RIGHT_MOTOR_CONTROL_1, false);
-                    gpio_put(RIGHT_MOTOR_CONTROL_2, true);
+                    gpio_put(RIGHT_MOTOR_CONTROL_1, true);
+                    gpio_put(RIGHT_MOTOR_CONTROL_2, false);
                     printf("setMotorMode(): right motors set to reverse\n");
                 }
 
@@ -359,7 +359,7 @@ void setMotorSpeed(uint8_t ID, uint8_t speed) {
         pwm_set_chan_level(slice, channel, level);
 
     // Fifth, print update
-        printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u%%\n", ID, speed);
+        //printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u%%\n", ID, speed);
 
     // Lastly, return to main program
         return;

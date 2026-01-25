@@ -96,6 +96,8 @@ int main()
     init_rover_i2c();
     initRelay();
     //**************</Motor Init>**************
+
+	sleep_ms(3000);
     
     // Run main program
     while (true) {
