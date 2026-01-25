@@ -47,6 +47,7 @@ void setMotorMode(char motor_set, char mode);
 char getMotorMode();
 void setMotorSpeed(uint8_t ID, uint8_t speed);
 void setMotorSpeed_all(uint8_t speed);
+void setMotorSpeed_side(char side, uint8_t speed);
 /******************</Functions>*****************/
 
 #endif // MOTOR_SPEED_CONTROL_H

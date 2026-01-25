@@ -36,7 +36,7 @@
 
 /******************<I2C Setup>*****************/
 #define I2C_BAUDRATE            100*1000    // initialize I2C at 1 kHz
-#define I2C_PORT                i2c1        // I2C port to use for I2C communication (i2c0 or i2c1, depends on which GPIO pins are used)
+#define I2C_PORT                i2c0        // I2C port to use for I2C communication (i2c0 or i2c1, depends on which GPIO pins are used)
 #define RP2350_I2C_ADDRESS      0x40        // I2C address for this board
 #define ESP32_I2C_ADDRESS       0x20        // I2C address for ESP32
 /******************</I2C Setup>*****************/
@@ -61,8 +61,8 @@
 #define RELAY_CONTROL           22
 
 // I2C pins
-#define I2C_SDA                 18
-#define I2C_SCL                 19
+#define I2C_SDA                 16
+#define I2C_SCL                 17
 /******************</GPIO Definitions>*****************/
 
 
