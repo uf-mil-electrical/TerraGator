@@ -25,11 +25,6 @@ uint8_t debug_count = 0;
 */
 void runRover_RemoteXYControl(){
     char mode = ' ';
-	uint8_t left_steering_multiplier = 0;
-	uint8_t right_steering_multiplier = 0;
-
-	uint8_t left_motor_velocity = 0;
-	uint8_t right_motor_velocity = 0;
 
     // First, read values from ESP32
         // i: define structure to hold received values
@@ -41,8 +36,8 @@ void runRover_RemoteXYControl(){
         // iii: parse and print received data
 			int8_t steering    =   (int8_t)i2c_data[0];
             int8_t velocity    =   (int8_t)i2c_data[1];
-            uint8_t relay_state =   i2c_data[1];
-            uint8_t brake_state =   i2c_data[2];
+            uint8_t relay_state =   i2c_data[2];
+            uint8_t brake_state =   i2c_data[3];
 
             //printf("I2C Data received: steering = %d, velocity = %d, relay_state = %u, brake_state = %u\n", steering, velocity, relay_state, brake_state);
 
@@ -105,30 +100,42 @@ void runRover_RemoteXYControl(){
     
 
     // Fifth, update motor speed, mode, based on velocity and steering
-        // i: determine rover motor mode based on velocity
-            if (velocity > 0){      // if velocity > 0, go forwards
-                mode = 'F';
-            }
-            else if (velocity < 0){ // if velocity < 0, go backwards
-                mode = 'R';
-            }
-            else {                  // if velocity == 0 (or something else), neutral
-                mode = 'N';
-            }
+        // i: determine motor mode based on steering
+			printf("steering value = %d\n", steering);
+			if (steering > 20){ // turn right
+				printf("turning right\n");
+				if (velocity > 0){ // going forwards
+					setMotorMode('L', 'F');	// left motors forward
+					setMotorMode('R', 'R');	// right motors backward
+				}
 
-		// ii: determine direction to move
-			if (steering > 0){ // turn right
-				left_steering_multiplier = steering;
-				right_steering_multiplier = 100-steering;
+				else if (velocity < 0){ // going backwards
+					setMotorMode('L', 'R');	// left motors backward
+					setMotorMode('R', 'F');	// right motors forward
+				}
 			}
-			else if (steering < 0){ // turn left
-				steering = -1 * steering;
-				left_steering_multiplier = 100 - steering;
-				right_steering_multiplier = steering;			
+
+			else if (steering < -20){ // turn left
+				printf("turning left\n");
+				if (velocity > 0){ // going forwards
+					setMotorMode('L', 'R');	// left motors backward
+					setMotorMode('R', 'F');	// right motors forward
+				}
+
+				else if (velocity < 0){ // going backwards
+					setMotorMode('L', 'F');	// left motors forward
+					setMotorMode('R', 'R');	// right motors backward
+				}
 			}
-			else {	// don't turn
-				left_steering_multiplier = 100;
-				right_steering_multiplier = 100;
+
+			else { // not turning
+				printf("not turning\n");
+				if (velocity >= 0){
+					setMotorMode('A', 'F');	// all motors forward
+				}
+				else {
+					setMotorMode('A', 'R');	// all motors backward
+				}
 			}
 
 		// iii: get velocity, normalize if needed
@@ -140,21 +147,13 @@ void runRover_RemoteXYControl(){
                 velocity = 100;
             }
 
-		// iv: update mode for all motors
-            if (mode != getMotorMode()){
-                setMotorMode('A', mode);
-            }
+		// iv: set motor speeds
+			setMotorSpeed_all(velocity);
 
-		// v: set motor speeds
-			left_motor_velocity = (velocity * left_steering_multiplier);
-			right_motor_velocity = (velocity * right_steering_multiplier);
-
-			//setMotorSpeed_side('L', left_motor_velocity);
-			//setMotorSpeed_side('R', right_motor_velocity);
 
 			debug_count++;
 			if (debug_count >= 5){
-				printf("overall velo: %u, L steer: %u, R steer: %u, L velo: %u, R velo: %u\n", velocity, left_steering_multiplier, right_steering_multiplier, left_motor_velocity, right_motor_velocity);
+				printf("overall velo: %u\n", velocity);
 				debug_count = 0;
 			}
 

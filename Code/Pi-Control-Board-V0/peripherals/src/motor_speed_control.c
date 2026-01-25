@@ -208,13 +208,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, true);
                     gpio_put(LEFT_MOTOR_CONTROL_2, false);
-                    printf("setMotorMode(): left motors set to forward\n");
+                    //printf("setMotorMode(): left motors set to forward\n");
                 }
 
                 if (affect_right){
                     gpio_put(RIGHT_MOTOR_CONTROL_1, false);
                     gpio_put(RIGHT_MOTOR_CONTROL_2, true);
-                    printf("setMotorMode(): right motors set to forward\n");
+                    //printf("setMotorMode(): right motors set to forward\n");
                 }
 
                 if (motor_set == 'A'){current_motor_mode = 'F';}
@@ -226,13 +226,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, false);
                     gpio_put(LEFT_MOTOR_CONTROL_2, true);
-                    printf("setMotorMode(): left motors set to reverse\n");
+                    //printf("setMotorMode(): left motors set to reverse\n");
                 }
 
                 if (affect_right){
                     gpio_put(RIGHT_MOTOR_CONTROL_1, true);
                     gpio_put(RIGHT_MOTOR_CONTROL_2, false);
-                    printf("setMotorMode(): right motors set to reverse\n");
+                    //printf("setMotorMode(): right motors set to reverse\n");
                 }
 
                 if (motor_set == 'A'){current_motor_mode = 'R';}
