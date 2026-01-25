@@ -5,6 +5,13 @@
 /******************</Dependencies>*****************/
 
 
+
+/******************<Temp debug>*****************/
+uint8_t debug_count = 0;
+/******************</Temp debug>*****************/
+
+
+
 /******************<Public Functions>*****************/
 
 /*******runRover_RemoteXYControl()*******
@@ -18,36 +25,47 @@
 */
 void runRover_RemoteXYControl(){
     char mode = ' ';
+	uint8_t left_steering_multiplier = 0;
+	uint8_t right_steering_multiplier = 0;
+
+	uint8_t left_motor_velocity = 0;
+	uint8_t right_motor_velocity = 0;
 
     // First, read values from ESP32
         // i: define structure to hold received values
-            uint8_t i2c_data[3];
+            uint8_t i2c_data[4];
         
         // ii: read data from ESP32 over I2C
-            i2c_read_esp32(i2c_data, 3);
+            i2c_read_esp32(i2c_data, 4);
 
         // iii: parse and print received data
-            int8_t velocity     =    (int8_t)i2c_data[0];
-            uint8_t relay_state =    i2c_data[1];
-            uint8_t brake_state =    i2c_data[2];
+			int8_t steering    =   (int8_t)i2c_data[0];
+            int8_t velocity    =   (int8_t)i2c_data[1];
+            uint8_t relay_state =   i2c_data[1];
+            uint8_t brake_state =   i2c_data[2];
 
-            printf("I2C Data received: velocity = %d, relay_state = %u, brake_state = %u\n", velocity, relay_state, brake_state);
+            //printf("I2C Data received: steering = %d, velocity = %d, relay_state = %u, brake_state = %u\n", steering, velocity, relay_state, brake_state);
 
     // Second, validate received values
-        // i: check if velocity is in valid range (-100 <= velocity <= 100)
+		// i: check if steering is in valid range (-100 <= steering <= 100)
+			if ((steering < -100) || (steering > 100)) {
+				printf("INVALID STEERING\n");
+				return;
+			}
+
+        // ii: check if velocity is in valid range (-100 <= velocity <= 100)
             if ((velocity < -100) || (velocity > 100)) {
                 printf("INVALID VELOCITY\n");
                 return;
             }
         
-        // ii: check if relay_state is in valid range (0 <= relay_state <= 1)
+        // iii: check if relay_state is in valid range (0 <= relay_state <= 1)
             if (relay_state > 1) {
                 printf("INVALID RELAY STATE: %u\n", relay_state);
                 return;
             }
 
-        // iii: check if brake_state is in valid range (0 <= brake_state <= 1)
-            // ii: check if relay_state is in valid range (0 <= relay_state <= 3)
+        // iv: check if brake_state is in valid range (0 <= brake_state <= 1)
             if (brake_state > 1) {
                 printf("INVALID BRAKE STATE: %u\n", brake_state);
                 return;
@@ -86,10 +104,8 @@ void runRover_RemoteXYControl(){
         }
     
 
-    // Fifth, if brake not engaged, update motor speed and mode accordingly
+    // Fifth, update motor speed, mode, based on velocity and steering
         // i: determine rover motor mode based on velocity
-            
-
             if (velocity > 0){      // if velocity > 0, go forwards
                 mode = 'F';
             }
@@ -99,23 +115,48 @@ void runRover_RemoteXYControl(){
             else {                  // if velocity == 0 (or something else), neutral
                 mode = 'N';
             }
-        
-        // ii: check to see if the mode needs to be changed
-            if (mode != getMotorMode()){
-                setMotorMode('A', mode);
-            }
 
-        // iii: get magnitude of velocity, normalize if needed
-            if (velocity < 0){          // set velocity to be 0 <= velocity < 100
+		// ii: determine direction to move
+			if (steering > 0){ // turn right
+				left_steering_multiplier = steering;
+				right_steering_multiplier = 100-steering;
+			}
+			else if (steering < 0){ // turn left
+				steering = -1 * steering;
+				left_steering_multiplier = 100 - steering;
+				right_steering_multiplier = steering;			
+			}
+			else {	// don't turn
+				left_steering_multiplier = 100;
+				right_steering_multiplier = 100;
+			}
+
+		// iii: get velocity, normalize if needed
+			if (velocity < 0){          // set velocity to be 0 <= velocity < 100
                 velocity = velocity * -1;
             }
 
             if (velocity > 100){        // if overflow occurs, reset to 100
                 velocity = 100;
             }
-        // iv: update motor speed
-            
-            setMotorSpeed_all(velocity);
+
+		// iv: update mode for all motors
+            if (mode != getMotorMode()){
+                setMotorMode('A', mode);
+            }
+
+		// v: set motor speeds
+			left_motor_velocity = (velocity * left_steering_multiplier);
+			right_motor_velocity = (velocity * right_steering_multiplier);
+
+			//setMotorSpeed_side('L', left_motor_velocity);
+			//setMotorSpeed_side('R', right_motor_velocity);
+
+			debug_count++;
+			if (debug_count >= 5){
+				printf("overall velo: %u, L steer: %u, R steer: %u, L velo: %u, R velo: %u\n", velocity, left_steering_multiplier, right_steering_multiplier, left_motor_velocity, right_motor_velocity);
+				debug_count = 0;
+			}
 
     // Lastly, return to main program
         return;

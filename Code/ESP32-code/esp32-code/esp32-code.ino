@@ -53,6 +53,7 @@ struct {
 
 
 /**********<Global Variables>**********/
+int8_t steering = 0;
 int8_t velocity = 0;
 uint8_t relay_state = 0;
 uint8_t brake_state = 0;
@@ -63,12 +64,13 @@ uint8_t brake_state = 0;
 // I2C data REQUEST ISR
 void i2c_request() {
   
-  uint8_t data_to_send[3];
-  data_to_send[0] = (uint8_t)(velocity);
-  data_to_send[1] = relay_state;
-  data_to_send[2] = brake_state;
+  uint8_t data_to_send[4];
+  data_to_send[0] = (uint8_t)(steering);
+  data_to_send[1] = (uint8_t)(velocity);
+  data_to_send[2] = relay_state;
+  data_to_send[3] = brake_state;
 
-  Wire.write(data_to_send, 3);  // send three bytes of data
+  Wire.write(data_to_send, 4);  // send four bytes of data
 
   Serial.println("I2C: data REQUEST received");
 }
@@ -112,6 +114,7 @@ void loop() {
     RemoteXY_Handler();
 
   // Second, get updated values
+    steering = RemoteXY.joystick_01_x;
     velocity = RemoteXY.joystick_01_y;
     relay_state = RemoteXY.relay_sw;
     brake_state = RemoteXY.brake_sw;
