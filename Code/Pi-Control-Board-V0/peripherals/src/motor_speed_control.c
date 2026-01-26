@@ -208,13 +208,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, true);
                     gpio_put(LEFT_MOTOR_CONTROL_2, false);
-                    printf("setMotorMode(): left motors set to forward\n");
+                    //printf("setMotorMode(): left motors set to forward\n");
                 }
 
                 if (affect_right){
-                    gpio_put(RIGHT_MOTOR_CONTROL_1, true);
-                    gpio_put(RIGHT_MOTOR_CONTROL_2, false);
-                    printf("setMotorMode(): right motors set to forward\n");
+                    gpio_put(RIGHT_MOTOR_CONTROL_1, false);
+                    gpio_put(RIGHT_MOTOR_CONTROL_2, true);
+                    //printf("setMotorMode(): right motors set to forward\n");
                 }
 
                 if (motor_set == 'A'){current_motor_mode = 'F';}
@@ -226,13 +226,13 @@ void setMotorMode(char motor_set, char mode){
                 if (affect_left){
                     gpio_put(LEFT_MOTOR_CONTROL_1, false);
                     gpio_put(LEFT_MOTOR_CONTROL_2, true);
-                    printf("setMotorMode(): left motors set to reverse\n");
+                    //printf("setMotorMode(): left motors set to reverse\n");
                 }
 
                 if (affect_right){
-                    gpio_put(RIGHT_MOTOR_CONTROL_1, false);
-                    gpio_put(RIGHT_MOTOR_CONTROL_2, true);
-                    printf("setMotorMode(): right motors set to reverse\n");
+                    gpio_put(RIGHT_MOTOR_CONTROL_1, true);
+                    gpio_put(RIGHT_MOTOR_CONTROL_2, false);
+                    //printf("setMotorMode(): right motors set to reverse\n");
                 }
 
                 if (motor_set == 'A'){current_motor_mode = 'R';}
@@ -295,21 +295,6 @@ char getMotorMode(){
 }
 
 
-/*******setMotorSpeed_all*******
- * Description
-        > changes speed of all motors
- * Arguments
-        > speed: value from 0-100, where 0 means off and 100 means max speed
- * Returns
-        > N/A
-*/
-void setMotorSpeed_all(uint8_t speed){
-    for (uint8_t i = 1; i <= NUM_MOTORS; i++){
-        setMotorSpeed(i, speed);
-    }
-}
-
-
 /*******setMotorSpeed*******
  * Description
         > changes speed of one motor
@@ -359,10 +344,57 @@ void setMotorSpeed(uint8_t ID, uint8_t speed) {
         pwm_set_chan_level(slice, channel, level);
 
     // Fifth, print update
-        printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u%%\n", ID, speed);
+        //printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u%%\n", ID, speed);
 
     // Lastly, return to main program
         return;
+}
+
+
+/*******setMotorSpeed_all*******
+ * Description
+        > changes speed of all motors
+ * Arguments
+        > speed: value from 0-100, where 0 means off and 100 means max speed
+ * Returns
+        > N/A
+*/
+void setMotorSpeed_all(uint8_t speed){
+    for (uint8_t i = 1; i <= NUM_MOTORS; i++){
+        setMotorSpeed(i, speed);
+    }
+}
+
+
+/*******setMotorSpeed_side*******
+ * Description
+        > changes speed of all motors on one side
+ * Arguments
+		> side: 'L' = all left motors, 'R' = all right motors
+        > speed: value from 0-100, where 0 means off and 100 means max speed
+ * Returns
+        > N/A
+*/
+void setMotorSpeed_side(char side, uint8_t speed){
+
+	switch(side){
+		case 'L': {
+			setMotorSpeed(1, speed);
+			setMotorSpeed(2, speed);
+			setMotorSpeed(3, speed);
+			break;
+		}
+		case 'R': {
+			setMotorSpeed(4, speed);
+			setMotorSpeed(5, speed);
+			setMotorSpeed(6, speed);
+			break;
+		}
+		default: {
+			printf("setMotorSpeed_side(): invalid side\n");
+			break;
+		}
+	}
 }
 
 /******************</Function definitions>*****************/

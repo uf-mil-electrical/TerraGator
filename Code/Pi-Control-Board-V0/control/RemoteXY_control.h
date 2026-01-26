@@ -24,6 +24,7 @@
 /******************</Dependencies>*****************/
 
 /******************<Defines>*****************/
+#define TURN_STEERING_THRESHOLD		20		// X-val of joystick needed to trigger turning
 /******************</Defines>*****************/
 
 
