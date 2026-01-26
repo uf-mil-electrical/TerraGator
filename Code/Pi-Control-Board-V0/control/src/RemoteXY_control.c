@@ -39,8 +39,6 @@ void runRover_RemoteXYControl(){
             uint8_t relay_state =   i2c_data[2];
             uint8_t brake_state =   i2c_data[3];
 
-            //printf("I2C Data received: steering = %d, velocity = %d, relay_state = %u, brake_state = %u\n", steering, velocity, relay_state, brake_state);
-
     // Second, validate received values
 		// i: check if steering is in valid range (-100 <= steering <= 100)
 			if ((steering < -100) || (steering > 100)) {
@@ -86,7 +84,7 @@ void runRover_RemoteXYControl(){
                 setMotorSpeed_all(0);
 
             // iii: delay a bit (give motors time to spin down)
-                sleep_ms(500);
+                sleep_ms(1000);
             
             // iv: engage brakes if not already engaged
                 mode = 'B';
@@ -99,61 +97,59 @@ void runRover_RemoteXYControl(){
         }
     
 
-    // Fifth, update motor speed, mode, based on velocity and steering
-        // i: determine motor mode based on steering
-			printf("steering value = %d\n", steering);
-			if (steering > 20){ // turn right
-				printf("turning right\n");
-				if (velocity > 0){ // going forwards
-					setMotorMode('L', 'F');	// left motors forward
-					setMotorMode('R', 'R');	// right motors backward
+    // Fifth, update motor modes based on steering
+		if ( (steering < -1 * TURN_STEERING_THRESHOLD) || (steering > TURN_STEERING_THRESHOLD) ){ // is turning?
+			// if turning right
+				if (steering > TURN_STEERING_THRESHOLD) {
+					if (velocity > 0){
+						setMotorMode('L', 'F');	// left motors forward
+						setMotorMode('R', 'R');	// right motors backward
+					}
+					else {
+						setMotorMode('L', 'R');	// left motors backward
+						setMotorMode('R', 'F');	// right motors forward
+					}
 				}
 
-				else if (velocity < 0){ // going backwards
-					setMotorMode('L', 'R');	// left motors backward
-					setMotorMode('R', 'F');	// right motors forward
+			// if turning left
+				if (steering < -1 * TURN_STEERING_THRESHOLD) {
+					if (velocity > 0){
+						setMotorMode('L', 'R');	// left motors backward
+						setMotorMode('R', 'F');	// right motors forward
+					}
+					else {
+						setMotorMode('L', 'F');	// left motors forward
+						setMotorMode('R', 'R');	// right motors backward
+					}
 				}
+		}
+		else {
+			printf("not turning\n");
+			if (velocity >= 0){
+				setMotorMode('A', 'F');	// all motors forward
 			}
-
-			else if (steering < -20){ // turn left
-				printf("turning left\n");
-				if (velocity > 0){ // going forwards
-					setMotorMode('L', 'R');	// left motors backward
-					setMotorMode('R', 'F');	// right motors forward
-				}
-
-				else if (velocity < 0){ // going backwards
-					setMotorMode('L', 'F');	// left motors forward
-					setMotorMode('R', 'R');	// right motors backward
-				}
+			else {
+				setMotorMode('A', 'R');	// all motors backward
 			}
+		}
 
-			else { // not turning
-				printf("not turning\n");
-				if (velocity >= 0){
-					setMotorMode('A', 'F');	// all motors forward
-				}
-				else {
-					setMotorMode('A', 'R');	// all motors backward
-				}
-			}
-
-		// iii: get velocity, normalize if needed
+	// Sixth, set motor velocities
+		// i: get velocity, normalize if needed
 			if (velocity < 0){          // set velocity to be 0 <= velocity < 100
-                velocity = velocity * -1;
-            }
+				velocity = velocity * -1;
+			}
 
-            if (velocity > 100){        // if overflow occurs, reset to 100
-                velocity = 100;
-            }
+			if (velocity > 100){        // if overflow occurs, reset to 100
+				velocity = 100;
+			}
 
-		// iv: set motor speeds
+		// ii: set motor speeds
 			setMotorSpeed_all(velocity);
 
 
 			debug_count++;
 			if (debug_count >= 5){
-				printf("overall velo: %u\n", velocity);
+				printf("steering: %u\n", steering);
 				debug_count = 0;
 			}
 
