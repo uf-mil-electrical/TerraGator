@@ -1,4 +1,4 @@
-Record=TopLevelDocument|FileName=Motors and Steering.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Motors and Steering.SchDoc|FileName=Peripherals.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Motors and Steering.SchDoc|FileName=Power.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Motors and Steering.SchDoc|FileName=RP2350.SchDoc|SheetNumber=4
+Record=TopLevelDocument|FileName=Motors and Steering.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Motors and Steering.SchDoc|FileName=Peripherals.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Motors and Steering.SchDoc|FileName=Power.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Motors and Steering.SchDoc|FileName=RP2350.SchDoc|SheetNumber=1
