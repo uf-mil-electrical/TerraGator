@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Mini ESP32 Board V0.PrjPcb]
+   Generated File[Main.TXT]
+   Generated File[Main.LDP]
+   Generated File[Main.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 15:50:35 On 12/27/25
