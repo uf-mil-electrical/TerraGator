@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Mini RFDx900 Board V1.PrjPcb]
+   Generated File[Main.TXT]
+   Generated File[Main.LDP]
+   Generated File[Main.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 13:59:18 On 02/05/26
