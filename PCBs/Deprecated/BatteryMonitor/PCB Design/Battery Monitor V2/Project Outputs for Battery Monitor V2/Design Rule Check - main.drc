@@ -1,0 +1,473 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\russe\Repositories\MIL\TerraGator\PCBs\BatteryMonitor\PCB Design\Battery Monitor V2\main.PcbDoc
+Date     : 12/03/25
+Time     : 22:57:48
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (not InAnyDifferentialPair),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (not InAnyDifferentialPair),(All)
+   Violation between Clearance Constraint: (0.171mm < 0.18mm) Between Track (33.5mm,32.866mm)(33.762mm,32.604mm) on Top Layer And Track (33.906mm,32.258mm)(37.338mm,32.258mm) on Top Layer 
+   Violation between Clearance Constraint: (0.003mm < 0.18mm) Between Track (78.88mm,42.75mm)(79.93mm,41.7mm) on Bottom Layer And Track (80.19mm,42.01mm)(80.5mm,41.7mm) on Bottom Layer 
+Rule Violations :2
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Via (42mm,28.75mm) from Top Layer to Bottom Layer And Pad C10-1(42.5mm,35.4mm) on Bottom Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad O1-4(53.4mm,26.625mm) on Bottom Layer [Unplated] And Pad C16-1(57.15mm,26.75mm) on Bottom Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net D_N Between Pad Z2-2(7.28mm,42.75mm) on Bottom Layer And Pad X2-2(15.5mm,45.25mm) on Multi-Layer 
+   Violation between Un-Routed Net Constraint: Net D_P Between Pad Z1-2(7.28mm,45.25mm) on Bottom Layer And Pad X2-3(13.5mm,45.25mm) on Multi-Layer 
+Rule Violations :4
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mm) (Max=100mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.263mm) (Max=0.379mm) (Preferred=0.379mm) (InNetClass('nRF Signal'))
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (13.25mm,38.28mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (14.06mm,67.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (15.5mm,72.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (19.5mm,68.675mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (20.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (21.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (21.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (22.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (22.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (22.6mm,6.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.1mm,11.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.6mm,10.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.6mm,6.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (23.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.1mm,11.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.6mm,10.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.6mm,6.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (24.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (25.1mm,11.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (25.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (25.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (26.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (26.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (27.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (27.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (28.1mm,11.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (28.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (28.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (28.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (28.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (28.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29.5mm,38.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29mm,42.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (29mm,45.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (30.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (30.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (30.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (30.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (31.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (31.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (31.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (31.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (32.52mm,33.02mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (32.963mm,36.905mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (33.11mm,13.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (33.5mm,33mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (33.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (33.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (33mm,70.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.01mm,30mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.481mm,33.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.5mm,67mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (34.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.241mm,33.097mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.246mm,35.635mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.687mm,10.204mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (35.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.422mm,21.249mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.576mm,25.273mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.576mm,34.365mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36mm,16.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36mm,33.097mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (36mm,36.905mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (37.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (37.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (37.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (37.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (37.73mm,30.44mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (38.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (38.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (38.56mm,30.44mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (38.5mm,18.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (38.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (38.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,11.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,13.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,15.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,3.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.37mm,33.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,10.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,12.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,14.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,6.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (39.751mm,31.7mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.1mm,15.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.25mm,27mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.6mm,22.584mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.994mm,31.7mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (40.994mm,36.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.25mm,18.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.25mm,20.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.5mm,22.584mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.756mm,31.7mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (41.8mm,32.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42.25mm,17.653mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42.6mm,31.7mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42mm,25.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42mm,27mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (42mm,28.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.1mm,13.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.1mm,15.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.1mm,5.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.5mm,70.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.6mm,10.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.6mm,2.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.6mm,4.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.75mm,27mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (43.9mm,22.627mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (44.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (44.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (44.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (44.7mm,22.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (45.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (45.5mm,22.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (45.6mm,68.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (45.6mm,8.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.1mm,15.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.1mm,7.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.1mm,9.6mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.25mm,64mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.3mm,24.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.3mm,25.8mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.482mm,20.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.5mm,28.4mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.5mm,29.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (46.5mm,30.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (48.514mm,33.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (48.5mm,34.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (48.5mm,34mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (54mm,32mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (54mm,34.94mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (58mm,31.65mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (60.75mm,23.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (60.96mm,33.06mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (60mm,31.3mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (61.75mm,23.7mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (62.5mm,74.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (63mm,24.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (66.25mm,26.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (66mm,32.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (69.5mm,55.485mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (74.803mm,44.216mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (74mm,55.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (75.25mm,26.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (75.25mm,29.25mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (78.5mm,55.485mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (81mm,33.75mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.187mm < 0.2mm) Via (83mm,55.5mm) from Top Layer to Bottom Layer (Annular Ring=0.187mm) On (Top Layer)
+Rule Violations :190
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (13.25mm,38.28mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (14.06mm,67.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (15.5mm,72.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (19.5mm,68.675mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (20.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (21.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (21.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (22.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (22.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (22.6mm,6.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.1mm,11.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.6mm,10.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.6mm,6.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (23.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.1mm,11.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.6mm,10.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.6mm,6.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (24.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (25.1mm,11.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (25.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (25.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (26.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (26.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (27.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (27.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (28.1mm,11.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (28.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (28.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (28.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (28.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (28.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29.5mm,38.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29mm,42.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (29mm,45.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (30.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (30.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (30.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (30.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (31.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (31.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (31.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (31.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (32.52mm,33.02mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (32.963mm,36.905mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (33.11mm,13.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (33.5mm,33mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (33.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (33.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (33mm,70.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.01mm,30mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.481mm,33.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.5mm,67mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (34.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.241mm,33.097mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.246mm,35.635mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.687mm,10.204mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (35.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.422mm,21.249mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.576mm,25.273mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.576mm,34.365mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36mm,16.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36mm,33.097mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (36mm,36.905mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (37.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (37.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (37.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (37.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (37.73mm,30.44mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (38.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (38.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (38.56mm,30.44mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (38.5mm,18.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (38.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (38.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,11.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,13.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,15.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,3.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.37mm,33.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,10.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,12.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,14.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,6.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (39.751mm,31.7mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.1mm,15.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.25mm,27mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.6mm,22.584mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.994mm,31.7mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (40.994mm,36.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.25mm,18.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.25mm,20.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.5mm,22.584mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.756mm,31.7mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (41.8mm,32.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42.25mm,17.653mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42.6mm,31.7mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42mm,25.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42mm,27mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (42mm,28.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.1mm,13.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.1mm,15.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.1mm,5.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.5mm,70.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.6mm,10.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.6mm,2.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.6mm,4.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.75mm,27mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (43.9mm,22.627mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (44.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (44.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (44.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (44.7mm,22.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (45.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (45.5mm,22.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (45.6mm,68.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (45.6mm,8.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.1mm,15.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.1mm,7.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.1mm,9.6mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.25mm,64mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.3mm,24.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.3mm,25.8mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.482mm,20.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.5mm,28.4mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.5mm,29.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (46.5mm,30.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (48.514mm,33.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (48.5mm,34.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (48.5mm,34mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (54mm,32mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (54mm,34.94mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (58mm,31.65mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (60.75mm,23.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (60.96mm,33.06mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (60mm,31.3mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (61.75mm,23.7mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (62.5mm,74.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (63mm,24.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (66.25mm,26.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (66mm,32.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (69.5mm,55.485mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (74.803mm,44.216mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (74mm,55.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (75.25mm,26.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (75.25mm,29.25mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (78.5mm,55.485mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (81mm,33.75mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+   Violation between Hole Size Constraint: (0.175mm < 0.3mm) Via (83mm,55.5mm) from Top Layer to Bottom Layer Actual Hole Size = 0.175mm
+Rule Violations :190
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "T1" (0.108mm,67.2mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "T2" (0.195mm,31mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.11mm < 0.2mm) Between Board Edge And Text "X2" (0.31mm,50.427mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.123mm < 0.2mm) Between Board Edge And Track (0.25mm,30.54mm)(8.25mm,30.54mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.123mm < 0.2mm) Between Board Edge And Track (0.25mm,56.38mm)(0.25mm,66.54mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.123mm < 0.2mm) Between Board Edge And Track (0.25mm,56.38mm)(8.25mm,56.38mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.123mm < 0.2mm) Between Board Edge And Track (0.25mm,66.54mm)(8.25mm,66.54mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.123mm < 0.2mm) Between Board Edge And Track (0.25mm,9.54mm)(0.25mm,30.54mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.123mm < 0.2mm) Between Board Edge And Track (0.25mm,9.54mm)(8.25mm,9.54mm) on Top Overlay 
+Rule Violations :9
+
+Processing Rule : Delay Constraint (Min=0ps) (Max=10000ps) (All)
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Delay Tolerance=100ps) (InDifferentialPairClass('Ethernet_Pairs') or InDifferentialPairClass('USB_Pairs') or InDifferentialPairClass('CAN_Pairs'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 395
+Waived Violations : 0
+Time Elapsed        : 00:00:16

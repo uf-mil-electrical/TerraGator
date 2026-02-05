@@ -1,0 +1,22 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: main.PcbDoc   02/05/26  14:02:13
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : main.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.25mm (10mil)                                            Round             74        PTH        369.12mm (14.53inch)
+T2      0.787mm (31mil)                                           Round             28        PTH        91.53mm (3.60inch)
+T3      0.8mm (31mil)                                             Round             19        PTH        75.28mm (2.96inch)
+T4      0.9mm (35mil)                                             Round             4         PTH        6.50mm (0.26inch)
+T5      1mm (39mil)                                               Round             8         PTH        73.22mm (2.88inch)
+T6      1.194mm (47mil)                                           Round             20        PTH        48.26mm (1.90inch)
+T7      1.3mm (51mil)                                             Round             2         PTH        5.08mm (0.20inch)
+T8      2.3mm (91mil)                                             Round             2         PTH        12.04mm (0.47inch)
+T9      2.54mm (100mil)                                           Round             4         PTH        244.30mm (9.62inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              161
+
+Total Processing Time (hh:mm:ss) : 00:00:00

@@ -1,8 +1,0 @@
-Added Pin To Net: NetName=LM2576_VIN Pin=U6-1
-Added Pin To Net: NetName=LM2576_OUTPUT Pin=U6-2
-Added Pin To Net: NetName=U3 GND Pin=U6-3
-Added Pin To Net: NetName=3V3 Reg VIN Pin=U6-4
-Added Pin To Net: NetName=U3 GND Pin=U6-5
-Added Pin To Net: NetName=U3 GND Pin=U6-6
-Added Pin To Net: NetName=U3 GND Pin=U6-6
-Added Pin To Net: NetName=U3 GND Pin=U6-6
