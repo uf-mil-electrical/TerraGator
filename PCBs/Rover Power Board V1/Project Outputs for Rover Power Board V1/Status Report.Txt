@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Rover Power Board V1.PrjPcb]
+   Generated File[Main-RoundHoles.TXT]
+   Generated File[Main-SlotHoles.TXT]
+   Generated File[Main.LDP]
+   Generated File[Main.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 13:15:14 On 02/04/26
