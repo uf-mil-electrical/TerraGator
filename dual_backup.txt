@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
+#include "hardware/gpio.h"
+#include "hardware/timer.h"
+#include "VL53L1X.h" // 
+
+#define TRIG_PIN 0
+#define ECHO_PIN 1
+#define I2C_SDA_PIN 28
+#define I2C_SCL_PIN 29
+#define x_shut_pin 25 
+
+#define TOF_THRESHOLD_MM 150
+#define ULTRA_THRESHOLD_CM 15.0f
+
+#define I2C_PORT i2c0
+
+float read_ultrasonic_cm() {
+    gpio_put(TRIG_PIN, 1);
+    sleep_us(10);
+    gpio_put(TRIG_PIN, 0);
+
+    uint32_t timeout = 26100;
+    uint32_t wait_start = time_us_32();
+    while (gpio_get(ECHO_PIN) == 0) {
+        if (time_us_32() - wait_start > timeout) return -1.0f;
+    }
+
+    uint32_t start_time = time_us_32();
+    while (gpio_get(ECHO_PIN) == 1) {
+        if (time_us_32() - start_time > timeout) return -1.0f;
+    }
+    uint32_t end_time = time_us_32();
+
+    uint32_t duration = end_time - start_time;
+    return (float)duration * 0.0343f / 2.0f;
+}
+
+int main() {
+    stdio_init_all();
+    sleep_ms(3000); 
+    
+    printf("\n--- Starting Dual Sensor Setup ---\n");
+
+    // Initialize Ultrasonic Pins
+    gpio_init(TRIG_PIN);
+    gpio_set_dir(TRIG_PIN, GPIO_OUT);
+    gpio_put(TRIG_PIN, 0); 
+    gpio_init(ECHO_PIN);
+    gpio_set_dir(ECHO_PIN, GPIO_IN);
+
+    // Initialize I2C hardware
+    i2c_init(I2C_PORT, 400 * 1000);
+    gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(I2C_SDA_PIN);
+    gpio_pull_up(I2C_SCL_PIN);
+
+    gpio_put(x_shut_pin,1);
+
+    // Create the ToF sensor object and initialize it
+    printf("wait for tofSensor init \n");
+    VL53L1X tofSensor(I2C_PORT);
+    if (!tofSensor.init()) {
+        printf("ERROR: VL53L1X failed to boot! Check wiring.\n");
+        while(1) sleep_ms(100); // Halt execution if sensor fails
+    }
+    printf("VL53L1X successfully booted.\n");
+    printf("Sensors ready. Monitoring...\n");
+
+    while (true) {
+        // Read real data from both sensors
+        float ultrasonic = read_ultrasonic_cm();
+        uint16_t tof = tofSensor.readRangeMillimeters(); 
+
+        printf("ToF: %d mm | Ultrasonic: %.2f cm\n", tof, ultrasonic);
+
+        bool too_close = false;
+
+        // Note: 8190 is the error code returned if the ToF sensor times out or fails to read
+        if (tof < TOF_THRESHOLD_MM && tof > 0 && tof != 8190) {
+            too_close = true;
+        }
+        if (ultrasonic > 0 && ultrasonic < ULTRA_THRESHOLD_CM) {
+            too_close = true;
+        }
+
+        if (too_close) {
+            printf("WARNING: TOO CLOSE!\n");
+        }
+
+        sleep_ms(100);
+    }
+}
