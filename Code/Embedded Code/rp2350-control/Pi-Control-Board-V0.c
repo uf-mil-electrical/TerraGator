@@ -102,6 +102,7 @@ int main()
     while (true) {
         //runMenu();
         runRover_RemoteXYControl();
+		//printf("meow\n");
         sleep_ms(50);        
     }
 

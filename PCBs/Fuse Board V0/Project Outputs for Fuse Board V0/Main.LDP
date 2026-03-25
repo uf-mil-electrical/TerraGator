@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\russe\Repositories\MIL\TerraGator\PCBs\Fuse Board V0\Main.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=main-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=main-slotholes.txt|DrillLayers=gtl,gbl
