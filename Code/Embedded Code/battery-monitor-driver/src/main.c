@@ -10,6 +10,7 @@
 #include "drivers/voltage_sens.h"
 #include "drivers/sseg.h"
 #include "drivers/status.h"
+#include "drivers/payload.h"
 
 int main()
 {
@@ -25,6 +26,23 @@ int main()
     running_average_init(&current_filter); 
     running_average_init(&voltage_filter); 
 
+    // ADDITIONS BEGIN HERE
+    
+    // TO-DO : fill this in with our battery parameters!
+    BatteryConfig config = {
+        .cell_count = 0, // [Cells]
+        .capacity_mAh = 0, // [mAh]
+        .max_voltage = 0.0f, // [V]
+        .min_voltage = 0.0f, // [V]
+        .max_discharge_current = 0.0f, // [A]
+        .max_charge_current = 0.0f, // [A]
+        .expected_current = 0.0f, // [A]
+    };
+    set_battery_config(config);
+    // Sending battery config once upon startup
+    send_battery_config_payload();
+    // ADDITIONS END HERE
+    
     //printf("Beginning serial output..."); 
 
     // small delay before beginning to read to allow initializations time to settle 
@@ -59,8 +77,8 @@ int main()
         // update status LEDs onboard battery monitor
         uint8_t status = change_led_indicators(filtered_voltage, filtered_current);
         
-        // send LED status to RPi5 
-        uart_putc_raw(uart0, status);
+        // sending every ~100 ms using according to MIL UART 
+        send_payload(status, filtered_voltage, filtered_current);
     }
 }
 
