@@ -27,7 +27,7 @@ $$$$$$$$\                                      $$$$$$\             $$\
 #include "hardware/uart.h"
 #include "hardware/pwm.h"
 
-#include "system_general.h"
+#include "pins.h"
 
 #include "peripherals/ESP32.h"
 #include "peripherals/motor_speed_control.h"
@@ -61,29 +61,6 @@ int main()
 {
     //**************<Peripheral Init>**************
     stdio_init_all();
-
-    /*
-
-    // <SPI Init>
-    spi_init(SPI_PORT, 1000*1000);                  // initialize SPI at 1MHz
-    gpio_set_function(PIN_MISO, GPIO_FUNC_SPI);
-    gpio_set_function(PIN_CS,   GPIO_FUNC_SIO);
-    gpio_set_function(PIN_SCK,  GPIO_FUNC_SPI);
-    gpio_set_function(PIN_MOSI, GPIO_FUNC_SPI);
-    gpio_set_dir(PIN_CS, GPIO_OUT);                 // initialize CS to be high (active low)
-    gpio_put(PIN_CS, 1);
-    // </SPI Init>
-
-
-    // <UART Init>
-    uart_init(UART_ID, BAUD_RATE);
-    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
-    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
-    uart_puts(UART_ID, " Hello, UART!\n");          // Print UART debug message
-    // </UART Init>
-
-    */
-
     //**************</Peripheral Init>**************
     
 
@@ -98,12 +75,18 @@ int main()
     //**************</Motor Init>**************
 
     
+
+    
     // Run main program
     while (true) {
         //runMenu();
-        runRover_RemoteXYControl();
+        //runRover_RemoteXYControl();
 		//printf("meow\n");
-        sleep_ms(50);        
+
+        sleep_ms(1000);
+        killRelay();
+        sleep_ms(1000); 
+        enableRelay();       
     }
 
 }

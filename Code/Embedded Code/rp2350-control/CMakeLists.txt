@@ -34,7 +34,7 @@ project(Pi-Control-Board-V0 C CXX ASM)
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
-add_executable(Pi-Control-Board-V0 Pi-Control-Board-V0.c)
+add_executable(Pi-Control-Board-V0 main.c)
 
 # Add all .c files here
 target_sources(Pi-Control-Board-V0 PRIVATE

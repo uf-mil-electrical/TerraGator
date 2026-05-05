@@ -17,7 +17,7 @@
 
 #include "hardware/i2c.h"
 
-#include "system_general.h"
+#include "pins.h"
 /******************</Dependencies>*****************/
 
 

@@ -16,7 +16,7 @@
 #include <stdint.h>
 #include "pico/stdlib.h"
 
-#include "system_general.h"
+#include "pins.h"
 #include "peripherals/rover_i2c.h"
 #include "peripherals/ESP32.h"
 #include "peripherals/motor_speed_control.h"

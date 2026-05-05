@@ -17,7 +17,7 @@
 
 #include "hardware/i2c.h"
 
-#include "system_general.h"
+#include "pins.h"
 #include "peripherals/motor_speed_control.h"
 #include "peripherals/rover_i2c.h"
 #include "peripherals/safety_devices.h"
