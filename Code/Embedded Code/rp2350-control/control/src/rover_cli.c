@@ -124,15 +124,15 @@ void runMenu(void){
 
             case 5: {   // toggle value of relay control pin
                 // i: get relay state
-                    bool relay_state = getRelayState();
+                    bool relay_state = get_relay_state();
                 
                 // ii: toggle relay pin, print message
                     if (relay_state == false){
-                        enableRelay();
+                        enable_relay();
                         printf("> Relay is now ON");
                     }
                     else {
-                        killRelay();
+                        kill_relay();
                         printf("> Relay is now OFF");
                     }
 

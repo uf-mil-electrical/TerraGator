@@ -50,15 +50,15 @@
 /******************</Motors>*****************/
 
 
-/******************<I2C0 Communication>*****************/
-#define I2C0_BAUDRATE           100*1000    // initialize I2C at 1 kHz
+/******************<I2C1 Communication>*****************/
+#define I2C1_BAUDRATE           100*1000    // initialize I2C at 1 kHz
 #define RP2350_I2C_ADDRESS      0x40        // I2C address for this board
 #define ESP32_I2C_ADDRESS       0x20        // I2C address for ESP32
 
 // Pins
-#define I2C0_SDA                37
-#define I2C0_SCL                36
-/******************</I2C0 Communication>*****************/
+#define I2C1_SDA                10
+#define I2C1_SCL                11
+/******************</I2C1 Communication>*****************/
 
 
 /******************<Safety Devices>*****************/
@@ -68,10 +68,10 @@
 
 // LEDs
 #define LED_1_PIN               21
-#define LED_2_PIN               22
-#define LED_3_PIN               23
-#define LED_4_PIN               24
-#define LED_5_PIN               25
+#define LED_2_PIN               20
+#define LED_3_PIN               19
+#define LED_4_PIN               18
+#define LED_5_PIN               17
 /******************</Safety Devices>*****************/
 
 

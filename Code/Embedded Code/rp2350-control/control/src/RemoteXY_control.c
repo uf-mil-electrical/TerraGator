@@ -66,12 +66,12 @@ void runRover_RemoteXYControl(){
 
     // Third, engage/disengage relay if needed
         // i: get current relay state
-            bool current_relay_state = getRelayState();
+            bool current_relay_state = get_relay_state();
 
         // ii: if new relay state is different from current relay state, change relay state
             if (relay_state != current_relay_state){
-                if(relay_state){enableRelay();}
-                else {killRelay();}
+                if(relay_state){enable_relay();}
+                else {kill_relay();}
             }
             
             

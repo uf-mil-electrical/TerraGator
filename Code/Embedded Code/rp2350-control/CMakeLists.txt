@@ -23,7 +23,7 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico2 CACHE STRING "Board type")
+set(PICO_BOARD none CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
@@ -38,7 +38,6 @@ add_executable(Pi-Control-Board-V0 main.c)
 
 # Add all .c files here
 target_sources(Pi-Control-Board-V0 PRIVATE
-    system_general.c
     peripherals/src/ESP32.c
     peripherals/src/motor_speed_control.c
     peripherals/src/rover_i2c.c

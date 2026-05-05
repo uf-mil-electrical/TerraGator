@@ -38,43 +38,24 @@ $$$$$$$$\                                      $$$$$$\             $$\
 //*****************</Includes>*****************
 
 
-/*
-//*****************<Pin Definitions>*****************
-// SPI
-#define SPI_PORT spi1           // SPI Port 1
-#define PIN_SCK  10             // GPIO18 = SCK
-#define PIN_MOSI 11             // GPIO11 = MOSI
-#define PIN_MISO 12             // GPIO12 = MISO
-#define PIN_CS   13             // GPIO13 = CS
-
-// UART
-#define UART_ID uart1           // UART Port 1
-#define BAUD_RATE 115200        // UART Baud rate
-#define UART_TX_PIN 4           // GPIO4 = TX
-#define UART_RX_PIN 5           // GPIO5 = RX
-//*****************</Pin Definitions>*****************
-*/
-
-
 
 int main()
 {
     //**************<Peripheral Init>**************
     stdio_init_all();
-    //**************</Peripheral Init>**************
-    
 
+    init_rover_i2c();
+    init_relay();
+    init_leds();
 
-    //**************</Motor Init>**************
-    sleep_ms(5000);
+    sleep_ms(50);
+
+    init_motors();
     printf("\n\n\n");
     printf("> Initializing rover...\n");
-    motor_init();
-    init_rover_i2c();
-    initRelay();
-    //**************</Motor Init>**************
 
-    
+    sleep_ms(2000);
+    //**************</Peripheral Init>**************
 
     
     // Run main program
@@ -83,10 +64,116 @@ int main()
         //runRover_RemoteXYControl();
 		//printf("meow\n");
 
-        sleep_ms(1000);
-        killRelay();
-        sleep_ms(1000); 
-        enableRelay();       
+
+        
+        uint8_t i2c_data[4];
+        
+        // read data from ESP32 over I2C
+        i2c_read_esp32(i2c_data, 4);
+
+        // parse and print received data
+        int8_t steering    =   (int8_t)i2c_data[0];
+        int8_t velocity    =   (int8_t)i2c_data[1];
+        uint8_t relay_state =   i2c_data[2];
+        uint8_t brake_state =   i2c_data[3];
+
+        printf("data read!\n");
+        printf("\tsteering: %d\n", steering);
+        printf("\tvelocity: %d\n", velocity);
+        printf("\trelay_state: %u\n", relay_state);
+        printf("\tbrake_state: %u\n", brake_state);
+
+        sleep_ms(50);
+
+
+        // Second, validate received values
+		// i: check if steering is in valid range (-100 <= steering <= 100)
+			if ((steering < -100) || (steering > 100)) {
+				printf("INVALID STEERING\n");
+			}
+
+        // ii: check if velocity is in valid range (-100 <= velocity <= 100)
+            if ((velocity < -100) || (velocity > 100)) {
+                printf("INVALID VELOCITY\n");
+            }
+        
+        // iii: check if relay_state is in valid range (0 <= relay_state <= 1)
+            if (relay_state > 1) {
+                printf("INVALID RELAY STATE: %u\n", relay_state);
+            }
+
+        // iv: check if brake_state is in valid range (0 <= brake_state <= 1)
+            if (brake_state > 1) {
+                printf("INVALID BRAKE STATE: %u\n", brake_state);
+            }
+
+    // Third, engage/disengage relay if needed
+        // i: get current relay state
+            bool current_relay_state = get_relay_state();
+
+        // ii: if new relay state is different from current relay state, change relay state
+            if (relay_state != current_relay_state){
+                if(relay_state){enable_relay();}
+                else {kill_relay();}
+            }
+            
+            
+    // Fourth, if brake is engaged, stop rover immediately
+        if (brake_state == 1){
+            // i: print debug message
+                printf("[!] BRAKE ENGAGED\n");
+        }
+    
+
+    // Fifth, update motor modes based on steering
+		if ( (steering < -1 * TURN_STEERING_THRESHOLD) || (steering > TURN_STEERING_THRESHOLD) ){ // is turning?
+			// if turning right
+				if (steering > TURN_STEERING_THRESHOLD) {
+					if (velocity > 0){
+						setMotorMode('L', 'F');	// left motors forward
+						setMotorMode('R', 'R');	// right motors backward
+					}
+					else {
+						setMotorMode('L', 'R');	// left motors backward
+						setMotorMode('R', 'F');	// right motors forward
+					}
+				}
+
+			// if turning left
+				if (steering < -1 * TURN_STEERING_THRESHOLD) {
+					if (velocity > 0){
+						setMotorMode('L', 'R');	// left motors backward
+						setMotorMode('R', 'F');	// right motors forward
+					}
+					else {
+						setMotorMode('L', 'F');	// left motors forward
+						setMotorMode('R', 'R');	// right motors backward
+					}
+				}
+		}
+		else {
+			printf("not turning\n");
+			if (velocity >= 0){
+				setMotorMode('A', 'F');	// all motors forward
+			}
+			else {
+				setMotorMode('A', 'R');	// all motors backward
+			}
+		}
+
+	// Sixth, set motor velocities
+		// i: get velocity, normalize if needed
+			if (velocity < 0){          // set velocity to be 0 <= velocity < 100
+				velocity = velocity * -1;
+			}
+
+			if (velocity > 100){        // if overflow occurs, reset to 100
+				velocity = 100;
+			}
+
+		// ii: set motor speeds
+			setMotorSpeed_all(velocity);
     }
+
 
 }

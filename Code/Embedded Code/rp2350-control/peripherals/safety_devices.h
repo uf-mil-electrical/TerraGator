@@ -27,10 +27,14 @@
 
 
 /******************<Functions>*****************/
-void initRelay();
-bool getRelayState();
-void enableRelay();
-void killRelay();
+void init_relay();
+bool get_relay_state();
+void enable_relay();
+void kill_relay();
+
+void init_leds();
+void set_led(uint8_t led, bool state);
+void set_all_leds(bool state);
 /******************</Functions>*****************/
 
 

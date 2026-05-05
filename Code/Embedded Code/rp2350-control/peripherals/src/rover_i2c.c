@@ -15,11 +15,11 @@
 */
 void init_rover_i2c(void){
     // First, initialialize I2C in master mode
-        i2c_init(I2C_PORT, I2C_BAUDRATE);
-        gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-        gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-        gpio_pull_up(I2C_SDA);
-        gpio_pull_up(I2C_SCL);
+        i2c_init(i2c1, I2C1_BAUDRATE);
+        gpio_set_function(I2C1_SDA, GPIO_FUNC_I2C);
+        gpio_set_function(I2C1_SCL, GPIO_FUNC_I2C);
+        gpio_pull_up(I2C1_SDA);
+        gpio_pull_up(I2C1_SCL);
 
     // Lastly, return to main program
         return;
@@ -40,7 +40,7 @@ void i2c_read_esp32(uint8_t* data, uint8_t num_bytes){
 
     // First, read data from I2C buffer
         num_bytes_read = i2c_read_timeout_us(
-            I2C_PORT,
+            i2c1,
             ESP32_I2C_ADDRESS,
             data,
             num_bytes,
@@ -73,7 +73,7 @@ void i2c_read_esp32(uint8_t* data, uint8_t num_bytes){
 void i2c_write_esp32(uint8_t* data, uint8_t num_bytes){
 
     // First, write data to I2C bus
-        i2c_write_blocking(I2C_PORT, ESP32_I2C_ADDRESS, data, num_bytes, false);
+        i2c_write_blocking(i2c1, ESP32_I2C_ADDRESS, data, num_bytes, false);
 
     /*
         i2c_write_timeout_us(

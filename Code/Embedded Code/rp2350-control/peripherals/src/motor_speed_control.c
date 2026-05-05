@@ -16,7 +16,7 @@ motor_str motors[NUM_MOTORS];               // Global array of motor structs
 
 /******************<Function definitions>*****************/
 
-/*******motor_init*******
+/*******init_motors*******
  * Description
         > initializes all motor PWM stuff
  * Arguments
@@ -24,7 +24,7 @@ motor_str motors[NUM_MOTORS];               // Global array of motor structs
  * Returns
         > N/A
 */
-void motor_init() {
+void init_motors() {
 
     // First, set GPIO pins for each motor
         motors[0].motor_ID = 1;                         // Motor #1

@@ -12,6 +12,16 @@
 /**********</Dependencies>**********/
 
 
+
+/**********<LEDs>**********/
+#define LED_1_PIN     5
+#define LED_2_PIN     17
+#define LED_3_PIN     16
+
+#define BLINK_INTERVAL    500       // toggle LED once every BLINK_INTERVAL ms
+/**********</LEDs>**********/
+
+
 /**********<RemoteXY GUI Configuration>**********/
 #pragma pack(push, 1)  
 
@@ -44,11 +54,11 @@ struct {
 
 
 
-/**********<Defines>**********/
+/**********<I2C Setup>**********/
 // I2C Defines
 #define esp32_i2c_address 0x20
 #define i2c_clock_freq    100000
-/**********</Defines>**********/
+/**********</I2C Setup>**********/
 
 
 
@@ -57,12 +67,17 @@ int8_t steering = 0;
 int8_t velocity = 0;
 uint8_t relay_state = 0;
 uint8_t brake_state = 0;
+
+uint16_t last_toggle_time = 0;
+bool led_state = false;
 /**********</Global Variables>**********/
 
 
 /**********<I2C Request/Receive ISRs>**********/
 // I2C data REQUEST ISR
 void i2c_request() {
+
+  Serial.println("I2C: data REQUEST received");
   
   uint8_t data_to_send[4];
   data_to_send[0] = (uint8_t)(steering);
@@ -71,8 +86,6 @@ void i2c_request() {
   data_to_send[3] = brake_state;
 
   Wire.write(data_to_send, 4);  // send four bytes of data
-
-  Serial.println("I2C: data REQUEST received");
 }
 
 // I2C data RECEIVE ISR
@@ -99,6 +112,15 @@ void setup() {
   delay(10);
   Serial.println("Waiting for I2C request from master device");
 
+  // Initialize LEDs
+  pinMode(LED_1_PIN, OUTPUT);
+  pinMode(LED_2_PIN, OUTPUT);
+  pinMode(LED_3_PIN, OUTPUT);
+
+  digitalWrite(LED_1_PIN, LOW);
+  digitalWrite(LED_2_PIN, LOW);
+  digitalWrite(LED_3_PIN, LOW);
+
   // I2C init and handler setup
   Wire.setClock(i2c_clock_freq);  // set I2C clock frequency
   Wire.begin(esp32_i2c_address);  // join I2C bus in slave mode with this address
@@ -110,13 +132,22 @@ void setup() {
 
 /**********<ESP32 Loop Function>**********/
 void loop() {
-  // First, run RemoteXY handler (required)
+  // run RemoteXY handler (required)
     RemoteXY_Handler();
 
-  // Second, get updated values
+  // get updated values
     steering = RemoteXY.joystick_01_x;
     velocity = RemoteXY.joystick_01_y;
     relay_state = RemoteXY.relay_sw;
     brake_state = RemoteXY.brake_sw;
+
+  // toggle LED once per 500ms
+    unsigned long current_time = millis();
+
+    if (current_time - last_toggle_time >= BLINK_INTERVAL){
+      last_toggle_time = current_time;
+      led_state = !led_state;
+      digitalWrite(LED_1_PIN, led_state ? HIGH : LOW);
+    }
 }
 /**********<ESP32 Loop Function>**********/
