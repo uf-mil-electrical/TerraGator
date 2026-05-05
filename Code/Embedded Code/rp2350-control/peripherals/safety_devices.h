@@ -16,7 +16,7 @@
 #include <stdint.h>
 #include "pico/stdlib.h"
 
-#include "system_general.h"
+#include "pins.h"
 
 #include "hardware/gpio.h"
 /******************</Dependencies>*****************/
