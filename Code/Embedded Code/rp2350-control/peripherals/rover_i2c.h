@@ -27,9 +27,9 @@
 
 
 /******************<Functions>*****************/
-void init_rover_i2c(void);
-void i2c_read_esp32(uint8_t* data, uint8_t num_bytes);
-void i2c_write_esp32(uint8_t* data, uint8_t num_bytes);
+void init_rover_i2c(i2c_inst_t* i2c_bus, uint8_t sda_pin, uint8_t scl_pin, uint baudrate, bool master_mode);
+void rover_i2c_read(i2c_inst_t* i2c_bus, uint8_t read_address, uint8_t* data, uint8_t num_bytes);
+void rover_i2c_write(i2c_inst_t* i2c_bus, uint8_t write_address, uint8_t* data, uint8_t num_bytes);
 /******************</Functions>*****************/
 
 
