@@ -1,0 +1,152 @@
+*************************************************************
+FileName = Ult_Sonic_main.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : Ult_Sonic_main_Copper_Signal_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Ult_Sonic_main_Copper_Signal_Bot.gbr
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Ult_Sonic_main_Legend_Top.gbr
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Ult_Sonic_main_Legend_Bot.gbr
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D15
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Ult_Sonic_main_Soldermask_Top.gbr
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Ult_Sonic_main_Soldermask_Bot.gbr
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Ult_Sonic_main_Paste_Top.gbr
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Ult_Sonic_main_Paste_Bot.gbr
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : Ult_Sonic_main_Profile.gbr
+
+
+Used DCodes :
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Non-plated through-hole drill file
+      File : Ult_Sonic_main_NPTH_Drill.gbr
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Plated through-hole drill file
+      File : Ult_Sonic_main_PTH_Drill.gbr
+
+
+Used DCodes :
+    D24
+    D25
+*************************************************************
+
