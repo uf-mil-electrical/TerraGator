@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Safety Board V2.PrjPcb]
+   Generated File[main-RoundHoles.TXT]
+   Generated File[main-SlotHoles.TXT]
+   Generated File[main.LDP]
+   Generated File[main.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 15:55:39 On 5/21/2026
