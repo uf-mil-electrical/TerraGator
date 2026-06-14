@@ -105,21 +105,7 @@ void runMenu(void){
             }
 
             case 4: {   // read values from ESP32
-                // i: define structure to hold result
-                    uint8_t i2c_data[2];
-
-                // ii: read data from ESP32 over I2C
-                    i2c_read_esp32(i2c_data, 2);
-
-                // iii: parse and print received data
-                    int8_t velocity = (int8_t)i2c_data[0];
-                    uint8_t mode =    i2c_data[1];
-
-                    printf("> Data from ESP32:\n");
-                    printf("\tvelocity: %d\n", velocity);
-                    printf("\tmode: %u\n", mode);
-
-                break;
+                printf("nope\n");
             }
 
             case 5: {   // toggle value of relay control pin

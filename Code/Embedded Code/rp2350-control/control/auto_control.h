@@ -1,10 +1,12 @@
-#ifndef ROVER_CLI_H
-#define ROVER_CLI_H
+#ifndef AUTO_CONTROL_H
+#define AUTO_CONTROL_H
 
 /******************<Summary>*****************
- * Name: rover_cli.h
+ * Name: auto_control.h
  * Purpose:
- *      > Functions for rover CLI and debug control
+ *      > Primary rover control
+ *      > Operates rover in response to commands received
+ *          over I2C
  * Written / updated by:
  *      > Russell
 ******************</Summary>*****************/
@@ -33,4 +35,4 @@ void runMenu(void);
 
 
 
-#endif // ROVER_CLI_H
+#endif // AUTO_CONTROL_H

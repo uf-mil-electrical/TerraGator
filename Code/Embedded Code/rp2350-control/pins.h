@@ -51,7 +51,7 @@
 
 
 /******************<I2C1 Communication>*****************/
-#define I2C1_BAUDRATE           100*1000    // initialize I2C at 1 kHz
+#define I2C1_BAUDRATE           100*1000    // initialize I2C at 100 kHz
 #define RP2350_I2C_ADDRESS      0x40        // I2C address for this board
 #define ESP32_I2C_ADDRESS       0x20        // I2C address for ESP32
 

@@ -1,11 +1,12 @@
-#ifndef ESP32_H
-#define ESP32_H
-
+#ifndef DATA_PARSER_H
+#define DATA_PARSER_H
 
 /******************<Summary>*****************
- * Name: ESP32.h
+ * Name: data_parser.h
  * Purpose:
- *      > Defines functions for use with communicating with the ESP32
+ *      > Parses received data using the MIL software-
+ *          electrical data serialization protocol
+ *      > https://milwiki.cbrxyz.com/wiki/Software-electrical_data_serialization_protocol
  * Written / updated by:
  *      > Russell
 ******************</Summary>*****************/
@@ -25,6 +26,10 @@
 
 
 /******************<Functions>*****************/
+void rover_i2c_parse_data(i2c_inst_t* i2c_bus);
+void rover_i2c_extract_motor_commands(uint8_t* payload);
 /******************</Functions>*****************/
 
-#endif // ESP32_H
+
+
+#endif // DATA_PARSER_H
