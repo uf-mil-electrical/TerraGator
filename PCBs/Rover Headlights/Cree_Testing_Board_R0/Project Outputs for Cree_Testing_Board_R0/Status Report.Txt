@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Cree_Testing_Board_R0.PrjPcb]
+   Generated File[Cree_Testing_Board_R0.TXT]
+   Generated File[Cree_Testing_Board_R0.LDP]
+   Generated File[Cree_Testing_Board_R0.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 5:07:41 PM On 7/8/2026
