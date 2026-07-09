@@ -1,0 +1,153 @@
+*************************************************************
+FileName = Cree_Testing_Board_R0.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Layer
+      File : Cree_Testing_Board_R0.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Cree_Testing_Board_R0.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Cree_Testing_Board_R0.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Cree_Testing_Board_R0.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D24
+    D25
+    D26
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : Cree_Testing_Board_R0.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Cree_Testing_Board_R0.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Cree_Testing_Board_R0.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Cree_Testing_Board_R0.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : Cree_Testing_Board_R0.GM
+
+
+Used DCodes :
+    D31
+*************************************************************
+
