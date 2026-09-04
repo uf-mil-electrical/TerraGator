@@ -17,7 +17,7 @@ else()
 endif()
 set(sdkVersion 2.2.0)
 set(toolchainVersion 14_2_Rel1)
-set(picotoolVersion 2.2.0)
+set(picotoolVersion 2.2.0-a4)
 set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
 if (EXISTS ${picoVscode})
     include(${picoVscode})
@@ -42,6 +42,7 @@ add_executable(battery-monitor-driver
     src/drivers/status.c
     src/drivers/sseg.c
     src/drivers/voltage_sens.c
+    src/drivers/payload.c
     )
 
 pico_set_program_name(battery-monitor-driver "battery-monitor-driver")
