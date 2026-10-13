@@ -1,5 +1,7 @@
 /******************<Dependencies>*****************/
 #include "communication/data_parser.h"
+#include "peripherals/motor_speed_control.h"
+#include "peripherals/safety_devices.h"
 /******************</Dependencies>*****************/
 
 
@@ -8,50 +10,61 @@
 /*******rover_i2c_parse_data*******
  * Description
         > implementation of MIL data serialization protocol
-        > reads a raw I2C packet from RX FIFO (slave mode)
+        > reads a raw I2C packet received from master I2C read
         > validates sync bytes, extracts header info
         > extracts payload into an array
         > [TBD] executes Fletcher's checksum
  * Arguments
-        > i2c_inst_t* i2c_bus: I2C bus to use (i2c0 or i2c1)
+        > uint8_t* packet: pointer to received I2C packet
+        > uint16_t packet_len: number of bytes in received packet
  * Returns
         > N/A
 */
-void rover_i2c_parse_data(i2c_inst_t* i2c_bus){
-
-    printf("rover_i2c_parse_data(): reading data...\n");
+bool rover_i2c_parse_data(uint8_t* packet, uint16_t packet_len){
 
     // define variables to store decoded data
-        uint8_t header[6];
         uint8_t payload_len_lo, payload_len_hi;
         uint16_t payload_length = 0;
 
-    // read 6-byte header (sync bits, class, subclass, payload length)
-        i2c_read_raw_blocking(i2c_bus, header, 6);
-
-    // validate sync bytes
-        if (header[0] != 0x37 || header[1] != 0x01){
-            printf("\t> invalid sync bits (0x%02X, 0x%02X)\n", header[0], header[1]);
+    // make sure packet contains at least the 6-byte header
+        if (packet == NULL || packet_len < 6){
+            printf("\t> packet too short!\n");
+            return false;
         }
 
-    // print class ID and subclass ID
-        printf("\t> Class ID: 0x%02X\n", header[2]);
-        printf("\t> Subclass ID: 0x%02X\n", header[3]);
+    // validate sync bytes
+        if (packet[0] != 0x37 || packet[1] != 0x01){
+            printf("\t> invalid sync bits (0x%02X, 0x%02X)\n", packet[0], packet[1]);
+            return false;
+        }
 
     // get payload length
-        payload_len_lo = header[4];
-        payload_len_hi = header[5];
+        payload_len_lo = packet[4];
+        payload_len_hi = packet[5];
         payload_length = (uint16_t)(payload_len_hi) << 8 | (uint16_t)(payload_len_lo);
-        printf("\t> Payload length: %u\n", payload_length);
 
-    // read payload
-        uint8_t payload[payload_length];
-        i2c_read_raw_blocking(i2c_bus, payload, payload_length);
+    // make sure packet contains the full payload
+        if (packet_len < (6 + payload_length)){
+            printf("\t> incomplete payload!\n");
+            return false;
+        }
 
-    // read checksum (last two bytes) to validate data
+        if (packet[2] != 0x30 || packet[3] != 0x00 || payload_length != 3 ||
+            packet_len != 9 || (packet[6] >> 4) != 0x05 ||
+            packet[7] > 100 || packet[8] > 100) {
+            printf("Rejected motor packet: class=%02X subclass=%02X len=%u device=%u speeds=%u,%u\n",
+                   packet[2], packet[3], payload_length, packet[6] >> 4,
+                   packet[7], packet[8]);
+            return false;
+        }
+
+    // payload starts after the 6-byte header
+        uint8_t* payload = &packet[6];
+
+    // This nine-byte ESP32 format has no checksum bytes.
 
     // proceed based on subclass ID
-        uint8_t subclass_id = header[3];
+        uint8_t subclass_id = packet[3];
         switch(subclass_id){
             case 0x00: {
                 rover_i2c_extract_motor_commands(payload);
@@ -62,6 +75,13 @@ void rover_i2c_parse_data(i2c_inst_t* i2c_bus){
                 printf("\t> Invalid subclass ID!\n");
             }
         }
+    return true;
+}
+
+void rover_stop_motors(void) {
+    setMotorSpeed_all(0);
+    setMotorMode('A', 'B');
+    kill_relay();
 }
 
 
@@ -91,15 +111,31 @@ void rover_i2c_extract_motor_commands(uint8_t* payload){
         left_motor_speed  = payload[1];
         right_motor_speed = payload[2];
 
-    // print values
-        printf("rover_i2c_extract_motor_commands(): data received\n");
-        printf("\t> device_id: %u\n", device_id);
-        printf("\t> right_motor_direction: %u\n", right_motor_dir);
-        printf("\t> left_motor_direction: %u\n", left_motor_dir);
-        printf("\t> brake_state: %u\n", brake_state);
-        printf("\t> relay_state: %u\n", relay_state);
-        printf("\t> right_motor_speed: %u\n", right_motor_speed);
-        printf("\t> left_motor_speed: %u\n", left_motor_speed);
+    // Limit USB output so logging does not dominate command processing.
+        static uint64_t last_log_us = 0;
+        const uint64_t now = time_us_64();
+        if (now - last_log_us >= 200000) {
+            last_log_us = now;
+            printf("Motor RX: device=%u left=%u/%s right=%u/%s relay=%u brake=%u\n",
+                   device_id, left_motor_speed, left_motor_dir ? "F" : "R",
+                   right_motor_speed, right_motor_dir ? "F" : "R",
+                   relay_state, brake_state);
+        }
+
+    // Remove PWM before changing direction or braking.
+        setMotorSpeed_all(0);
+        if (!relay_state) {
+            rover_stop_motors();
+        } else if (brake_state) {
+            setMotorMode('A', 'B');
+            if (!get_relay_state()) enable_relay();
+        } else {
+            setMotorMode('L', left_motor_dir ? 'F' : 'R');
+            setMotorMode('R', right_motor_dir ? 'F' : 'R');
+            if (!get_relay_state()) enable_relay();
+            setMotorSpeed_side('L', left_motor_speed);
+            setMotorSpeed_side('R', right_motor_speed);
+        }
 
     // return
         return;

@@ -26,7 +26,8 @@
 
 
 /******************<Functions>*****************/
-void rover_i2c_parse_data(i2c_inst_t* i2c_bus);
+bool rover_i2c_parse_data(uint8_t* packet, uint16_t packet_len);
+void rover_stop_motors(void);
 void rover_i2c_extract_motor_commands(uint8_t* payload);
 /******************</Functions>*****************/
 

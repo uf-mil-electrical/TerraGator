@@ -105,7 +105,8 @@ void runMenu(void){
             }
 
             case 4: {   // read values from ESP32
-                printf("nope\n");
+                printf("ESP32 receive diagnostics are printed by the main polling loop.\n");
+                break;
             }
 
             case 5: {   // toggle value of relay control pin

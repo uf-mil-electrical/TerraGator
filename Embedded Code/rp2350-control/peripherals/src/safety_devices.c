@@ -174,7 +174,7 @@ void set_led(uint8_t led, bool state){
         > N/A
 */
 void set_all_leds(bool state){
-    for (int i = 0; i < 5; i++){
+    for (int i = 1; i <= 5; i++){
         set_led(i, state);
     }
 }

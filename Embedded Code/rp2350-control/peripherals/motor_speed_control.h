@@ -43,6 +43,7 @@ typedef struct motor_str {
 /******************<Functions>*****************/
 void init_motors();
 void printMotorDetails();
+void printMotorMovement(void);
 void setMotorMode(char motor_set, char mode);
 char getMotorMode();
 void setMotorSpeed(uint8_t ID, uint8_t speed);

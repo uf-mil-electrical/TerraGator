@@ -1,11 +1,15 @@
 /******************<Dependencies>*****************/
 #include "peripherals/motor_speed_control.h"
+#include "peripherals/safety_devices.h"
 /******************</Dependencies>*****************/
 
 
 /******************<Private variables>*****************/
 bool motors_initialized = false;           // keeps track of whether or not initMotors has been called
 char current_motor_mode = ' ';             // keeps track of motor mode (only updated when mode for both sides is updated)
+static char side_modes[2] = {'?', '?'};
+static uint8_t commanded_speed[NUM_MOTORS];
+static uint16_t commanded_level[NUM_MOTORS];
 /******************</Private variables>*****************/
 
 
@@ -85,7 +89,11 @@ void init_motors() {
                 if (slice_initialized == false){            // initialize slice if not yet initialized
                     pwm_config_set_wrap(&config, PWM_WRAP);
                     pwm_init(motors[i].PWM_slice, &config, true);
+                    initialized_slices[i] = motors[i].PWM_slice;
                 }
+                pwm_set_chan_level(motors[i].PWM_slice, motors[i].PWM_channel, 0);
+                commanded_speed[i] = 0;
+                commanded_level[i] = 0;
         }
 
     // Fourth, initialize control logic pins
@@ -277,6 +285,9 @@ void setMotorMode(char motor_set, char mode){
             }
         }
 
+        if (affect_left) side_modes[0] = mode;
+        if (affect_right) side_modes[1] = mode;
+
     // Lastly, return to main program
         return;
 }
@@ -292,6 +303,22 @@ void setMotorMode(char motor_set, char mode){
 */
 char getMotorMode(){
     return current_motor_mode;
+}
+
+// Command/output diagnostics only: there are no wheel direction/RPM sensors.
+void printMotorMovement(void) {
+    if (!motors_initialized) return;
+    printf("Motor outputs: relay=%s (commanded); F=forward R=reverse B=brake N=neutral\n",
+           get_relay_state() ? "ON" : "OFF");
+    for (uint8_t i = 0; i < NUM_MOTORS; i++) {
+        const bool left = motors[i].side == 0;
+        const uint pin1 = left ? LEFT_MOTOR_CONTROL_1 : RIGHT_MOTOR_CONTROL_1;
+        const uint pin2 = left ? LEFT_MOTOR_CONTROL_2 : RIGHT_MOTOR_CONTROL_2;
+        printf("  M%u %s mode=%c PWM=GP%u request=%u%% level=%u/%u DIR=GP%u:%u GP%u:%u\n",
+               motors[i].motor_ID, left ? "LEFT " : "RIGHT", side_modes[motors[i].side],
+               motors[i].GPIO_pin, commanded_speed[i], commanded_level[i], PWM_WRAP + 1u,
+               pin1, gpio_get_out_level(pin1), pin2, gpio_get_out_level(pin2));
+    }
 }
 
 
@@ -342,6 +369,8 @@ void setMotorSpeed(uint8_t ID, uint8_t speed) {
 
     // Fourth, update duty cycle for this channel only
         pwm_set_chan_level(slice, channel, level);
+        commanded_speed[target_motor] = speed;
+        commanded_level[target_motor] = level;
 
     // Fifth, print update
         //printf("setMotorSpeed(): changed Motor %u's PWM duty cycle to %u%%\n", ID, speed);

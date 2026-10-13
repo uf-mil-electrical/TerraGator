@@ -5,6 +5,8 @@
 
 
 /******************<Private Functions>*****************/
+
+/* no long using for master design
 // buffer for in-progress I2C transaction
 static volatile uint8_t rx_buf[ROVER_I2C_MAX_RX_BUF_SIZE];
 static volatile uint16_t rx_len = 0;
@@ -12,7 +14,8 @@ static volatile uint16_t rx_len = 0;
 // buffer for previous I2C transaction
 static volatile uint8_t packet_buf[ROVER_I2C_MAX_RX_BUF_SIZE];
 static volatile uint16_t packet_len = 0;
-static volatile bool packet_ready = false; 
+static volatile bool packet_ready = false;
+*/
 /******************</Private Functions>*****************/
 
 
@@ -64,9 +67,9 @@ void init_rover_i2c(i2c_inst_t* i2c_bus, uint8_t sda_pin, uint8_t scl_pin, uint 
         > uint8_t* data: pointer to location to store received data
         > uint8_t num_bytes: number of bytes to read
  * Returns
-        > N/A
+        > int num_bytes_read
 */
-void rover_i2c_read(i2c_inst_t* i2c_bus, uint8_t read_address, uint8_t* data, uint8_t num_bytes){
+int rover_i2c_read(i2c_inst_t* i2c_bus, uint8_t read_address, uint8_t* data, uint8_t num_bytes){
     int num_bytes_read = 0;
 
     // read data from I2C buffer
@@ -75,7 +78,7 @@ void rover_i2c_read(i2c_inst_t* i2c_bus, uint8_t read_address, uint8_t* data, ui
             read_address,
             data,
             num_bytes,
-            false,                  // nostop = false (If true, master retains control of the bus at the end of the transfer (no Stop is issued), and the next transfer will begin with a Restart rather than a Start)
+            false,         // nostop = false (If true, master retains control of the bus at the end of the transfer (no Stop is issued), and the next transfer will begin with a Restart rather than a Start)
             I2C_TIMEOUT_DELAY
         );
 
@@ -88,9 +91,8 @@ void rover_i2c_read(i2c_inst_t* i2c_bus, uint8_t read_address, uint8_t* data, ui
         }
 
     // Lastly, return to main program
-        return;
+        return num_bytes_read;
 }
-
 
 /*******rover_i2c_get_num_bytes_rx*******
  * Description
@@ -101,9 +103,11 @@ void rover_i2c_read(i2c_inst_t* i2c_bus, uint8_t read_address, uint8_t* data, ui
  * Returns
         > N/A
 */
+/* no longer use in the master design
 void rover_i2c_get_num_bytes_rx(i2c_inst_t* i2c_bus, uint8_t* num_bytes){
     *num_bytes = i2c_get_read_available(i2c_bus);
 }
+    */
 
 
 /*******rover_i2c_write*******
@@ -117,10 +121,13 @@ void rover_i2c_get_num_bytes_rx(i2c_inst_t* i2c_bus, uint8_t* num_bytes){
  * Returns
         > N/A
 */
-void rover_i2c_write(i2c_inst_t* i2c_bus, uint8_t write_address, uint8_t* data, uint8_t num_bytes){
+int rover_i2c_write(i2c_inst_t* i2c_bus, uint8_t write_address, uint8_t* data, uint8_t num_bytes){
+
+        int result;
 
     // First, write data to I2C bus
-        i2c_write_blocking(i2c_bus, write_address, data, num_bytes, false);
+      result = i2c_write_timeout_us(i2c_bus, write_address, data, num_bytes,
+                                   false, I2C_TIMEOUT_DELAY);
 
     /*
         i2c_write_timeout_us(
@@ -134,13 +141,110 @@ void rover_i2c_write(i2c_inst_t* i2c_bus, uint8_t write_address, uint8_t* data, 
     */
 
     // Second, print debug message
-        printf("> rover_i2c_write(): wrote %u bytes\n", num_bytes);
+        if (result != num_bytes) {
+            static uint64_t last_error_us = 0;
+            const uint64_t now = time_us_64();
+            if (now - last_error_us >= 1000000) {
+                last_error_us = now;
+                printf("I2C write FAILED: address=0x%02X expected=%u result=%d; check SDA/SCL/GND and ESP32 slave init\n",
+                       write_address, num_bytes, result);
+            }
+        }
 
     // Lastly, return to main program
-        return;
+        return result; // capture the return value
 }
 
 
+// new function added polling from esp32
+/*******rover_i2c_poll_esp32*******
+ * Description
+        > polls ESP32 to check if new RemoteXY motor data exists
+        > if new data exists, requests the full motor command packet
+ * Arguments
+        > i2c_inst_t* i2c_bus: I2C bus to use
+        > uint8_t* packet: pointer to location to store received motor packet
+ * Returns
+        > bool: true=new motor packet received, false=no new packet or I2C error
+*/
+bool rover_i2c_poll_esp32(i2c_inst_t* i2c_bus, uint8_t* packet){
+
+    uint8_t request = I2C_STATUS_REQUEST;
+    uint8_t status = 0;
+
+    int num_bytes_written = 0;
+    int num_bytes_read = 0;
+
+
+    // ask ESP32 for status
+        num_bytes_written = rover_i2c_write(
+            i2c_bus,
+            ESP32_I2C_ADDRESS,
+            &request,
+            1 // number of bytes of 1, single command
+        );
+
+        if (num_bytes_written != 1){
+            return false;
+        }
+
+
+    // ESP32 handles the request in a FreeRTOS task and preloads the reply.
+    // A STOP alone does not guarantee that callback has run before the read.
+        sleep_ms(2);
+
+    // read status byte from ESP32
+        num_bytes_read = rover_i2c_read(
+            i2c_bus,
+            ESP32_I2C_ADDRESS,
+            &status,
+            1
+        );
+
+        if (num_bytes_read != 1){
+            return false;
+        }
+
+
+    // no new RemoteXY data
+        if (status != 1){
+            return false;
+        }
+
+
+    // new data exists, request motor packet
+        request = I2C_MOTOR_DATA_REQUEST;
+
+        num_bytes_written = rover_i2c_write(
+            i2c_bus,
+            ESP32_I2C_ADDRESS,
+            &request,
+            1
+        );
+
+        if (num_bytes_written != 1){
+            return false;
+        }
+
+
+        sleep_ms(2);
+
+    //do a second request read full motor command packet
+        num_bytes_read = rover_i2c_read(
+            i2c_bus,
+            ESP32_I2C_ADDRESS,
+            packet,
+            MOTOR_PACKET_SIZE   // actual data
+        );
+
+        if (num_bytes_read != MOTOR_PACKET_SIZE){
+            return false;
+        }
+
+
+    // new packet successfully received
+        return true;
+}
 
 /*******rover_i2c_check_for_rx*******
  * Description
@@ -153,9 +257,9 @@ void rover_i2c_write(i2c_inst_t* i2c_bus, uint8_t write_address, uint8_t* data, 
         > uint16_t* out_len: length of buffer in which to store data
  * Returns
         > bool: true=packet received
-*/
+*/ /* already have the polling function
 bool rover_i2c_check_for_rx(i2c_inst_t* i2c_bus, uint8_t* out_buf, uint16_t* out_len){
     //
 }
-
+*/
 /******************</Public Functions>*****************/
