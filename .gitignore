@@ -12,3 +12,5 @@ log
 venv
 install
 build
+
+/build-verified
