@@ -28,13 +28,6 @@ $$$$$$$$\                                      $$$$$$\             $$\
 #include "peripherals/safety_devices.h"
 //*****************</Includes>*****************
 
-// Temporary startup test: set to 0 to disable before normal operation.
-// Runs on every boot. RELAY_CONTROL must match the actual board wiring.
-#define RUN_FORWARD_STARTUP_TEST 1
-#define FORWARD_TEST_SPEED_PERCENT 20
-#define FORWARD_TEST_DURATION_MS 5000
-
-
 int main()
 {
     // peripheral init
@@ -55,22 +48,6 @@ int main()
         printf("> Initializing rover...\n");
 
         sleep_ms(2000);
-
-#if RUN_FORWARD_STARTUP_TEST
-        // Keep the wheels raised: this test runs without a phone connection.
-        printf("> Forward test: all motors at %u%% PWM for %u ms\n",
-               (unsigned int)FORWARD_TEST_SPEED_PERCENT,
-               (unsigned int)FORWARD_TEST_DURATION_MS);
-        setMotorSpeed_all(0);
-        setMotorMode('A', 'F');
-        enable_relay();
-        setMotorSpeed_all(FORWARD_TEST_SPEED_PERCENT);
-        printMotorMovement();
-        sleep_ms(FORWARD_TEST_DURATION_MS);
-        rover_stop_motors();
-        printf("> Forward test complete: motors stopped, relay off\n");
-        printf("> Starting RemoteXY command polling\n");
-#endif
 
         // buffer for packet received from ESP32
         uint8_t esp32_packet[MOTOR_PACKET_SIZE];
