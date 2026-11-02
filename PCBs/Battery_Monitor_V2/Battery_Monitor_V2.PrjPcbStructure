@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=Battery-Current.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Battery-Current.SchDoc|FileName=Battery-Voltage.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Battery-Current.SchDoc|FileName=RP2350A.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Battery-Current.SchDoc|FileName=Seven-Seg.SchDoc|SheetNumber=1
